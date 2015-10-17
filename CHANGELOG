@@ -1,0 +1,43 @@
+version 1.1 2014.07.13
+-add Chinese(Traditional) translation
+-add run program action
+
+version 1.2 2014.7.28
+-add parameter for run program action
+
+version 1.3 2014.8.14
+-add toolbar
+-disable action radiobuttons when timer is enabled
+-save settings
+
+version 1.4 2014.8.25
+-saves settings to settings.ini
+-add the ability to minimize to system tray
+
+version 1.5 2014.9.13
+-beep
+-bug fix
+
+version 1.6 2014.12.7
+-beep with ioctl
+-save settings with programOptions
+
+version 1.7 2015.2.7
+-modal dialog
+-windows version
+
+version 1.8 2015.4.5
+-pkexec
+
+version 1.9 2015.6.23
+-add context menu to tray icon
+-bug fixes
+
+version 2.0 2015.8.23
+-run timer repeatedly
+-add the function to use audio file to play beep sound
+-add hour
+
+version 2.1 2015.10.15
+-startup settings
+-command line

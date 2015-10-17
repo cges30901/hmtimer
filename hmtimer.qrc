@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>hmtimer.png</file>
+        <file>beep.ogg</file>
+    </qresource>
+</RCC>
