@@ -7,8 +7,8 @@ SelectFileDialog::SelectFileDialog(ProgramOptions *programOptions,QWidget *paren
     this->programOptions=programOptions;
     lneFilename->setText(programOptions->lneFilename_Text);
     lneParameters->setText(programOptions->lneParameters_Text);
-    connect(toolButton,SIGNAL(clicked()),
-            this,SLOT(setFile()));
+    connect(toolButton,&QToolButton::clicked,
+            this,&SelectFileDialog::setFile);
 }
 
 void SelectFileDialog::setFile()

@@ -35,22 +35,22 @@ MainWindow::MainWindow(QWidget *parent)
     actShow=trayContextMenu->addAction(tr("Show"));
     actQuit=trayContextMenu->addAction(tr("Quit"));
     trayIcon->setContextMenu(trayContextMenu);
-    connect(btnStart,SIGNAL(clicked()),
-            this,SLOT(buttonStartPressed()));
-    connect(timer,SIGNAL(timeout()),
-            this,SLOT(timer_timeout()));
-    connect(spbSecond,SIGNAL(valueChanged(int)),
-            this,SLOT(spbSecond_valueChanged(int)));
-    connect(rbtSound,SIGNAL(clicked()),
-            this,SLOT(setAudioFile()));
-    connect(qApp,SIGNAL(aboutToQuit()),
-            this,SLOT(writeSettings()));
-    connect(trayIcon,SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
-            this,SLOT(trayIcon_activated(QSystemTrayIcon::ActivationReason)));
-    connect(actShow,SIGNAL(triggered(bool)),
-            this,SLOT(actShow_Triggered()));
-    connect(actQuit,SIGNAL(triggered(bool)),
-            this,SLOT(actQuit_Triggered()));
+    connect(btnStart,&QPushButton::clicked,
+            this,&MainWindow::buttonStartPressed);
+    connect(timer,&QTimer::timeout,
+            this,&MainWindow::timer_timeout);
+    connect(spbSecond,(void (QSpinBox:: *)(int))&QSpinBox::valueChanged,
+            this,&MainWindow::spbSecond_valueChanged);
+    connect(rbtSound,&QRadioButton::clicked,
+            this,&MainWindow::setAudioFile);
+    connect(qApp,&QApplication::aboutToQuit,
+            this,&MainWindow::writeSettings);
+    connect(trayIcon,&QSystemTrayIcon::activated,
+            this,&MainWindow::trayIcon_activated);
+    connect(actShow,&QAction::triggered,
+            this,&MainWindow::actShow_Triggered);
+    connect(actQuit,&QAction::triggered,
+            this,&MainWindow::actQuit_Triggered);
 #ifdef Q_OS_LINUX
     write_fp=popen((QString("pkexec ")+qApp->applicationDirPath()+"/root").toLocal8Bit().data(),"w");
 #endif
