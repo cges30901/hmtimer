@@ -11,6 +11,7 @@ SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):
 {
     setupUi(this);
     this->programOptions=programOptions;
+    tabWidget->setCurrentIndex(0);
 
     //general
     chbMinimizeToTray->setChecked(programOptions->chbMinimizeToTray_Checked);
