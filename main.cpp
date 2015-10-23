@@ -22,7 +22,9 @@ int main(int argc,char *argv[])
         }
     }
     QTranslator translator;
-    translator.load("hmtimer_"+QLocale::system().name(),app.applicationDirPath()+"/language");
+    if(translator.load("hmtimer_"+QLocale::system().name(),app.applicationDirPath()+"/language")!=true){
+        translator.load("hmtimer_"+QLocale::system().name(),"/usr/share/hmtimer");
+    }
     app.installTranslator(&translator);
     MainWindow *window=new MainWindow;
     window->show();
