@@ -52,7 +52,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(actQuit,&QAction::triggered,
             this,&MainWindow::actQuit_Triggered);
 #ifdef Q_OS_LINUX
-    write_fp=popen((QString("pkexec ")+qApp->applicationDirPath()+"/root").toLocal8Bit().data(),"w");
+    write_fp=popen((QString("pkexec ")+qApp->applicationDirPath()+"/hmtimer_root").toLocal8Bit().data(),"w");
 #endif
     readSettings();
     QStringList args=qApp->arguments();
