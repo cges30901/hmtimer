@@ -6,4 +6,4 @@ Icon=hmtimer
 Exec=hmtimer
 Terminal=false
 Hidden=false
-Categories=Utility;DesktopUtility;
+Categories=Utility;Qt;
