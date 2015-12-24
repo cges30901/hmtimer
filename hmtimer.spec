@@ -26,8 +26,10 @@ Source0:        %{name}-%{version}-src.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 BuildRequires:  pkgconfig(Qt5Core)
-BuildRequires:  update-desktop-files
 BuildRequires:  pkgconfig(Qt5Multimedia)
+%if 0%{?suse_version}
+BuildRequires:  update-desktop-files
+%endif
 
 %description
 Hsiu-Ming's Timer is a graphical shutdown timer for Linux and Windows. It enables you to shutdown, turn off monitor, reboot or play sound after a period of time.
@@ -47,7 +49,9 @@ install -D -m0644 language/hmtimer_zh_TW.qm %{buildroot}%{_datadir}/hmtimer/hmti
 install -D -m0644 hmtimer.desktop %{buildroot}%{_datadir}/applications/hmtimer.desktop
 install -D -m0644 hmtimer.png %{buildroot}%{_datadir}/icons/hicolor/128x128/apps/hmtimer.png
 install -D -m0644 hmtimer48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/hmtimer.png
+%if 0%{?suse_version}
 %suse_update_desktop_file %{name}
+%endif
 
 %clean
 rm -rf %{buildroot}
