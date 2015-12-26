@@ -53,7 +53,7 @@ void SettingsDialog::on_btnOk_clicked()
         std::ofstream file(qPrintable(QDir::homePath()+"/.config/autostart/hmtimer.desktop"));
         file<<"[Desktop Entry]\n"
             <<"Type=Application\n"
-            <<"Name=timer\n"
+            <<"Name=hmtimer\n"
             <<"Exec="<<qPrintable(qApp->applicationFilePath());
         file<<" -t "<<qPrintable(QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value()));
         if(chbMinimizeOnStartup->isChecked()){
