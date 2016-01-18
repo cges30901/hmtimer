@@ -3,7 +3,6 @@
 #include <QStringList>
 #include <iostream>
 #include "mainwindow.h"
-#include "selectfiledialog.h"
 
 int main(int argc,char *argv[])
 {

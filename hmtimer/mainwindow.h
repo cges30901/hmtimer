@@ -11,10 +11,7 @@
 #include "selectfiledialog.h"
 #include "settingsdialog.h"
 #include "programoptions.h"
-#include <unistd.h>
-#include <stdio.h>
 #include <QProcess>
-#include <QVector>
 
 
 class MainWindow : public QMainWindow,public Ui::MainWindow

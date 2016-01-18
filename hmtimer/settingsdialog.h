@@ -1,7 +1,6 @@
 #ifndef SETTINGSDIALOG_H
 #define SETTINGSDIALOG_H
 #include <QDialog>
-#include <stdio.h>
 #include "ui_settingsdialog.h"
 #include "programoptions.h"
 

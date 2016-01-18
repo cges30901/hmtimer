@@ -5,7 +5,6 @@
 #endif
 #include <fstream>
 #include <QDir>
-#include <cstdio>
 #include "settingsdialog.h"
 
 SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):QDialog(parent)

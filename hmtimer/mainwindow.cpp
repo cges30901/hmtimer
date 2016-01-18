@@ -1,15 +1,11 @@
-#include "mainwindow.h"
 #include <time.h>
-#include <QMediaPlayer>
-#include <QFileInfo>
 #include <QFileDialog>
-#include "selectfiledialog.h"
 #include <QMessageBox>
 #include <QDesktopServices>
 #include <QUrl>
 #include <QSettings>
-#include <settingsdialog.h>
 #ifdef Q_OS_LINUX
+# include <unistd.h>
 # include <linux/kd.h>
 # include <sys/ioctl.h>
 # include <fcntl.h>
@@ -18,8 +14,9 @@
 #ifdef Q_OS_WIN32
  #include <windows.h>
 #endif
-#include <stdio.h>
-#include <QProcess>
+#include "mainwindow.h"
+#include "selectfiledialog.h"
+#include "settingsdialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
