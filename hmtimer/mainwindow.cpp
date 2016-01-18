@@ -24,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     setupUi(this);
     programOptions=new ProgramOptions;
     player=new QMediaPlayer;
+    beepPlayer=new QMediaPlayer;
     timer=new QTimer(this);
     timer_enabled=false;
     trayIcon=new QSystemTrayIcon;
@@ -34,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent)
     actQuit=trayContextMenu->addAction(tr("Quit"));
     trayIcon->setContextMenu(trayContextMenu);
     connect(btnStart,&QPushButton::clicked,
-            this,&MainWindow::buttonStartPressed);
+            this,&MainWindow::btnStartPressed);
     connect(timer,&QTimer::timeout,
             this,&MainWindow::timer_timeout);
     connect(spbSecond,(void (QSpinBox:: *)(int))&QSpinBox::valueChanged,
@@ -49,6 +50,8 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::actShow_Triggered);
     connect(actQuit,&QAction::triggered,
             this,&MainWindow::actQuit_Triggered);
+    connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
+            this,&MainWindow::playerError);
 
     readSettings();
     QStringList args=qApp->arguments();
@@ -84,11 +87,11 @@ MainWindow::MainWindow(QWidget *parent)
     }
     for(int i=0;i<args.size();i++){
         if(args.at(i)=="-s"){
-            buttonStartPressed();
+            btnStartPressed();
         }
     }
 }
-void MainWindow::buttonStartPressed()
+void MainWindow::btnStartPressed()
 {
     if(timer_enabled)
     {
@@ -130,6 +133,9 @@ void MainWindow::buttonStartPressed()
         rbtRunprogram->setEnabled(false);
         chbRunRepeatedly->setEnabled(false);
         timer_enabled=!timer_enabled;
+        if(rbtSound->isChecked()){
+            player->setMedia(QUrl::fromLocalFile(audioFile));
+        }
     }
 }
 void MainWindow::timer_timeout()
@@ -145,11 +151,10 @@ void MainWindow::action()
 {
     if(rbtSound->isChecked()){
         timer->stop();
-        player->setMedia(QUrl::fromLocalFile(audioFile));
         player->play();
     }
     else if(rbtShutdown->isChecked()){
-        buttonStartPressed();
+        btnStartPressed();
         writeSettings();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
@@ -180,7 +185,7 @@ void MainWindow::action()
 #endif
     }
     else if(rbtReboot->isChecked()){
-        buttonStartPressed();
+        btnStartPressed();
         writeSettings();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
@@ -211,7 +216,7 @@ void MainWindow::action()
 #endif
     }
     else if (rbtMonitor->isChecked()){
-        buttonStartPressed();
+        btnStartPressed();
 #ifdef Q_OS_LINUX
         system("xset dpms force off");
 #endif
@@ -220,7 +225,7 @@ void MainWindow::action()
 #endif
     }
     else if (rbtRunprogram->isChecked()){
-        buttonStartPressed();
+        btnStartPressed();
         process=new QProcess;
         process->start(programOptions->lneFilename_Text,QStringList(programOptions->lneParameters_Text));
     }
@@ -228,7 +233,7 @@ void MainWindow::action()
         spbHour->setValue(setTime/3600);
         spbMinute->setValue(setTime/60%60);
         spbSecond->setValue(setTime%60);
-        buttonStartPressed();
+        btnStartPressed();
     }
 }
 
@@ -250,9 +255,9 @@ void MainWindow::spbSecond_valueChanged(int sec)
 #endif
             }
             else{
-                player->setMedia(QUrl("qrc:/beep.ogg"));
-                player->setVolume(100);
-                player->play();
+                beepPlayer->setMedia(QUrl("qrc:/beep.ogg"));
+                beepPlayer->setVolume(100);
+                beepPlayer->play();
             }
         }
     }
@@ -409,6 +414,14 @@ void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
         trayIcon->hide();
     }
 }
+
+void MainWindow::playerError(QMediaPlayer::Error error)
+{
+    btnStartPressed();
+    QMessageBox::warning(this,tr("Audio Error"),
+                             player->errorString());
+}
+
 void MainWindow::actShow_Triggered()
 {
     this->show();

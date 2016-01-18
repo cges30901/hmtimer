@@ -18,6 +18,7 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
 {
     Q_OBJECT
     QMediaPlayer *player;
+    QMediaPlayer *beepPlayer;
     QTimer *timer;
     int setTime;
     time_t startTime;
@@ -39,11 +40,12 @@ protected:
     void changeEvent(QEvent *);
 private slots:
     void timer_timeout();
-    void buttonStartPressed();
+    void btnStartPressed();
     void spbSecond_valueChanged(int sec);
     void setAudioFile();
     void writeSettings();
     void trayIcon_activated(QSystemTrayIcon::ActivationReason reason);
+    void playerError(QMediaPlayer::Error error);
     void actShow_Triggered();
     void actQuit_Triggered();
     void on_actionAbout_Qt_triggered();
