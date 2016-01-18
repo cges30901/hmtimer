@@ -10,9 +10,10 @@
 #include <QSettings>
 #include <settingsdialog.h>
 #ifdef Q_OS_LINUX
- #include <linux/kd.h>
- #include <sys/ioctl.h>
- #include <fcntl.h>
+# include <linux/kd.h>
+# include <sys/ioctl.h>
+# include <fcntl.h>
+# include <QtDBus>
 #endif
 #ifdef Q_OS_WIN32
  #include <windows.h>
@@ -51,9 +52,7 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::actShow_Triggered);
     connect(actQuit,&QAction::triggered,
             this,&MainWindow::actQuit_Triggered);
-#ifdef Q_OS_LINUX
-    write_fp=popen((QString("pkexec ")+qApp->applicationDirPath()+"/hmtimer_root").toLocal8Bit().data(),"w");
-#endif
+
     readSettings();
     QStringList args=qApp->arguments();
     for(int i=0;i<args.size();i++){
@@ -153,8 +152,15 @@ void MainWindow::action()
         buttonStartPressed();
         writeSettings();
 #ifdef Q_OS_LINUX
-        fwrite("shutdown\n",sizeof(char),strlen("shutdown\n"),write_fp);
-        fflush(write_fp);
+        QDBusMessage response;
+        QDBusInterface freedesktopLogin1("org.freedesktop.login1",
+          "/org/freedesktop/login1",
+          "org.freedesktop.login1.Manager", QDBusConnection::systemBus());
+        response = freedesktopLogin1.call("PowerOff", true);
+        if(response.type() == QDBusMessage::ErrorMessage){
+            qDebug()<< response.errorName() << ": "
+                    << response.errorMessage() << endl;
+        }
 #endif
 #ifdef Q_OS_WIN32
         HANDLE hToken;
@@ -177,8 +183,15 @@ void MainWindow::action()
         buttonStartPressed();
         writeSettings();
 #ifdef Q_OS_LINUX
-        fwrite("reboot\n",sizeof(char),strlen("reboot\n"),write_fp);
-        fflush(write_fp);
+        QDBusMessage response;
+        QDBusInterface freedesktopLogin1("org.freedesktop.login1",
+          "/org/freedesktop/login1",
+          "org.freedesktop.login1.Manager", QDBusConnection::systemBus());
+        response = freedesktopLogin1.call("Reboot", true);
+        if(response.type() == QDBusMessage::ErrorMessage){
+            qDebug()<< response.errorName() << ": "
+                    << response.errorMessage() << endl;
+        }
 #endif
 #ifdef Q_OS_WIN32
         HANDLE hToken;
@@ -229,8 +242,8 @@ void MainWindow::spbSecond_valueChanged(int sec)
             if(programOptions->chbAudioBeep_Checked==false)
             {
 #ifdef Q_OS_LINUX
-                fwrite("beep\n",sizeof(char),strlen("beep\n"),write_fp);
-                fflush(write_fp);
+                int fd = open("/dev/console", O_RDONLY);
+                ioctl(fd, KDMKTONE, (200<<16 | 1193180/750));
 #endif
 #ifdef Q_OS_WIN32
                 Beep(750,200);
@@ -238,7 +251,6 @@ void MainWindow::spbSecond_valueChanged(int sec)
             }
             else{
                 player->setMedia(QUrl("qrc:/beep.ogg"));
-                //player->setMedia(QUrl::fromLocalFile(qApp->applicationDirPath()+"/beep.ogg"));
                 player->setVolume(100);
                 player->play();
             }

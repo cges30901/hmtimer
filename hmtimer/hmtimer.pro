@@ -7,6 +7,9 @@ TARGET = hmtimer
 INCLUDEPATH += .
 QT+=widgets
 QT += multimedia
+!win32{
+QT += dbus
+}
 
 # Input
 FORMS += mainwindow.ui \

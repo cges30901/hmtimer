@@ -3,7 +3,7 @@
 ######################################################################
 
 TEMPLATE = subdirs
-SUBDIRS=hmtimer hmtimer_root
+SUBDIRS=hmtimer
 
 install_desktop.files=hmtimer.desktop
 install_desktop.path=/usr/share/applications

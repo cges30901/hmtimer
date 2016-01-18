@@ -33,9 +33,6 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
     QAction *actShow;
     ProgramOptions *programOptions;
     QProcess *process;
-#ifdef Q_OS_LINUX
-    FILE *write_fp;
-#endif
 
     void action();
     void readSettings();
