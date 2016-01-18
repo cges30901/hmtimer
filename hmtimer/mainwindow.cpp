@@ -103,8 +103,10 @@ void MainWindow::buttonStartPressed()
         rbtReboot->setEnabled(true);
         rbtSound->setEnabled(true);
         rbtRunprogram->setEnabled(true);
+        chbRunRepeatedly->setEnabled(true);
         trayIcon->setToolTip("Hsiu-Ming's Timer");
         timer_enabled=!timer_enabled;
+        player->stop();
     }
     else if(spbHour->value()==0 and spbMinute->value()==0 and spbSecond->value()==0)
     {
@@ -126,6 +128,7 @@ void MainWindow::buttonStartPressed()
         rbtReboot->setEnabled(false);
         rbtSound->setEnabled(false);
         rbtRunprogram->setEnabled(false);
+        chbRunRepeatedly->setEnabled(false);
         timer_enabled=!timer_enabled;
     }
 }
@@ -141,7 +144,7 @@ void MainWindow::timer_timeout()
 void MainWindow::action()
 {
     if(rbtSound->isChecked()){
-        buttonStartPressed();
+        timer->stop();
         player->setMedia(QUrl::fromLocalFile(audioFile));
         player->play();
     }
