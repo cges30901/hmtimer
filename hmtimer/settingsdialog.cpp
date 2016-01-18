@@ -1,3 +1,4 @@
+#include <QtGlobal>
 #ifdef Q_OS_WIN
 # include <tchar.h>
 # include <windows.h>
