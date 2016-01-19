@@ -107,7 +107,6 @@ void MainWindow::btnStartPressed()
         rbtSound->setEnabled(true);
         rbtRunprogram->setEnabled(true);
         chbRunRepeatedly->setEnabled(true);
-        trayIcon->setToolTip("Hsiu-Ming's Timer");
         timer_enabled=!timer_enabled;
         player->stop();
     }
@@ -144,7 +143,12 @@ void MainWindow::timer_timeout()
     spbMinute->setValue((setTime-int(difftime(time(NULL),startTime)))/60%60);
     //if the value of spbSecond is changed, spbSecond_valueChanged() is called
     spbSecond->setValue((setTime-int(difftime(time(NULL),startTime)))%60);
-    trayIcon->setToolTip("Hsiu-Ming's Timer\n"+spbHour->text()+':'+spbMinute->text()+':'+spbSecond->text());
+    if(setTime-int(difftime(time(NULL),startTime))<=0){
+        trayIcon->setToolTip("Hsiu-Ming's Timer");
+    }
+    else{
+        trayIcon->setToolTip("Hsiu-Ming's Timer\n"+spbHour->text()+':'+spbMinute->text()+':'+spbSecond->text());
+    }
 }
 
 void MainWindow::action()
