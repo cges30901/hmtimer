@@ -282,7 +282,7 @@ void MainWindow::on_actionAbout_Qt_triggered()
 
 void MainWindow::on_actionAbout_triggered()
 {
-    QString version="2.1";
+    QString version="2.2";
     QMessageBox::about(this,tr("About"),tr("<h3>Hsiu-Ming's Timer %1</h3><br>"
                                            "Author: Hsiu-Ming Chang<br>"
                                            "e-mail: cges30901@gmail.com<br>"
@@ -422,6 +422,7 @@ void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 void MainWindow::playerError(QMediaPlayer::Error error)
 {
     btnStartPressed();
+    qDebug()<<"player error: "<<error;
     QMessageBox::warning(this,tr("Audio Error"),
                              player->errorString());
 }

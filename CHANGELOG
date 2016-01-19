@@ -41,3 +41,9 @@ version 2.0 2015.8.23
 version 2.1 2015.10.15
 -startup settings
 -command line
+
+version 2.2 2016.01.19
+-Linux: shutdown and reboot with org.freedesktop.login1. hmtimer_root is not needed now
+-display a messagebox if audio file cannot be played
+-bug fix: after time is up, the tooltip of trayIcon is set to Hsiu-Ming's Timer
+-other bug fixes
