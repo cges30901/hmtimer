@@ -50,8 +50,6 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::actShow_Triggered);
     connect(actQuit,&QAction::triggered,
             this,&MainWindow::actQuit_Triggered);
-    connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
-            this,&MainWindow::playerError);
 
     readSettings();
     QStringList args=qApp->arguments();
@@ -135,6 +133,8 @@ void MainWindow::btnStartPressed()
         if(rbtSound->isChecked()){
             player->setMedia(QUrl::fromLocalFile(audioFile));
         }
+        connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
+                this,&MainWindow::playerError);
     }
 }
 void MainWindow::timer_timeout()
@@ -422,6 +422,7 @@ void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 void MainWindow::playerError(QMediaPlayer::Error error)
 {
     btnStartPressed();
+    disconnect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),0,0);
     qDebug()<<"player error: "<<error;
     QMessageBox::warning(this,tr("Audio Error"),
                              player->errorString());
