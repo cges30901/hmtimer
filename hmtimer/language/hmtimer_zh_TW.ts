@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_TW">
 <context>
     <name>MainWindow</name>
     <message>
@@ -30,7 +32,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
-        <location filename="../mainwindow.cpp" line="98"/>
+        <location filename="../mainwindow.cpp" line="97"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
@@ -76,13 +78,13 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="268"/>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="273"/>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
@@ -98,7 +100,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
-        <location filename="../mainwindow.cpp" line="36"/>
+        <location filename="../mainwindow.cpp" line="35"/>
         <source>Quit</source>
         <translation>結束</translation>
     </message>
@@ -113,7 +115,7 @@
         <translation>捐款</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="35"/>
+        <location filename="../mainwindow.cpp" line="34"/>
         <source>Show</source>
         <translation>顯示</translation>
     </message>
@@ -129,9 +131,14 @@
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="427"/>
+        <source>Audio Error</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
