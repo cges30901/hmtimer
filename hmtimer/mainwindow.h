@@ -29,6 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "settingsdialog.h"
 #include "programoptions.h"
 #include <QProcess>
+#include <QKeyEvent>
 
 
 class MainWindow : public QMainWindow,public Ui::MainWindow
@@ -55,6 +56,7 @@ public:
     MainWindow(QWidget *parent=0);
 protected:
     void changeEvent(QEvent *);
+    void keyPressEvent(QKeyEvent *);
 private slots:
     void timer_timeout();
     void btnStartPressed();

@@ -412,6 +412,16 @@ void MainWindow::changeEvent(QEvent *event)
     }
 }
 
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if(event->key()==Qt::Key_Enter or event->key()==Qt::Key_Return){
+        btnStartPressed();
+    }
+    else{
+        QMainWindow::keyPressEvent(event);
+    }
+}
+
 
 void MainWindow::on_actionSettings_triggered()
 {
