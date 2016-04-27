@@ -44,6 +44,12 @@ SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):
     spbStartupHour->setValue(programOptions->spbStartupHour_Value);
     spbStartupMinute->setValue(programOptions->spbStartupMinute_Value);
     spbStartupSecond->setValue(programOptions->spbStartupSecond_Value);
+
+    chbMinimizeOnStartup->setEnabled(programOptions->chbStartup_Checked);
+    chbStartTimerOnStartup->setEnabled(programOptions->chbStartup_Checked);
+    spbStartupHour->setEnabled(programOptions->chbStartup_Checked);
+    spbStartupMinute->setEnabled(programOptions->chbStartup_Checked);
+    spbStartupSecond->setEnabled(programOptions->chbStartup_Checked);
 }
 
 void SettingsDialog::on_btnOk_clicked()
@@ -145,4 +151,13 @@ void SettingsDialog::on_btnOk_clicked()
     }
 #endif
     this->close();
+}
+
+void SettingsDialog::on_chbStartup_clicked(bool checked)
+{
+    chbMinimizeOnStartup->setEnabled(checked);
+    chbStartTimerOnStartup->setEnabled(checked);
+    spbStartupHour->setEnabled(checked);
+    spbStartupMinute->setEnabled(checked);
+    spbStartupSecond->setEnabled(checked);
 }
