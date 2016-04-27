@@ -25,6 +25,7 @@ int main(int argc,char *argv[])
 {
     QApplication app(argc,argv);
     QStringList args=app.arguments();
+    bool showWindow=true;
     for(int i=0;i<args.size();i++){
         if(args.at(i)=="--help"){
             std::cout<<"Usage: hmtimer [-t time] [-s] [-m] [-a ACTION]\n"
@@ -36,6 +37,9 @@ int main(int argc,char *argv[])
                      <<"    ACTION:monitor, shutdown, reboot, sound, runprogram\n";
             exit(0);
         }
+        else if(args.at(i)=="-m"){
+            showWindow=false;
+        }
     }
     QTranslator translator;
     if(translator.load("hmtimer_"+QLocale::system().name(),app.applicationDirPath()+"/language")!=true){
@@ -43,11 +47,8 @@ int main(int argc,char *argv[])
     }
     app.installTranslator(&translator);
     MainWindow *window=new MainWindow;
-    window->show();
-    for(int i=0;i<args.size();i++){
-        if(args.at(i)=="-m"){
-            window->hide();
-        }
+    if(showWindow==true){
+        window->show();
     }
     return app.exec();
 }

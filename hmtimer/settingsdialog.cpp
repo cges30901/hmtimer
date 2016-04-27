@@ -38,9 +38,6 @@ SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):
     chbAudioBeep->setEnabled(chbBeep->isChecked());
 
     //startup
-#ifdef Q_OS_LINUX
-    chbMinimizeOnStartup->hide();
-#endif
     chbStartup->setChecked(programOptions->chbStartup_Checked);
     chbMinimizeOnStartup->setChecked(programOptions->chbMinimizeOnStartup_Checked);
     chbStartTimerOnStartup->setChecked(programOptions->chbStartTimerOnStartup_Checked);
