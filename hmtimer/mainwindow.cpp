@@ -69,6 +69,8 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::actQuit_Triggered);
 
     readSettings();
+
+    //command line parameter
     QStringList args=qApp->arguments();
     for(int i=0;i<args.size();i++){
         if(args.at(i)=="-a"){
@@ -108,7 +110,7 @@ MainWindow::MainWindow(QWidget *parent)
 }
 void MainWindow::btnStartPressed()
 {
-    if(timer_enabled)
+    if(timer_enabled) //timer is running
     {
         //stop timer
         btnStart->setText(tr("Start"));
@@ -261,11 +263,11 @@ void MainWindow::action()
 void MainWindow::spbSecond_valueChanged(int sec)
 {
     if(timer_enabled){
-        if(sec==0 and spbMinute->value()==0 and spbHour->value()==0){
+        if(sec==0 and spbMinute->value()==0 and spbHour->value()==0){ //time is up
             action();
         }
         else if(programOptions->chbBeep_Checked==true and (spbHour->value()*3600+spbMinute->value()*60+sec)<programOptions->spbBeep_Value){
-            if(programOptions->chbAudioBeep_Checked==false)
+            if(programOptions->chbAudioBeep_Checked==false) //beep with pcspkr
             {
 #ifdef Q_OS_LINUX
                 int fd = open("/dev/console", O_RDONLY);
@@ -275,7 +277,7 @@ void MainWindow::spbSecond_valueChanged(int sec)
                 Beep(750,200);
 #endif
             }
-            else{
+            else{ //Use audio file to play beep sound
                 beepPlayer->setMedia(QUrl("qrc:/beep.ogg"));
                 beepPlayer->setVolume(100);
                 beepPlayer->play();
@@ -402,7 +404,7 @@ void MainWindow::readSettings()
 void MainWindow::changeEvent(QEvent *event)
 {
     if(event->type()==QEvent::WindowStateChange){
-        if(isMinimized() and programOptions->chbMinimizeToTray_Checked){
+        if(isMinimized() and programOptions->chbMinimizeToTray_Checked){ //minimize to tray
             this->hide();
             trayIcon->show();
         }
@@ -414,7 +416,7 @@ void MainWindow::changeEvent(QEvent *event)
 
 void MainWindow::keyPressEvent(QKeyEvent *event)
 {
-    if(event->key()==Qt::Key_Enter or event->key()==Qt::Key_Return){
+    if(event->key()==Qt::Key_Enter or event->key()==Qt::Key_Return){ //start or stop timer by pressing Enter or Return key
         btnStartPressed();
     }
     else{
@@ -440,7 +442,7 @@ void MainWindow::on_rbtRunprogram_clicked()
 
 void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 {
-    if(reason==3){
+    if(reason==3){ //reason==Trigger
         this->show();
         trayIcon->hide();
     }
@@ -449,6 +451,7 @@ void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 void MainWindow::playerError(QMediaPlayer::Error error)
 {
     btnStartPressed();
+    //prevent multiple messageboxes
     disconnect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),0,0);
     qDebug()<<"player error: "<<error;
     QMessageBox::warning(this,tr("Audio Error"),

@@ -32,7 +32,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="110"/>
-        <location filename="../mainwindow.cpp" line="97"/>
+        <location filename="../mainwindow.cpp" line="114"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
@@ -78,13 +78,13 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="268"/>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="303"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="273"/>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.cpp" line="297"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
@@ -100,7 +100,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="288"/>
-        <location filename="../mainwindow.cpp" line="35"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>Quit</source>
         <translation>結束</translation>
     </message>
@@ -115,28 +115,28 @@
         <translation>捐款</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="34"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Show</source>
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="113"/>
-        <location filename="../mainwindow.cpp" line="114"/>
+        <location filename="../mainwindow.cpp" line="130"/>
+        <location filename="../mainwindow.cpp" line="131"/>
         <source>Please set the timer</source>
         <translation>請設定計時器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="121"/>
+        <location filename="../mainwindow.cpp" line="138"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="303"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="427"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>Audio Error</source>
         <translation type="unfinished"></translation>
     </message>
