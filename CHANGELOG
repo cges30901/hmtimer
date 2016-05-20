@@ -47,3 +47,10 @@ version 2.2 2016.01.19
 -display a messagebox if audio file cannot be played
 -bug fix: after time is up, the tooltip of trayIcon is set to Hsiu-Ming's Timer
 -other bug fixes
+
+version 2.3 2016.05.20
+-start or stop timer by pressing Enter or Return key
+-Linux: fix minimize to tray when Hsiu-Ming's timer is run
+-edit tab order
+-add keyboard shortcut
+-bug fixes
