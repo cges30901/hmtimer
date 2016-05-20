@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_TW">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
@@ -9,35 +7,21 @@
         <translation>Hsiu-Ming&apos;s Timer</translation>
     </message>
     <message>
-        <source>Hour</source>
-        <translation type="vanished">小時</translation>
-    </message>
-    <message>
-        <source>Min.</source>
-        <comment>minute</comment>
-        <translation type="vanished">分</translation>
-    </message>
-    <message>
-        <source>Sec.</source>
-        <comment>second</comment>
-        <translation type="vanished">秒</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="32"/>
         <source>&amp;Hour</source>
-        <translation type="unfinished"></translation>
+        <translation>小時(&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="49"/>
         <source>&amp;Min.</source>
         <comment>minute</comment>
-        <translation type="unfinished"></translation>
+        <translation>分(&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="69"/>
         <source>&amp;Sec.</source>
         <comment>second</comment>
-        <translation type="unfinished"></translation>
+        <translation>秒(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="81"/>
@@ -51,13 +35,9 @@
         <translation>開始</translation>
     </message>
     <message>
-        <source>Action</source>
-        <translation type="vanished">動作</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="169"/>
         <source>&amp;Action</source>
-        <translation type="unfinished"></translation>
+        <translation>動作(&amp;A)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="175"/>
@@ -156,7 +136,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="457"/>
         <source>Audio Error</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
