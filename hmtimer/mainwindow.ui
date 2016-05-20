@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>515</width>
-    <height>246</height>
+    <height>276</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -238,7 +238,7 @@
      <x>0</x>
      <y>0</y>
      <width>515</width>
-     <height>24</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHelp">
@@ -300,14 +300,16 @@
   </action>
  </widget>
  <tabstops>
+  <tabstop>spbHour</tabstop>
   <tabstop>spbMinute</tabstop>
   <tabstop>spbSecond</tabstop>
+  <tabstop>chbRunRepeatedly</tabstop>
+  <tabstop>btnStart</tabstop>
   <tabstop>rbtMonitor</tabstop>
   <tabstop>rbtShutdown</tabstop>
   <tabstop>rbtReboot</tabstop>
   <tabstop>rbtSound</tabstop>
   <tabstop>rbtRunprogram</tabstop>
-  <tabstop>btnStart</tabstop>
  </tabstops>
  <resources>
   <include location="hmtimer.qrc"/>
