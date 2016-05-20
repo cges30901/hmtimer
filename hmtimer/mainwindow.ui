@@ -166,7 +166,7 @@
     <item>
      <widget class="QGroupBox" name="groupBox">
       <property name="title">
-       <string>Action</string>
+       <string>&amp;Action</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>

@@ -51,9 +51,13 @@
         <translation>開始</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="169"/>
         <source>Action</source>
-        <translation>動作</translation>
+        <translation type="vanished">動作</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="169"/>
+        <source>&amp;Action</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="175"/>

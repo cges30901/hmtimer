@@ -38,7 +38,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="169"/>
-        <source>Action</source>
+        <source>&amp;Action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
