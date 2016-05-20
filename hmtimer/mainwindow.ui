@@ -29,7 +29,10 @@
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>Hour</string>
+           <string>&amp;Hour</string>
+          </property>
+          <property name="buddy">
+           <cstring>spbHour</cstring>
           </property>
          </widget>
         </item>
@@ -43,7 +46,10 @@
         <item>
          <widget class="QLabel" name="labelMinute">
           <property name="text">
-           <string comment="minute">Min.</string>
+           <string comment="minute">&amp;Min.</string>
+          </property>
+          <property name="buddy">
+           <cstring>spbMinute</cstring>
           </property>
          </widget>
         </item>
@@ -60,7 +66,10 @@
         <item>
          <widget class="QLabel" name="labelSecond">
           <property name="text">
-           <string comment="second">Sec.</string>
+           <string comment="second">&amp;Sec.</string>
+          </property>
+          <property name="buddy">
+           <cstring>spbSecond</cstring>
           </property>
          </widget>
         </item>
