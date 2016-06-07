@@ -34,6 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "mainwindow.h"
 #include "selectfiledialog.h"
 #include "settingsdialog.h"
+#include "version.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -301,11 +302,10 @@ void MainWindow::on_actionAbout_Qt_triggered()
 
 void MainWindow::on_actionAbout_triggered()
 {
-    QString version="2.3";
     QMessageBox::about(this,tr("About"),tr("<h3>Hsiu-Ming's Timer %1</h3><br>"
                                            "Author: Hsiu-Ming Chang<br>"
                                            "e-mail: cges30901@gmail.com<br>"
-                                           "License:GPL v3").arg(version));
+                                           "License:GPL v3").arg(VERSION));
 }
 
 void MainWindow::on_actionHomepage_triggered()

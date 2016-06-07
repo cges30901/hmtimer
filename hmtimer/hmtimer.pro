@@ -24,7 +24,8 @@ HEADERS += \
     mainwindow.h \
     programoptions.h \
     selectfiledialog.h \
-    settingsdialog.h
+    settingsdialog.h \
+    version.h
 
 TRANSLATIONS=language/hmtimer.ts language/hmtimer_zh_TW.ts
 

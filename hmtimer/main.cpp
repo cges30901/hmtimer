@@ -20,6 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QStringList>
 #include <iostream>
 #include "mainwindow.h"
+#include "version.h"
 
 int main(int argc,char *argv[])
 {
@@ -35,6 +36,10 @@ int main(int argc,char *argv[])
                      <<"  -m           minimize to tray(may not work on Linux)\n"
                      <<"  -a ACTION    set action when time is up\n"
                      <<"    ACTION:monitor, shutdown, reboot, sound, runprogram\n";
+            exit(0);
+        }
+        else if(args.at(i)=="--version"){
+            std::cout<<VERSION<<"\n";
             exit(0);
         }
         else if(args.at(i)=="-m"){
