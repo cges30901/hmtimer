@@ -27,14 +27,19 @@ HEADERS += \
     settingsdialog.h \
     version.h
 
-TRANSLATIONS=language/hmtimer.ts language/hmtimer_zh_TW.ts
+TRANSLATIONS=language/hmtimer.ts \
+    language/hmtimer_zh_TW.ts \
+    language/hmtimer_ar.ts \
+    language/hmtimer_ru.ts
 
 RESOURCES=hmtimer.qrc
 
 install_bin.files=hmtimer
 install_bin.path=/usr/bin
 
-install_translation.files=language/hmtimer_zh_TW.qm
+install_translation.files=language/hmtimer_zh_TW.qm \
+    language/hmtimer_ar.qm \
+    language/hmtimer_ru.qm
 install_translation.path=/usr/share/hmtimer
 
 install_icon.files=hmtimer.png

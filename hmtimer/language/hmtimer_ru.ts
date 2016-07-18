@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="ru">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Hsiu-Ming&apos;s Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Таймер Hsiu-Ming</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
@@ -17,13 +17,13 @@
         <location filename="../mainwindow.ui" line="49"/>
         <source>&amp;Min.</source>
         <comment>minute</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Мин.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="69"/>
         <source>&amp;Sec.</source>
         <comment>second</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Сек.</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="81"/>
@@ -34,32 +34,32 @@
         <location filename="../mainwindow.ui" line="119"/>
         <location filename="../mainwindow.cpp" line="117"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Старт</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="169"/>
         <source>&amp;Action</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Действие</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="175"/>
         <source>Turn off monitor</source>
-        <translation type="unfinished"></translation>
+        <translation>Выключить монитор</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="185"/>
         <source>Shutdown</source>
-        <translation type="unfinished"></translation>
+        <translation>Выключение</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="192"/>
         <source>Reboot</source>
-        <translation type="unfinished"></translation>
+        <translation>Перезагрузка</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="199"/>
         <source>Play Sound</source>
-        <translation type="unfinished"></translation>
+        <translation>Воспроизвести звук</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="209"/>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="141"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Стоп</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -235,13 +235,13 @@
         <location filename="../settingsdialog.ui" line="151"/>
         <source>Min.</source>
         <comment>minute</comment>
-        <translation type="unfinished"></translation>
+        <translation>Мин.</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="168"/>
         <source>Sec.</source>
         <comment>second</comment>
-        <translation type="unfinished"></translation>
+        <translation>Сек.</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="222"/>

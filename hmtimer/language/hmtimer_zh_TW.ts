@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_TW">
 <context>
     <name>MainWindow</name>
     <message>
@@ -30,7 +32,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="119"/>
-        <location filename="../mainwindow.cpp" line="116"/>
+        <location filename="../mainwindow.cpp" line="117"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
@@ -82,7 +84,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="282"/>
-        <location filename="../mainwindow.cpp" line="299"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
@@ -98,7 +100,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="297"/>
-        <location filename="../mainwindow.cpp" line="52"/>
+        <location filename="../mainwindow.cpp" line="53"/>
         <source>Quit</source>
         <translation>結束</translation>
     </message>
@@ -113,18 +115,18 @@
         <translation>捐款</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="51"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>Show</source>
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="132"/>
         <location filename="../mainwindow.cpp" line="133"/>
+        <location filename="../mainwindow.cpp" line="134"/>
         <source>Please set the timer</source>
         <translation>請設定計時器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="141"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
@@ -136,7 +138,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="457"/>
         <source>Audio Error</source>
-        <translation type="unfinished"/>
+        <translation>音訊錯誤</translation>
     </message>
 </context>
 <context>
