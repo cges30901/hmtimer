@@ -10,7 +10,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
-        <source>&amp;Hour</source>
+        <source>H&amp;our</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -68,12 +68,12 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="255"/>
-        <source>Help</source>
+        <source>&amp;Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="266"/>
-        <source>File</source>
+        <source>&amp;File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

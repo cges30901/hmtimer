@@ -29,7 +29,7 @@
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>&amp;Hour</string>
+           <string>H&amp;our</string>
           </property>
           <property name="buddy">
            <cstring>spbHour</cstring>
@@ -252,7 +252,7 @@
    </property>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>Help</string>
+     <string>&amp;Help</string>
     </property>
     <addaction name="actionHomepage"/>
     <addaction name="actionProject_Page"/>
@@ -263,7 +263,7 @@
    </widget>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>File</string>
+     <string>&amp;File</string>
     </property>
     <addaction name="actionSettings"/>
     <addaction name="actionQuit"/>

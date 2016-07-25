@@ -9,9 +9,13 @@
         <translation>مؤقت شِيُو-مِينْج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
         <source>&amp;Hour</source>
-        <translation>&amp;ساعة</translation>
+        <translation type="vanished">&amp;ساعة</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="32"/>
+        <source>H&amp;our</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="49"/>
@@ -68,13 +72,21 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="255"/>
-        <source>Help</source>
-        <translation>مساعدة</translation>
+        <source>&amp;Help</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="266"/>
+        <source>&amp;File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="vanished">مساعدة</translation>
+    </message>
+    <message>
         <source>File</source>
-        <translation>ملف</translation>
+        <translation type="vanished">ملف</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="277"/>

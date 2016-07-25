@@ -9,9 +9,13 @@
         <translation>Hsiu-Ming&apos;s Timer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
         <source>&amp;Hour</source>
-        <translation>小時(&amp;H)</translation>
+        <translation type="vanished">小時(&amp;H)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="32"/>
+        <source>H&amp;our</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="49"/>
@@ -68,13 +72,21 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="255"/>
-        <source>Help</source>
-        <translation>幫助</translation>
+        <source>&amp;Help</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="266"/>
+        <source>&amp;File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="vanished">幫助</translation>
+    </message>
+    <message>
         <source>File</source>
-        <translation>檔案</translation>
+        <translation type="vanished">檔案</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="277"/>
