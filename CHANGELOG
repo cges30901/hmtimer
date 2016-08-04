@@ -54,3 +54,8 @@ version 2.3 2016.05.20
 -edit tab order
 -add keyboard shortcut
 -bug fixes
+
+version 2.3.1 2016.08.04
+-add Arabic and Russian translation
+-add keyboard shortcut for File and Help
+-show version number if parameter is "--version"

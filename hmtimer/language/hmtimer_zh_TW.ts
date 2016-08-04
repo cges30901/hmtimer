@@ -15,7 +15,7 @@
     <message>
         <location filename="../mainwindow.ui" line="32"/>
         <source>H&amp;our</source>
-        <translation type="unfinished"></translation>
+        <translation>小時(&amp;O)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="49"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../mainwindow.ui" line="255"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>說明(&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="266"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>檔案(&amp;F)</translation>
     </message>
     <message>
         <source>Help</source>
