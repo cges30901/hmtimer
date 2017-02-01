@@ -424,6 +424,21 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
     }
 }
 
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    //prevent hmtimer from closing when quit from tray icon
+    this->show();
+    trayIcon->hide();
+
+    if(timer_enabled and QMessageBox::question(this,"Close hmtimer?",
+                           "timer is running. Do you really want to quit?")==QMessageBox::No){
+        event->ignore();
+    }
+    else{
+        event->accept();
+    }
+}
+
 
 void MainWindow::on_actionSettings_triggered()
 {

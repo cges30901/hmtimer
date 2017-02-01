@@ -30,6 +30,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "programoptions.h"
 #include <QProcess>
 #include <QKeyEvent>
+#include <QCloseEvent>
 
 
 class MainWindow : public QMainWindow,public Ui::MainWindow
@@ -57,6 +58,7 @@ public:
 protected:
     void changeEvent(QEvent *);
     void keyPressEvent(QKeyEvent *);
+    void closeEvent(QCloseEvent *event);
 private slots:
     void timer_timeout();
     void btnStartPressed();
