@@ -31,6 +31,7 @@ private slots:
 
     void on_btnOk_clicked();
     void on_chbStartup_clicked(bool checked);
+    void on_chbPassword_clicked(bool checked);
 };
 
 #endif // SETTINGSDIALOG_H

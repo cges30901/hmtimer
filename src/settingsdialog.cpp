@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <fstream>
 #include <QDir>
 #include "settingsdialog.h"
+#include "newpassworddialog.h"
 
 SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):QDialog(parent)
 {
@@ -160,4 +161,13 @@ void SettingsDialog::on_chbStartup_clicked(bool checked)
     spbStartupHour->setEnabled(checked);
     spbStartupMinute->setEnabled(checked);
     spbStartupSecond->setEnabled(checked);
+}
+
+void SettingsDialog::on_chbPassword_clicked(bool checked)
+{
+    if(checked){
+        NewPasswordDialog *dialog=new NewPasswordDialog(this);
+        dialog->exec();
+        delete dialog;
+    }
 }
