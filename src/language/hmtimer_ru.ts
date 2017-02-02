@@ -136,7 +136,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="433"/>
+        <source>Close hmtimer?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="434"/>
+        <source>Timer is running. Do you really want to quit?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="472"/>
         <source>Audio Error</source>
         <translation type="unfinished"></translation>
     </message>

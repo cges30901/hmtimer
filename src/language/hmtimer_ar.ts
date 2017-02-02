@@ -148,7 +148,17 @@
         <translation>&lt;h3&gt;مؤقت شِيُو-مِينْج %1&lt;/h3&gt;&lt;br&gt;المؤلف: شيو-مينج تشانغ&lt;br&gt;البريد الإلكتروني:cges30901@gmail.com&lt;br&gt;الرخصة:GPL v3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="433"/>
+        <source>Close hmtimer?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="434"/>
+        <source>Timer is running. Do you really want to quit?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="472"/>
         <source>Audio Error</source>
         <translation>خطأ صوتي</translation>
     </message>

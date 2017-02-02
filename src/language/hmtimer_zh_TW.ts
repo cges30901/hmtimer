@@ -148,7 +148,17 @@
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="433"/>
+        <source>Close hmtimer?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="434"/>
+        <source>Timer is running. Do you really want to quit?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="472"/>
         <source>Audio Error</source>
         <translation>音訊錯誤</translation>
     </message>

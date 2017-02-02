@@ -430,8 +430,8 @@ void MainWindow::closeEvent(QCloseEvent *event)
     this->show();
     trayIcon->hide();
 
-    if(timer_enabled and QMessageBox::question(this,"Close hmtimer?",
-                           "timer is running. Do you really want to quit?")==QMessageBox::No){
+    if(timer_enabled and QMessageBox::question(this,tr("Close hmtimer?"),
+                           tr("Timer is running. Do you really want to quit?"))==QMessageBox::No){
         event->ignore();
     }
     else{
