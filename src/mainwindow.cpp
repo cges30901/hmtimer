@@ -347,6 +347,8 @@ void MainWindow::writeSettings()
     settings.setValue("checkBoxBeep",programOptions->chbBeep_Checked);
     settings.setValue("spinBoxBeep",programOptions->spbBeep_Value);
     settings.setValue("chbAudioBeep",programOptions->chbAudioBeep_Checked);
+    settings.setValue("chbPassword_Checked",programOptions->chbPassword_Checked);
+    settings.setValue("password",programOptions->password);
 
     settings.setValue("chbStartup_Checked",programOptions->chbStartup_Checked);
     settings.setValue("chbMinimizeOnStartup_Checked",programOptions->chbMinimizeOnStartup_Checked);
@@ -391,6 +393,8 @@ void MainWindow::readSettings()
     programOptions->chbBeep_Checked=settings.value("checkBoxBeep",true).toBool();
     programOptions->spbBeep_Value=settings.value("spinBoxBeep",60).toInt();
     programOptions->chbAudioBeep_Checked=settings.value("chbAudioBeep",false).toBool();
+    programOptions->chbPassword_Checked=settings.value("chbPassword_Checked",false).toBool();
+    programOptions->password=settings.value("password","").toString();
 
     programOptions->chbStartup_Checked=settings.value("chbStartup_Checked",false).toBool();
     programOptions->chbMinimizeOnStartup_Checked=settings.value("chbMinimizeOnStartup_Checked",false).toBool();

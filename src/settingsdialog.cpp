@@ -37,6 +37,7 @@ SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):
     spbBeep->setValue(programOptions->spbBeep_Value);
     chbAudioBeep->setChecked(programOptions->chbAudioBeep_Checked);
     chbAudioBeep->setEnabled(chbBeep->isChecked());
+    chbPassword->setChecked(programOptions->chbPassword_Checked);
 
     //startup
     chbStartup->setChecked(programOptions->chbStartup_Checked);
@@ -60,6 +61,7 @@ void SettingsDialog::on_btnOk_clicked()
     programOptions->chbBeep_Checked=chbBeep->isChecked();
     programOptions->spbBeep_Value=spbBeep->value();
     programOptions->chbAudioBeep_Checked=chbAudioBeep->isChecked();
+    programOptions->chbPassword_Checked=chbPassword->isChecked();
 
     //startup
     programOptions->chbStartup_Checked=chbStartup->isChecked();
@@ -166,7 +168,7 @@ void SettingsDialog::on_chbStartup_clicked(bool checked)
 void SettingsDialog::on_chbPassword_clicked(bool checked)
 {
     if(checked){
-        NewPasswordDialog *dialog=new NewPasswordDialog(this);
+        NewPasswordDialog *dialog=new NewPasswordDialog(programOptions,this);
         dialog->exec();
         delete dialog;
     }

@@ -1,12 +1,14 @@
 #include "newpassworddialog.h"
 #include "ui_newpassworddialog.h"
 #include <QMessageBox>
+#include <QCryptographicHash>
 
-NewPasswordDialog::NewPasswordDialog(QWidget *parent) :
+NewPasswordDialog::NewPasswordDialog(ProgramOptions *programOptions, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::NewPasswordDialog)
 {
     ui->setupUi(this);
+    this->programOptions=programOptions;
 }
 
 NewPasswordDialog::~NewPasswordDialog()
@@ -21,6 +23,7 @@ void NewPasswordDialog::accept()
                              tr("password do not match"));
     }
     else{
+        programOptions->password=QCryptographicHash::hash(ui->lnePassword->text().toUtf8(),QCryptographicHash::Sha1).toHex();
         QDialog::accept();
     }
 }

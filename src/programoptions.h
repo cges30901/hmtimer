@@ -27,6 +27,9 @@ public:
     bool chbBeep_Checked;
     int spbBeep_Value;
     bool chbAudioBeep_Checked;
+    bool chbPassword_Checked;
+    QString password;
+
     bool chbStartup_Checked;
     bool chbMinimizeOnStartup_Checked;
     bool chbStartTimerOnStartup_Checked;
