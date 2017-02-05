@@ -170,7 +170,9 @@ void SettingsDialog::on_chbPassword_clicked(bool checked)
 {
     if(checked){
         NewPasswordDialog *dialog=new NewPasswordDialog(programOptions,this);
-        dialog->exec();
+        if(dialog->exec()==QDialog::Rejected){ //password not set
+            chbPassword->setChecked(false);
+        }
         delete dialog;
     }
     else{
