@@ -15,12 +15,14 @@ QT += dbus
 FORMS += mainwindow.ui \
     selectfiledialog.ui \
     settingsdialog.ui \
-    newpassworddialog.ui
+    newpassworddialog.ui \
+    passworddialog.ui
 SOURCES += main.cpp \
     mainwindow.cpp \
     selectfiledialog.cpp \
     settingsdialog.cpp \
-    newpassworddialog.cpp
+    newpassworddialog.cpp \
+    passworddialog.cpp
 
 HEADERS += \
     mainwindow.h \
@@ -28,7 +30,8 @@ HEADERS += \
     selectfiledialog.h \
     settingsdialog.h \
     version.h \
-    newpassworddialog.h
+    newpassworddialog.h \
+    passworddialog.h
 
 TRANSLATIONS=language/hmtimer.ts \
     language/hmtimer_zh_TW.ts \

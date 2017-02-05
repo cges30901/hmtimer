@@ -24,6 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QDir>
 #include "settingsdialog.h"
 #include "newpassworddialog.h"
+#include "passworddialog.h"
 
 SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):QDialog(parent)
 {
@@ -170,6 +171,13 @@ void SettingsDialog::on_chbPassword_clicked(bool checked)
     if(checked){
         NewPasswordDialog *dialog=new NewPasswordDialog(programOptions,this);
         dialog->exec();
+        delete dialog;
+    }
+    else{
+        PasswordDialog *dialog=new PasswordDialog(programOptions->password,this);
+        if(dialog->exec()==QDialog::Rejected){
+            chbPassword->setChecked(true);
+        }
         delete dialog;
     }
 }

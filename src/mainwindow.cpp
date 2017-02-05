@@ -35,6 +35,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "selectfiledialog.h"
 #include "settingsdialog.h"
 #include "version.h"
+#include "passworddialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -114,6 +115,14 @@ void MainWindow::btnStartPressed()
     if(timer_enabled) //timer is running
     {
         //stop timer
+        if(programOptions->chbPassword_Checked){
+            PasswordDialog *dialog=new PasswordDialog(programOptions->password,this);
+            if(dialog->exec()==QDialog::Rejected){
+                delete dialog;
+                return;
+            }
+            delete dialog;
+        }
         btnStart->setText(tr("Start"));
         timer->stop();
         spbHour->setReadOnly(false);
@@ -434,9 +443,20 @@ void MainWindow::closeEvent(QCloseEvent *event)
     this->show();
     trayIcon->hide();
 
-    if(timer_enabled and QMessageBox::question(this,tr("Close hmtimer?"),
-                           tr("Timer is running. Do you really want to quit?"))==QMessageBox::No){
-        event->ignore();
+    if(timer_enabled){
+        if(QMessageBox::question(this,tr("Close hmtimer?"),
+                                 tr("Timer is running. Do you really want to quit?"))==QMessageBox::No){
+            event->ignore();
+        }
+        else{ //want to quit
+            if(programOptions->chbPassword_Checked){
+                PasswordDialog *dialog=new PasswordDialog(programOptions->password,this);
+                if(dialog->exec()) event->accept(); //correct password
+                else event->ignore();
+                delete dialog;
+            }
+            else event->accept(); //don't need to enter password
+        }
     }
     else{
         event->accept();
