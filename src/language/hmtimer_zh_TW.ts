@@ -1,16 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="zh_TW">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Hsiu-Ming&apos;s Timer</source>
         <translation>Hsiu-Ming&apos;s Timer</translation>
-    </message>
-    <message>
-        <source>&amp;Hour</source>
-        <translation type="vanished">小時(&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
@@ -36,7 +30,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="119"/>
-        <location filename="../mainwindow.cpp" line="117"/>
+        <location filename="../mainwindow.cpp" line="126"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
@@ -81,22 +75,14 @@
         <translation>檔案(&amp;F)</translation>
     </message>
     <message>
-        <source>Help</source>
-        <translation type="vanished">幫助</translation>
-    </message>
-    <message>
-        <source>File</source>
-        <translation type="vanished">檔案</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="277"/>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="314"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="282"/>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
@@ -112,7 +98,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="297"/>
-        <location filename="../mainwindow.cpp" line="53"/>
+        <location filename="../mainwindow.cpp" line="54"/>
         <source>Quit</source>
         <translation>結束</translation>
     </message>
@@ -127,40 +113,96 @@
         <translation>捐款</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="52"/>
+        <location filename="../mainwindow.cpp" line="53"/>
         <source>Show</source>
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="133"/>
-        <location filename="../mainwindow.cpp" line="134"/>
+        <location filename="../mainwindow.cpp" line="142"/>
+        <location filename="../mainwindow.cpp" line="143"/>
         <source>Please set the timer</source>
         <translation>請設定計時器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
+        <location filename="../mainwindow.cpp" line="150"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="314"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Close hmtimer?</source>
-        <translation type="unfinished"></translation>
+        <translation>關閉 hmtimer 嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>Timer is running. Do you really want to quit?</source>
-        <translation type="unfinished"></translation>
+        <translation>計時器正在執行。你真的想要退出嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="496"/>
         <source>Audio Error</source>
         <translation>音訊錯誤</translation>
+    </message>
+</context>
+<context>
+    <name>NewPasswordDialog</name>
+    <message>
+        <location filename="../newpassworddialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation>對話方塊</translation>
+    </message>
+    <message>
+        <location filename="../newpassworddialog.ui" line="22"/>
+        <source>Confirm password:</source>
+        <translation>確認密碼：</translation>
+    </message>
+    <message>
+        <location filename="../newpassworddialog.ui" line="29"/>
+        <source>Password:</source>
+        <translation>密碼：</translation>
+    </message>
+    <message>
+        <location filename="../newpassworddialog.cpp" line="22"/>
+        <source>Error</source>
+        <translation>錯誤</translation>
+    </message>
+    <message>
+        <location filename="../newpassworddialog.cpp" line="23"/>
+        <source>password do not match</source>
+        <translation>密碼不相符</translation>
+    </message>
+</context>
+<context>
+    <name>PasswordDialog</name>
+    <message>
+        <location filename="../passworddialog.ui" line="14"/>
+        <source>Dialog</source>
+        <translation>對話方塊</translation>
+    </message>
+    <message>
+        <location filename="../passworddialog.ui" line="22"/>
+        <source>Password:</source>
+        <translation>密碼：</translation>
+    </message>
+    <message>
+        <location filename="../passworddialog.ui" line="66"/>
+        <source>OK</source>
+        <translation>確定</translation>
+    </message>
+    <message>
+        <location filename="../passworddialog.ui" line="73"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="../passworddialog.cpp" line="25"/>
+        <source>Wrong password</source>
+        <translation>密碼錯誤</translation>
     </message>
 </context>
 <context>
@@ -229,49 +271,54 @@
         <translation>使用聲音檔來播放嗶聲</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="92"/>
+        <location filename="../settingsdialog.ui" line="78"/>
+        <source>Password protection</source>
+        <translation>密碼保護</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="99"/>
         <source>Startup</source>
         <translation>啟動</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="98"/>
+        <location filename="../settingsdialog.ui" line="105"/>
         <source>Run Hsiu-Ming&apos;s Timer on startup</source>
         <translation>開機時執行 Hsiu-Ming&apos;s Timer</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="105"/>
+        <location filename="../settingsdialog.ui" line="112"/>
         <source>Minimize to tray on startup</source>
         <translation>開機時最小化到系統匣</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="112"/>
+        <location filename="../settingsdialog.ui" line="119"/>
         <source>Start timer on startup</source>
         <translation>開機時開始計時</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="137"/>
+        <location filename="../settingsdialog.ui" line="144"/>
         <source>Hour</source>
         <translation>小時</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="151"/>
+        <location filename="../settingsdialog.ui" line="158"/>
         <source>Min.</source>
         <comment>minute</comment>
         <translation>分</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="168"/>
+        <location filename="../settingsdialog.ui" line="175"/>
         <source>Sec.</source>
         <comment>second</comment>
         <translation>秒</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="222"/>
+        <location filename="../settingsdialog.ui" line="229"/>
         <source>Ok</source>
         <translation>確定</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="229"/>
+        <location filename="../settingsdialog.ui" line="236"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
