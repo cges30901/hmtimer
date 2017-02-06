@@ -59,3 +59,7 @@ version 2.3.1 2016.08.04
 -add Arabic and Russian translation
 -add keyboard shortcut for File and Help
 -show version number if parameter is "--version"
+
+version 2.4 2017.02.06
+-If timer is running when closing hmtimer, ask for confirmation
+-password protection
