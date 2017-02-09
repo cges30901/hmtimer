@@ -67,6 +67,7 @@ private slots:
     void writeSettings();
     void trayIcon_activated(QSystemTrayIcon::ActivationReason reason);
     void playerError(QMediaPlayer::Error error);
+    void stopTimer();
     void actShow_Triggered();
     void actQuit_Triggered();
     void on_actionAbout_Qt_triggered();

@@ -123,19 +123,7 @@ void MainWindow::btnStartPressed()
             }
             delete dialog;
         }
-        btnStart->setText(tr("Start"));
-        timer->stop();
-        spbHour->setReadOnly(false);
-        spbMinute->setReadOnly(false);
-        spbSecond->setReadOnly(false);
-        rbtMonitor->setEnabled(true);
-        rbtShutdown->setEnabled(true);
-        rbtReboot->setEnabled(true);
-        rbtSound->setEnabled(true);
-        rbtRunprogram->setEnabled(true);
-        chbRunRepeatedly->setEnabled(true);
-        timer_enabled=!timer_enabled;
-        player->stop();
+        stopTimer();
     }
     else if(spbHour->value()==0 and spbMinute->value()==0 and spbSecond->value()==0)
     {
@@ -187,7 +175,7 @@ void MainWindow::action()
         player->play();
     }
     else if(rbtShutdown->isChecked()){
-        btnStartPressed();
+        stopTimer();
         writeSettings();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
@@ -218,7 +206,7 @@ void MainWindow::action()
 #endif
     }
     else if(rbtReboot->isChecked()){
-        btnStartPressed();
+        stopTimer();
         writeSettings();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
@@ -249,7 +237,7 @@ void MainWindow::action()
 #endif
     }
     else if (rbtMonitor->isChecked()){
-        btnStartPressed();
+        stopTimer();
 #ifdef Q_OS_LINUX
         system("xset dpms force off");
 #endif
@@ -258,7 +246,7 @@ void MainWindow::action()
 #endif
     }
     else if (rbtRunprogram->isChecked()){
-        btnStartPressed();
+        stopTimer();
         process=new QProcess;
         process->start(programOptions->lneFilename_Text,QStringList(programOptions->lneParameters_Text));
     }
@@ -489,12 +477,29 @@ void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 
 void MainWindow::playerError(QMediaPlayer::Error error)
 {
-    btnStartPressed();
+    stopTimer();
     //prevent multiple messageboxes
     disconnect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),0,0);
     qDebug()<<"player error: "<<error;
     QMessageBox::warning(this,tr("Audio Error"),
-                             player->errorString());
+                         player->errorString());
+}
+
+void MainWindow::stopTimer()
+{
+    btnStart->setText(tr("Start"));
+    timer->stop();
+    spbHour->setReadOnly(false);
+    spbMinute->setReadOnly(false);
+    spbSecond->setReadOnly(false);
+    rbtMonitor->setEnabled(true);
+    rbtShutdown->setEnabled(true);
+    rbtReboot->setEnabled(true);
+    rbtSound->setEnabled(true);
+    rbtRunprogram->setEnabled(true);
+    chbRunRepeatedly->setEnabled(true);
+    timer_enabled=!timer_enabled;
+    player->stop();
 }
 
 void MainWindow::actShow_Triggered()
