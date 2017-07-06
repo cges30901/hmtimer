@@ -39,9 +39,9 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
     QMediaPlayer *player;
     QMediaPlayer *beepPlayer;
     QTimer *timer;
-    int setTime;
+    int timeSet;
     int timeRemain;
-    time_t startTime;
+    time_t timeStart;
     bool timer_enabled;
     QString audioFile;
     QString filename;

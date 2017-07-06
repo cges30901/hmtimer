@@ -133,8 +133,8 @@ void MainWindow::btnStartPressed()
     else
     {
         //start timer
-        startTime=time(NULL);
-        setTime=spbHour->text().toInt()*3600+spbMinute->text().toInt()*60+spbSecond->text().toInt();
+        timeStart=time(NULL);
+        timeSet=spbHour->text().toInt()*3600+spbMinute->text().toInt()*60+spbSecond->text().toInt();
         btnStart->setText(tr("Stop"));
         timer->start(200);
         spbHour->setReadOnly(true);
@@ -156,7 +156,7 @@ void MainWindow::btnStartPressed()
 }
 void MainWindow::timer_timeout()
 {
-    timeRemain=setTime-int(difftime(time(NULL),startTime));
+    timeRemain=timeSet-int(difftime(time(NULL),timeStart));
     spbHour->setValue(timeRemain/3600);
     spbMinute->setValue(timeRemain/60%60);
     //if the value of spbSecond is changed, spbSecond_valueChanged() is called
@@ -252,9 +252,9 @@ void MainWindow::action()
         process->start(programOptions->lneFilename_Text,QStringList(programOptions->lneParameters_Text));
     }
     if(chbRunRepeatedly->isChecked()){
-        spbHour->setValue(setTime/3600);
-        spbMinute->setValue(setTime/60%60);
-        spbSecond->setValue(setTime%60);
+        spbHour->setValue(timeSet/3600);
+        spbMinute->setValue(timeSet/60%60);
+        spbSecond->setValue(timeSet%60);
         btnStartPressed();
     }
 }
