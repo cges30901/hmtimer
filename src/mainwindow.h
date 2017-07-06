@@ -40,6 +40,7 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
     QMediaPlayer *beepPlayer;
     QTimer *timer;
     int setTime;
+    int timeRemain;
     time_t startTime;
     bool timer_enabled;
     QString audioFile;

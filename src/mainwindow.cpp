@@ -156,11 +156,12 @@ void MainWindow::btnStartPressed()
 }
 void MainWindow::timer_timeout()
 {
-    spbHour->setValue((setTime-int(difftime(time(NULL),startTime)))/3600);
-    spbMinute->setValue((setTime-int(difftime(time(NULL),startTime)))/60%60);
+    timeRemain=setTime-int(difftime(time(NULL),startTime));
+    spbHour->setValue(timeRemain/3600);
+    spbMinute->setValue(timeRemain/60%60);
     //if the value of spbSecond is changed, spbSecond_valueChanged() is called
-    spbSecond->setValue((setTime-int(difftime(time(NULL),startTime)))%60);
-    if(setTime-int(difftime(time(NULL),startTime))<=0){
+    spbSecond->setValue(timeRemain%60);
+    if(timeRemain<=0){
         trayIcon->setToolTip("Hsiu-Ming's Timer");
     }
     else{
@@ -261,10 +262,10 @@ void MainWindow::action()
 void MainWindow::spbSecond_valueChanged(int sec)
 {
     if(timer_enabled){
-        if(sec==0 and spbMinute->value()==0 and spbHour->value()==0){ //time is up
+        if(timeRemain==0){ //time is up
             action();
         }
-        else if(programOptions->chbBeep_Checked==true and (spbHour->value()*3600+spbMinute->value()*60+sec)<programOptions->spbBeep_Value){
+        else if(programOptions->chbBeep_Checked==true and timeRemain<programOptions->spbBeep_Value){
             if(programOptions->chbAudioBeep_Checked==false) //beep with pcspkr
             {
 #ifdef Q_OS_LINUX
