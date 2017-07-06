@@ -390,7 +390,7 @@ void MainWindow::readSettings()
     programOptions->chbMinimizeToTray_Checked=settings.value("minimizeToTray",true).toBool();
     programOptions->chbBeep_Checked=settings.value("checkBoxBeep",true).toBool();
     programOptions->spbBeep_Value=settings.value("spinBoxBeep",60).toInt();
-    programOptions->chbAudioBeep_Checked=settings.value("chbAudioBeep",false).toBool();
+    programOptions->chbAudioBeep_Checked=settings.value("chbAudioBeep",true).toBool();
     programOptions->chbPassword_Checked=settings.value("chbPassword_Checked",false).toBool();
     programOptions->password=settings.value("password","").toString();
 
