@@ -57,7 +57,7 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::btnStartPressed);
     connect(timer,&QTimer::timeout,
             this,&MainWindow::timer_timeout);
-    connect(spbSecond,(void (QSpinBox:: *)(int))&QSpinBox::valueChanged,
+    connect(spbSecond,static_cast<void (QSpinBox:: *)(int)>(&QSpinBox::valueChanged),
             this,&MainWindow::spbSecond_valueChanged);
     connect(rbtSound,&QRadioButton::clicked,
             this,&MainWindow::setAudioFile);
