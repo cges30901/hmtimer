@@ -63,7 +63,7 @@ protected:
 private slots:
     void timer_timeout();
     void btnStartPressed();
-    void spbSecond_valueChanged(int sec);
+    void spbSecond_valueChanged();
     void setAudioFile();
     void writeSettings();
     void trayIcon_activated(QSystemTrayIcon::ActivationReason reason);

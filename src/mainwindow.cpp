@@ -259,7 +259,7 @@ void MainWindow::action()
     }
 }
 
-void MainWindow::spbSecond_valueChanged(int sec)
+void MainWindow::spbSecond_valueChanged()
 {
     if(timer_enabled){
         if(timeRemain==0){ //time is up
