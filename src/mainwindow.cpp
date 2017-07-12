@@ -156,6 +156,9 @@ void MainWindow::btnStartPressed()
 }
 void MainWindow::timer_timeout()
 {
+    if(timeRemain==timeSet-int(difftime(time(NULL),timeStart))){
+        return;
+    }
     timeRemain=timeSet-int(difftime(time(NULL),timeStart));
     spbHour->setValue(timeRemain/3600);
     spbMinute->setValue(timeRemain/60%60);
