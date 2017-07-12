@@ -57,8 +57,6 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::btnStartPressed);
     connect(timer,&QTimer::timeout,
             this,&MainWindow::timer_timeout);
-    connect(spbSecond,static_cast<void (QSpinBox:: *)(int)>(&QSpinBox::valueChanged),
-            this,&MainWindow::spbSecond_valueChanged);
     connect(rbtSound,&QRadioButton::clicked,
             this,&MainWindow::setAudioFile);
     connect(qApp,&QApplication::aboutToQuit,
@@ -162,13 +160,30 @@ void MainWindow::timer_timeout()
     timeRemain=timeSet-int(difftime(time(NULL),timeStart));
     spbHour->setValue(timeRemain/3600);
     spbMinute->setValue(timeRemain/60%60);
-    //if the value of spbSecond is changed, spbSecond_valueChanged() is called
     spbSecond->setValue(timeRemain%60);
     if(timeRemain<=0){
         trayIcon->setToolTip("Hsiu-Ming's Timer");
+        action();
     }
     else{
         trayIcon->setToolTip("Hsiu-Ming's Timer\n"+spbHour->text()+':'+spbMinute->text()+':'+spbSecond->text());
+        if(programOptions->chbBeep_Checked==true and timeRemain<programOptions->spbBeep_Value){
+            if(programOptions->chbAudioBeep_Checked==false) //beep with pcspkr
+            {
+#ifdef Q_OS_LINUX
+                int fd = open("/dev/console", O_RDONLY);
+                ioctl(fd, KDMKTONE, (200<<16 | 1193180/750));
+#endif
+#ifdef Q_OS_WIN32
+                Beep(750,200);
+#endif
+            }
+            else{ //Use audio file to play beep sound
+                beepPlayer->setMedia(QUrl("qrc:/beep.ogg"));
+                beepPlayer->setVolume(100);
+                beepPlayer->play();
+            }
+        }
     }
 }
 
@@ -259,32 +274,6 @@ void MainWindow::action()
         spbMinute->setValue(timeSet/60%60);
         spbSecond->setValue(timeSet%60);
         btnStartPressed();
-    }
-}
-
-void MainWindow::spbSecond_valueChanged()
-{
-    if(timer_enabled){
-        if(timeRemain==0){ //time is up
-            action();
-        }
-        else if(programOptions->chbBeep_Checked==true and timeRemain<programOptions->spbBeep_Value){
-            if(programOptions->chbAudioBeep_Checked==false) //beep with pcspkr
-            {
-#ifdef Q_OS_LINUX
-                int fd = open("/dev/console", O_RDONLY);
-                ioctl(fd, KDMKTONE, (200<<16 | 1193180/750));
-#endif
-#ifdef Q_OS_WIN32
-                Beep(750,200);
-#endif
-            }
-            else{ //Use audio file to play beep sound
-                beepPlayer->setMedia(QUrl("qrc:/beep.ogg"));
-                beepPlayer->setVolume(100);
-                beepPlayer->play();
-            }
-        }
     }
 }
 
