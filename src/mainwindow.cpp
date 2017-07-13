@@ -133,6 +133,7 @@ void MainWindow::btnStartPressed()
         //start timer
         timeStart=time(NULL);
         timeSet=spbHour->text().toInt()*3600+spbMinute->text().toInt()*60+spbSecond->text().toInt();
+        timeRemain=timeSet;
         btnStart->setText(tr("Stop"));
         timer->start(200);
         spbHour->setReadOnly(true);
