@@ -164,6 +164,7 @@ void MainWindow::timer_timeout()
     spbSecond->setValue(timeRemain%60);
     if(timeRemain<=0){
         trayIcon->setToolTip("Hsiu-Ming's Timer");
+        writeSettings();
         action();
     }
     else{
@@ -196,7 +197,6 @@ void MainWindow::action()
     }
     else if(rbtShutdown->isChecked()){
         stopTimer();
-        writeSettings();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
@@ -227,7 +227,6 @@ void MainWindow::action()
     }
     else if(rbtReboot->isChecked()){
         stopTimer();
-        writeSettings();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
