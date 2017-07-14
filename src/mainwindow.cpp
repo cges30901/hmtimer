@@ -137,26 +137,7 @@ void MainWindow::btnStartPressed()
     else
     {
         //start timer
-        timeStart=time(NULL);
-        timeSet=spbHour->text().toInt()*3600+spbMinute->text().toInt()*60+spbSecond->text().toInt();
-        timeRemain=timeSet;
-        btnStart->setText(tr("Stop"));
-        timer->start(200);
-        spbHour->setReadOnly(true);
-        spbMinute->setReadOnly(true);
-        spbSecond->setReadOnly(true);
-        rbtMonitor->setEnabled(false);
-        rbtShutdown->setEnabled(false);
-        rbtReboot->setEnabled(false);
-        rbtSound->setEnabled(false);
-        rbtRunprogram->setEnabled(false);
-        chbRunRepeatedly->setEnabled(false);
-        timer_enabled=!timer_enabled;
-        if(rbtSound->isChecked()){
-            player->setMedia(QUrl::fromLocalFile(audioFile));
-        }
-        connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
-                this,&MainWindow::playerError);
+        startTimer();
     }
 }
 void MainWindow::timer_timeout()
@@ -276,7 +257,7 @@ void MainWindow::action()
         process->start(programOptions->lneFilename_Text,QStringList(programOptions->lneParameters_Text));
     }
     if(chbRunRepeatedly->isChecked()){
-        btnStartPressed();
+        startTimer();
     }
 }
 
@@ -495,6 +476,30 @@ void MainWindow::stopTimer()
     rbtRunprogram->setEnabled(true);
     chbRunRepeatedly->setEnabled(true);
     timer_enabled=!timer_enabled;
+}
+
+void MainWindow::startTimer()
+{
+    timeStart=time(NULL);
+    timeSet=spbHour->text().toInt()*3600+spbMinute->text().toInt()*60+spbSecond->text().toInt();
+    timeRemain=timeSet;
+    btnStart->setText(tr("Stop"));
+    timer->start(200);
+    spbHour->setReadOnly(true);
+    spbMinute->setReadOnly(true);
+    spbSecond->setReadOnly(true);
+    rbtMonitor->setEnabled(false);
+    rbtShutdown->setEnabled(false);
+    rbtReboot->setEnabled(false);
+    rbtSound->setEnabled(false);
+    rbtRunprogram->setEnabled(false);
+    chbRunRepeatedly->setEnabled(false);
+    timer_enabled=!timer_enabled;
+    if(rbtSound->isChecked()){
+        player->setMedia(QUrl::fromLocalFile(audioFile));
+    }
+    connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
+            this,&MainWindow::playerError);
 }
 
 void MainWindow::playerMediaStatusChanged(QMediaPlayer::MediaStatus status)
