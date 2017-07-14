@@ -170,6 +170,9 @@ void MainWindow::timer_timeout()
     spbSecond->setValue(timeRemain%60);
     if(timeRemain<=0){
         stopTimer();
+        spbHour->setValue(timeSet/3600);
+        spbMinute->setValue(timeSet/60%60);
+        spbSecond->setValue(timeSet%60);
         trayIcon->setToolTip("Hsiu-Ming's Timer");
         writeSettings();
         action();
@@ -273,9 +276,6 @@ void MainWindow::action()
         process->start(programOptions->lneFilename_Text,QStringList(programOptions->lneParameters_Text));
     }
     if(chbRunRepeatedly->isChecked()){
-        spbHour->setValue(timeSet/3600);
-        spbMinute->setValue(timeSet/60%60);
-        spbSecond->setValue(timeSet%60);
         btnStartPressed();
     }
 }
