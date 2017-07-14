@@ -123,6 +123,10 @@ void MainWindow::btnStartPressed()
         }
         stopTimer();
     }
+    else if(player->state()==QMediaPlayer::PlayingState){
+        player->stop();
+        btnStart->setText(tr("Start"));
+    }
     else if(spbHour->value()==0 and spbMinute->value()==0 and spbSecond->value()==0)
     {
         QMessageBox::warning(this,tr("Please set the timer"),
@@ -192,8 +196,9 @@ void MainWindow::timer_timeout()
 void MainWindow::action()
 {
     if(rbtSound->isChecked()){
-        timer->stop();
+        stopTimer();
         player->play();
+        btnStart->setText(tr("Stop"));
     }
     else if(rbtShutdown->isChecked()){
         stopTimer();
@@ -492,7 +497,6 @@ void MainWindow::stopTimer()
     rbtRunprogram->setEnabled(true);
     chbRunRepeatedly->setEnabled(true);
     timer_enabled=!timer_enabled;
-    player->stop();
 }
 
 void MainWindow::actShow_Triggered()
