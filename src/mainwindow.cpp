@@ -67,6 +67,8 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::actShow_Triggered);
     connect(actQuit,&QAction::triggered,
             this,&MainWindow::actQuit_Triggered);
+    connect(player,&QMediaPlayer::mediaStatusChanged,
+            this,&MainWindow::playerMediaStatusChanged);
 
     readSettings();
 
@@ -497,6 +499,13 @@ void MainWindow::stopTimer()
     rbtRunprogram->setEnabled(true);
     chbRunRepeatedly->setEnabled(true);
     timer_enabled=!timer_enabled;
+}
+
+void MainWindow::playerMediaStatusChanged(QMediaPlayer::MediaStatus status)
+{
+    if(status==QMediaPlayer::EndOfMedia){
+        btnStart->setText(tr("Start"));
+    }
 }
 
 void MainWindow::actShow_Triggered()
