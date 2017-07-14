@@ -169,6 +169,7 @@ void MainWindow::timer_timeout()
     spbMinute->setValue(timeRemain/60%60);
     spbSecond->setValue(timeRemain%60);
     if(timeRemain<=0){
+        stopTimer();
         trayIcon->setToolTip("Hsiu-Ming's Timer");
         writeSettings();
         action();
@@ -198,12 +199,10 @@ void MainWindow::timer_timeout()
 void MainWindow::action()
 {
     if(rbtSound->isChecked()){
-        stopTimer();
         player->play();
         btnStart->setText(tr("Stop"));
     }
     else if(rbtShutdown->isChecked()){
-        stopTimer();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
@@ -233,7 +232,6 @@ void MainWindow::action()
 #endif
     }
     else if(rbtReboot->isChecked()){
-        stopTimer();
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
@@ -263,7 +261,6 @@ void MainWindow::action()
 #endif
     }
     else if (rbtMonitor->isChecked()){
-        stopTimer();
 #ifdef Q_OS_LINUX
         system("xset dpms force off");
 #endif
@@ -272,7 +269,6 @@ void MainWindow::action()
 #endif
     }
     else if (rbtRunprogram->isChecked()){
-        stopTimer();
         process=new QProcess;
         process->start(programOptions->lneFilename_Text,QStringList(programOptions->lneParameters_Text));
     }
