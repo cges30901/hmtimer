@@ -124,6 +124,7 @@ void MainWindow::btnStartPressed()
             delete dialog;
         }
         stopTimer();
+        player->stop();
     }
     else if(player->state()==QMediaPlayer::PlayingState){
         player->stop();
@@ -495,7 +496,7 @@ void MainWindow::startTimer()
     rbtRunprogram->setEnabled(false);
     chbRunRepeatedly->setEnabled(false);
     timer_enabled=!timer_enabled;
-    if(rbtSound->isChecked()){
+    if(rbtSound->isChecked() and player->state()!=QMediaPlayer::PlayingState){
         player->setMedia(QUrl::fromLocalFile(audioFile));
     }
     connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
@@ -504,7 +505,7 @@ void MainWindow::startTimer()
 
 void MainWindow::playerMediaStatusChanged(QMediaPlayer::MediaStatus status)
 {
-    if(status==QMediaPlayer::EndOfMedia){
+    if(status==QMediaPlayer::EndOfMedia and !timer_enabled){
         btnStart->setText(tr("Start"));
     }
 }
