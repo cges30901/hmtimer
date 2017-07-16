@@ -255,7 +255,7 @@ void MainWindow::action()
     }
     else if (rbtRunprogram->isChecked()){
         process=new QProcess;
-        process->start(programOptions->lneFilename_Text,QStringList(programOptions->lneParameters_Text));
+        process->start(programOptions->lneFilename_Text+" "+programOptions->lneParameters_Text);
     }
     if(chbRunRepeatedly->isChecked()){
         startTimer();
