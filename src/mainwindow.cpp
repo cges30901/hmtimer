@@ -452,7 +452,9 @@ void MainWindow::on_rbtRunprogram_clicked()
 
 void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 {
-    if(reason==3){ //reason==Trigger
+    if(reason==QSystemTrayIcon::Trigger or reason==QSystemTrayIcon::DoubleClick){
+        //When dialog is open, trayicon can not be activated.
+        //Double click seems to be the only way to show main window.
         this->show();
         trayIcon->hide();
     }
