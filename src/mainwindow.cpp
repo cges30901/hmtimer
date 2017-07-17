@@ -173,7 +173,12 @@ void MainWindow::timer_timeout()
 #endif
             }
             else{ //Use audio file to play beep sound
+#ifdef Q_OS_LINUX
                 beepPlayer->setMedia(QUrl("qrc:/beep.ogg"));
+#endif
+#ifdef Q_OS_WIN
+                beepPlayer->setMedia(QUrl("qrc:/beep.mp3"));
+#endif
                 beepPlayer->setVolume(100);
                 beepPlayer->play();
             }
