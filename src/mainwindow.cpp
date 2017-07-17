@@ -455,7 +455,7 @@ void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
     if(reason==QSystemTrayIcon::Trigger or reason==QSystemTrayIcon::DoubleClick){
         //When dialog is open, trayicon can not be activated.
         //Double click seems to be the only way to show main window.
-        this->show();
+        this->showNormal();
         trayIcon->hide();
     }
 }
@@ -519,7 +519,7 @@ void MainWindow::playerMediaStatusChanged(QMediaPlayer::MediaStatus status)
 
 void MainWindow::actShow_Triggered()
 {
-    this->show();
+    this->showNormal();
     trayIcon->hide();
 }
 
