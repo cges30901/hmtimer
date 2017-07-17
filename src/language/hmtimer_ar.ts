@@ -209,12 +209,12 @@
     <message>
         <location filename="../passworddialog.ui" line="66"/>
         <source>OK</source>
-        <translation type="unfinished">حسناً</translation>
+        <translation>حسناً</translation>
     </message>
     <message>
         <location filename="../passworddialog.ui" line="73"/>
         <source>Cancel</source>
-        <translation type="unfinished">ألغِ</translation>
+        <translation>ألغِ</translation>
     </message>
     <message>
         <location filename="../passworddialog.cpp" line="25"/>
