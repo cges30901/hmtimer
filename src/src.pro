@@ -36,7 +36,8 @@ HEADERS += \
 TRANSLATIONS=language/hmtimer.ts \
     language/hmtimer_zh_TW.ts \
     language/hmtimer_ar.ts \
-    language/hmtimer_ru.ts
+    language/hmtimer_ru.ts \
+    language/hmtimer_be.ts
 
 RESOURCES=hmtimer.qrc
 
