@@ -66,3 +66,15 @@ version 2.4 2017.02.06
 
 version 2.4.1 2017.02.09
 -do not show PasswordDialog when time is up
+
+version 2.4.2 2017.07.18
+-Use audio file to play beep sound by default
+-when playing sound to end of media, set text of btnStart to "Start"
+-fix play sound repeatedly
+-when time is up, reset value of spbHour, spbMinute and spbSecond
+-fix parameter of "Run Program"
+-play beep sound with beep.mp3 on Windows because DirectShow doesn't support ogg by default
+-show mainwindow when trayicon is double clicked(this seems to be the only way to show mainwindow when dialog is open)
+-mainwindow is not minimized when showing mainwindow from trayicon now
+-add Belarusian translation
+-code refactor
