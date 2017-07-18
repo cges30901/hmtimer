@@ -46,7 +46,8 @@ install_bin.path=/usr/bin
 
 install_translation.files=language/hmtimer_zh_TW.qm \
     language/hmtimer_ar.qm \
-    language/hmtimer_ru.qm
+    language/hmtimer_ru.qm \
+    language/hmtimer_be.qm
 install_translation.path=/usr/share/hmtimer
 
 install_icon.files=hmtimer.png
