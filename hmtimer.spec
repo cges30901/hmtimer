@@ -36,6 +36,8 @@ BuildRequires:  update-desktop-files
 %description
 Hsiu-Ming's Timer is a graphical shutdown timer for Linux and Windows. It enables you to shutdown, turn off monitor, reboot or play sound after a period of time.
 
+%global debug_package %{nil}
+
 %prep
 %setup -q
 
