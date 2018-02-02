@@ -285,7 +285,10 @@ void MainWindow::on_actionAbout_triggered()
     QMessageBox::about(this,tr("About"),tr("<h3>Hsiu-Ming's Timer %1</h3><br>"
                                            "Author: Hsiu-Ming Chang<br>"
                                            "e-mail: cges30901@gmail.com<br>"
-                                           "License:GPL v3").arg(VERSION));
+                                           "License: GPL v3<br><br>"
+                                           "If you find any bugs or have suggestions, "
+                                           "please feel free to contact me by "
+                                           "sending me an e-mail.").arg(VERSION));
 }
 
 void MainWindow::on_actionHomepage_triggered()
