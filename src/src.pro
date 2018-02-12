@@ -16,13 +16,15 @@ FORMS += mainwindow.ui \
     selectfiledialog.ui \
     settingsdialog.ui \
     newpassworddialog.ui \
-    passworddialog.ui
+    passworddialog.ui \
+    atdialog.ui
 SOURCES += main.cpp \
     mainwindow.cpp \
     selectfiledialog.cpp \
     settingsdialog.cpp \
     newpassworddialog.cpp \
-    passworddialog.cpp
+    passworddialog.cpp \
+    atdialog.cpp \
 
 HEADERS += \
     mainwindow.h \
@@ -31,7 +33,8 @@ HEADERS += \
     settingsdialog.h \
     version.h \
     newpassworddialog.h \
-    passworddialog.h
+    passworddialog.h \
+    atdialog.h \
 
 TRANSLATIONS=language/hmtimer.ts \
     language/hmtimer_zh_TW.ts \

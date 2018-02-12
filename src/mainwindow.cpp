@@ -540,3 +540,15 @@ void MainWindow::on_actionDonate_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://hsiumingstimer.sourceforge.io/donate.html"));
 }
+
+void MainWindow::on_btnAt_clicked()
+{
+    AtDialog *dlgAt =new AtDialog(&timeSet,this);
+    if(dlgAt->exec()==QDialog::Accepted){
+        spbHour->setValue(timeSet/3600);
+        spbMinute->setValue(timeSet/60%60);
+        spbSecond->setValue(timeSet%60);
+        startTimer();
+    }
+    delete dlgAt;
+}

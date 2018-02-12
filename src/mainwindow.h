@@ -28,6 +28,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "selectfiledialog.h"
 #include "settingsdialog.h"
 #include "programoptions.h"
+#include "atdialog.h"
 #include <QProcess>
 #include <QKeyEvent>
 #include <QCloseEvent>
@@ -79,6 +80,7 @@ private slots:
     void on_rbtRunprogram_clicked();
     void on_actionProject_Page_triggered();
     void on_actionDonate_triggered();
+    void on_btnAt_clicked();
 };
 
 #endif // MAINWINDOW_H
