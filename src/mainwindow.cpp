@@ -486,6 +486,7 @@ void MainWindow::stopTimer()
     rbtSound->setEnabled(true);
     rbtRunprogram->setEnabled(true);
     chbRunRepeatedly->setEnabled(true);
+    btnAt->setEnabled(true);
     timer_enabled=!timer_enabled;
 }
 
@@ -505,6 +506,7 @@ void MainWindow::startTimer()
     rbtSound->setEnabled(false);
     rbtRunprogram->setEnabled(false);
     chbRunRepeatedly->setEnabled(false);
+    btnAt->setEnabled(false);
     timer_enabled=!timer_enabled;
     if(rbtSound->isChecked() and player->state()!=QMediaPlayer::PlayingState){
         player->setMedia(QUrl::fromLocalFile(audioFile));
