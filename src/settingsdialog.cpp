@@ -154,7 +154,7 @@ void SettingsDialog::on_btnOk_clicked()
         RegCloseKey(newValue);
     }
 #endif
-    this->close();
+    this->accept();
 }
 
 void SettingsDialog::on_chbStartup_clicked(bool checked)
