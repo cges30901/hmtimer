@@ -40,5 +40,5 @@ void SelectFileDialog::on_btnOk_clicked()
 {
     programOptions->lneFilename_Text=lneFilename->text();
     programOptions->lneParameters_Text=lneParameters->text();
-    this->close();
+    this->accept();
 }
