@@ -33,9 +33,9 @@ int main(int argc,char *argv[])
                      <<"options:\n"
                      <<"  -t SECONDS   set seconds\n"
                      <<"  -s           start timer\n"
-                     <<"  -m           minimize to tray(may not work on Linux)\n"
-                     <<"  -a ACTION    set action when time is up\n"
-                     <<"    ACTION:monitor, shutdown, reboot, sound, runprogram\n";
+                     <<"  -m           minimize to tray\n"
+                     <<"  -a ACTION    set action when time is up.\n"
+                     <<"    available action: monitor, shutdown, reboot, sound, runprogram\n";
             exit(0);
         }
         else if(args.at(i)=="--version"){
