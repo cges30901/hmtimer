@@ -6,22 +6,22 @@
     <message>
         <location filename="../atdialog.ui" line="14"/>
         <source>At a specific time:</source>
-        <translation type="unfinished"></translation>
+        <translation>在特定的時間：</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="20"/>
         <source>Enter the time you want this program to do the action:</source>
-        <translation type="unfinished"></translation>
+        <translation>輸入你要這個程式執行動作的時間：</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="85"/>
         <source>OK</source>
-        <translation type="unfinished">確定</translation>
+        <translation>確定</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="92"/>
         <source>Cancel</source>
-        <translation type="unfinished">取消</translation>
+        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -56,7 +56,7 @@
     <message>
         <location filename="../mainwindow.ui" line="90"/>
         <source>A&amp;t:</source>
-        <translation type="unfinished"></translation>
+        <translation>在(&amp;T)：</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="143"/>
@@ -164,7 +164,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="285"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;如果你發現任何錯誤或有任何建議，請寄 e-mail 聯絡我。</translation>
     </message>
     <message>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</source>
