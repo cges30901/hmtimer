@@ -36,6 +36,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "settingsdialog.h"
 #include "version.h"
 #include "passworddialog.h"
+#include "atdialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

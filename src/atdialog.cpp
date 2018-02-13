@@ -16,7 +16,6 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include "atdialog.h"
-#include <QFileDialog>
 #include <QTime>
 
 AtDialog::AtDialog(int *timeset, QWidget *parent):QDialog(parent)

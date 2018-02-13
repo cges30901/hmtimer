@@ -23,12 +23,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QMainWindow>
 #include <QSystemTrayIcon>
 #include <QMenu>
-#include <QStringList>
 #include "ui_mainwindow.h"
-#include "selectfiledialog.h"
-#include "settingsdialog.h"
 #include "programoptions.h"
-#include "atdialog.h"
 #include <QProcess>
 #include <QKeyEvent>
 #include <QCloseEvent>
