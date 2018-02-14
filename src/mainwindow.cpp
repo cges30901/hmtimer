@@ -100,14 +100,10 @@ MainWindow::MainWindow(QWidget *parent)
             spbHour->setValue(time.toInt()/3600);
             spbMinute->setValue(time.toInt()/60%60);
             spbSecond->setValue(time.toInt()%60);
+            btnStartPressed();
         }
         else if(args.at(i)=="-m"){
             trayIcon->show();
-        }
-    }
-    for(int i=0;i<args.size();i++){
-        if(args.at(i)=="-s"){
-            btnStartPressed();
         }
     }
 }

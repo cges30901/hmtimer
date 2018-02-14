@@ -31,8 +31,7 @@ int main(int argc,char *argv[])
         if(args.at(i)=="--help"){
             std::cout<<"Usage: hmtimer [-t time] [-s] [-m] [-a ACTION]\n"
                      <<"options:\n"
-                     <<"  -t SECONDS   set seconds\n"
-                     <<"  -s           start timer\n"
+                     <<"  -t SECONDS   set seconds and start timer\n"
                      <<"  -m           minimize to tray\n"
                      <<"  -a ACTION    set action when time is up.\n"
                      <<"    available action: monitor, shutdown, reboot, sound, runprogram\n";
