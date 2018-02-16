@@ -78,3 +78,10 @@ version 2.4.2 2017.07.18
 -mainwindow is not minimized when showing mainwindow from trayicon now
 -add Belarusian translation
 -code refactor
+
+version 2.5 2018.02.15
+-new homepage: https://hsiumingstimer.sourceforge.io/
+-new function: do action at a specific time
+-remove command line option "-s". Timer is started if "-t" is found
+-Linux: add man page
+-miner fix and refactor

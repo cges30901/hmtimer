@@ -17,10 +17,10 @@
 
 Summary:        A graphical shutdown timer
 Name:           hmtimer
-Version:        2.4.2
+Version:        2.5
 Release:        1
 License:        GPL-3.0
-Url:            https://sites.google.com/site/hsiumingstimer/
+Url:            https://hsiumingstimer.sourceforge.io/
 Group:          Productivity/Other
 Source0:        %{name}-%{version}-src.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -44,16 +44,15 @@ Hsiu-Ming's Timer is a graphical shutdown timer for Linux and Windows. It enable
 %build
 qmake-qt5
 make
+gzip hmtimer.1
 
 %install
 install -D -m0755 src/hmtimer %{buildroot}%{_bindir}/hmtimer
-install -D -m0644 src/language/hmtimer_zh_TW.qm %{buildroot}%{_datadir}/hmtimer/hmtimer_zh_TW.qm
-install -D -m0644 src/language/hmtimer_ar.qm %{buildroot}%{_datadir}/hmtimer/hmtimer_ar.qm
-install -D -m0644 src/language/hmtimer_ru.qm %{buildroot}%{_datadir}/hmtimer/hmtimer_ru.qm
-install -D -m0644 src/language/hmtimer_be.qm %{buildroot}%{_datadir}/hmtimer/hmtimer_be.qm
+install -D -m0644 -t %{buildroot}%{_datadir}/hmtimer src/language/hmtimer_*.qm
 install -D -m0644 hmtimer.desktop %{buildroot}%{_datadir}/applications/hmtimer.desktop
 install -D -m0644 src/hmtimer.png %{buildroot}%{_datadir}/icons/hicolor/128x128/apps/hmtimer.png
 install -D -m0644 src/hmtimer48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/hmtimer.png
+install -D -m0644 hmtimer.1.gz %{buildroot}%{_mandir}/man1/hmtimer.1.gz
 %if 0%{?suse_version}
 %suse_update_desktop_file -r %{name} Utility DesktopUtility
 %endif
@@ -68,5 +67,6 @@ rm -rf %{buildroot}
 %{_datadir}/applications/hmtimer.desktop
 %{_datadir}/hmtimer/
 %{_datadir}/icons/hicolor/
+%{_mandir}/man1/hmtimer.1.gz
 
 %changelog
