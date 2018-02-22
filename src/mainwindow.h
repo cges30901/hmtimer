@@ -48,9 +48,11 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
     QAction *actShow;
     ProgramOptions *programOptions;
     QProcess *process;
+    bool startFromAt;
 
     void action();
     void readSettings();
+    void setAtTime();
 public:
     MainWindow(QWidget *parent=0);
 protected:

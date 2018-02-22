@@ -19,13 +19,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ATDIALOG_H
 #include <QDialog>
 #include "ui_atdialog.h"
+#include "programoptions.h"
 
 class AtDialog:public QDialog,public Ui::AtDialog
 {
     Q_OBJECT
-    int *timeset;
+    ProgramOptions *programOptions;
 public:
-    AtDialog(int *timeset,QWidget *parent=0);
+    AtDialog(ProgramOptions *programOptions, QWidget *parent=0);
 private slots:
     void on_btnOk_clicked();
 };

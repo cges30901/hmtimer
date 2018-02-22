@@ -18,19 +18,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "atdialog.h"
 #include <QTime>
 
-AtDialog::AtDialog(int *timeset, QWidget *parent):QDialog(parent)
+AtDialog::AtDialog(ProgramOptions *programOptions, QWidget *parent):QDialog(parent)
 {
     setupUi(this);
-    this->timeset=timeset;
+    this->programOptions=programOptions;
+    spbHour->setValue(programOptions->spbAtHour_Value);
+    spbMinute->setValue(programOptions->spbAtMinute_Value);
 }
 
 void AtDialog::on_btnOk_clicked()
 {
-    int atTime=spbHour->value()*3600+spbMinute->value()*60;
-    int currentTime=QTime::currentTime().msecsSinceStartOfDay()/1000;
-    if(atTime<currentTime)
-        *timeset=86400-(currentTime-atTime);
-    else
-        *timeset=atTime-currentTime;
+    programOptions->spbAtHour_Value=spbHour->value();
+    programOptions->spbAtMinute_Value=spbMinute->value();
     this->accept();
 }

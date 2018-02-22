@@ -134,6 +134,7 @@ void MainWindow::btnStartPressed()
     }
     else
     {
+        startFromAt=false;
         //start timer
         startTimer();
     }
@@ -149,9 +150,14 @@ void MainWindow::timer_timeout()
     spbSecond->setValue(timeRemain%60);
     if(timeRemain<=0){
         stopTimer();
-        spbHour->setValue(timeSet/3600);
-        spbMinute->setValue(timeSet/60%60);
-        spbSecond->setValue(timeSet%60);
+        if(startFromAt){
+            setAtTime();
+        }
+        else{
+            spbHour->setValue(timeSet/3600);
+            spbMinute->setValue(timeSet/60%60);
+            spbSecond->setValue(timeSet%60);
+        }
         trayIcon->setToolTip("Hsiu-Ming's Timer");
         writeSettings();
         action();
@@ -337,6 +343,12 @@ void MainWindow::writeSettings()
     settings.setValue("spbStartupMinute_Value",programOptions->spbStartupMinute_Value);
     settings.setValue("spbStartupSecond_Value",programOptions->spbStartupSecond_Value);
     settings.endGroup();
+
+    //AtDialog
+    settings.beginGroup("At");
+    settings.setValue("spbAtHour_Value",programOptions->spbAtHour_Value);
+    settings.setValue("spbAtMinute_Value",programOptions->spbAtMinute_Value);
+    settings.endGroup();
 }
 
 void MainWindow::readSettings()
@@ -382,6 +394,12 @@ void MainWindow::readSettings()
     programOptions->spbStartupHour_Value=settings.value("spbStartupHour_Value",false).toInt();
     programOptions->spbStartupMinute_Value=settings.value("spbStartupMinute_Value",false).toInt();
     programOptions->spbStartupSecond_Value=settings.value("spbStartupSecond_Value",false).toInt();
+    settings.endGroup();
+
+    //AtDialog
+    settings.beginGroup("At");
+    programOptions->spbAtHour_Value=settings.value("spbAtHour_Value",0).toInt();
+    programOptions->spbAtMinute_Value=settings.value("spbAtMinute_Value",0).toInt();
     settings.endGroup();
 }
 
@@ -542,12 +560,24 @@ void MainWindow::on_actionDonate_triggered()
 
 void MainWindow::on_btnAt_clicked()
 {
-    AtDialog *dlgAt =new AtDialog(&timeSet,this);
+    AtDialog *dlgAt =new AtDialog(programOptions,this);
     if(dlgAt->exec()==QDialog::Accepted){
-        spbHour->setValue(timeSet/3600);
-        spbMinute->setValue(timeSet/60%60);
-        spbSecond->setValue(timeSet%60);
+        startFromAt=true;
+        setAtTime();
         startTimer();
     }
     delete dlgAt;
+}
+
+void MainWindow::setAtTime()
+{
+    int atTime=programOptions->spbAtHour_Value*3600+programOptions->spbAtMinute_Value*60;
+    int currentTime=QTime::currentTime().msecsSinceStartOfDay()/1000;
+    if(atTime<=currentTime)
+        timeSet=86400-(currentTime-atTime);
+    else
+        timeSet=atTime-currentTime;
+    spbHour->setValue(timeSet/3600);
+    spbMinute->setValue(timeSet/60%60);
+    spbSecond->setValue(timeSet%60);
 }

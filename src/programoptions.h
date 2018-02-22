@@ -40,6 +40,10 @@ public:
     //SelectFileDialog
     QString lneFilename_Text;
     QString lneParameters_Text;
+
+    //AtDialog
+    int spbAtHour_Value;
+    int spbAtMinute_Value;
 };
 
 #endif // PROGRAMOPTIONS_H
