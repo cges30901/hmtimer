@@ -391,9 +391,9 @@ void MainWindow::readSettings()
     programOptions->chbStartup_Checked=settings.value("chbStartup_Checked",false).toBool();
     programOptions->chbMinimizeOnStartup_Checked=settings.value("chbMinimizeOnStartup_Checked",false).toBool();
     programOptions->chbStartTimerOnStartup_Checked=settings.value("chbStartTimerOnStartup_Checked",false).toBool();
-    programOptions->spbStartupHour_Value=settings.value("spbStartupHour_Value",false).toInt();
-    programOptions->spbStartupMinute_Value=settings.value("spbStartupMinute_Value",false).toInt();
-    programOptions->spbStartupSecond_Value=settings.value("spbStartupSecond_Value",false).toInt();
+    programOptions->spbStartupHour_Value=settings.value("spbStartupHour_Value",0).toInt();
+    programOptions->spbStartupMinute_Value=settings.value("spbStartupMinute_Value",0).toInt();
+    programOptions->spbStartupSecond_Value=settings.value("spbStartupSecond_Value",0).toInt();
     settings.endGroup();
 
     //AtDialog
