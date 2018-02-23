@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru">
+<TS version="2.1" language="cs">
 <context>
     <name>AtDialog</name>
     <message>
         <location filename="../atdialog.ui" line="14"/>
         <source>At a specific time:</source>
-        <translation type="unfinished"></translation>
+        <translation>V určitém čase:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="20"/>
         <source>Enter the time you want this program to do the action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zadejte čas, ve kterém chcete tuto akci provést:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="85"/>
@@ -21,7 +21,7 @@
     <message>
         <location filename="../atdialog.ui" line="92"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Storno</translation>
     </message>
 </context>
 <context>
@@ -29,29 +29,29 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Hsiu-Ming&apos;s Timer</source>
-        <translation>Таймер Hsiu-Ming</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
         <source>H&amp;our</source>
-        <translation type="unfinished"></translation>
+        <translation>H&amp;odiny</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="49"/>
         <source>&amp;Min.</source>
         <comment>minute</comment>
-        <translation>&amp;Мин.</translation>
+        <translation>&amp;Minuty</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="69"/>
         <source>&amp;Sec.</source>
         <comment>second</comment>
-        <translation>&amp;Сек.</translation>
+        <translation>&amp;Sekundy</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="83"/>
         <source>Run repeatedly</source>
-        <translation type="unfinished"></translation>
+        <translation>Spouštět opakovaně</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="113"/>
@@ -63,7 +63,7 @@
         <location filename="../mainwindow.ui" line="137"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
-        <translation type="unfinished"></translation>
+        <translation>Za&amp;čít v:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="190"/>
@@ -71,122 +71,122 @@
         <location filename="../mainwindow.cpp" line="502"/>
         <location filename="../mainwindow.cpp" line="549"/>
         <source>Start</source>
-        <translation>Старт</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="240"/>
         <source>&amp;Action</source>
-        <translation>&amp;Действие</translation>
+        <translation>&amp;Činnosti</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="246"/>
         <source>Turn off monitor</source>
-        <translation>Выключить монитор</translation>
+        <translation>Zhasnout monitor</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="256"/>
         <source>Shutdown</source>
-        <translation>Выключение</translation>
+        <translation>Vypnout</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="263"/>
         <source>Reboot</source>
-        <translation>Перезагрузка</translation>
+        <translation>Restartovat</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="270"/>
         <source>Play Sound</source>
-        <translation>Воспроизвести звук</translation>
+        <translation>Přehrát zvuk</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>Run Program</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit program</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="326"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nápověda</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="337"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Soubor</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="348"/>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O programu</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="353"/>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>About Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>O knihovně Qt</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="358"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Domovská stránka</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="363"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="368"/>
         <location filename="../mainwindow.cpp" line="55"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukončit</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="373"/>
         <source>Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Stránka projektu</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="378"/>
         <source>Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>Darovat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="54"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukázat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="132"/>
         <location filename="../mainwindow.cpp" line="133"/>
         <source>Please set the timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavte prosím časovač</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="196"/>
         <location filename="../mainwindow.cpp" line="523"/>
         <source>Stop</source>
-        <translation>Стоп</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;Pokud zjistíte jakékoliv chyby nebo máte nějaké návrhy, neváhejte a kontaktujte mě na e-mailu.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="445"/>
         <source>Close hmtimer?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukončit časovač?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="446"/>
         <source>Timer is running. Do you really want to quit?</source>
-        <translation type="unfinished"></translation>
+        <translation>Časovač je spuštěn. Skutečně chcete skončit?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="496"/>
         <source>Audio Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba přehrávání</translation>
     </message>
 </context>
 <context>
@@ -194,27 +194,27 @@
     <message>
         <location filename="../newpassworddialog.ui" line="14"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.ui" line="22"/>
         <source>Confirm password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Potvrďte heslo:</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.ui" line="29"/>
         <source>Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo:</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.cpp" line="22"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.cpp" line="23"/>
         <source>password do not match</source>
-        <translation type="unfinished"></translation>
+        <translation>heslo se neshoduje</translation>
     </message>
 </context>
 <context>
@@ -222,12 +222,12 @@
     <message>
         <location filename="../passworddialog.ui" line="14"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo</translation>
     </message>
     <message>
         <location filename="../passworddialog.ui" line="22"/>
         <source>Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Heslo:</translation>
     </message>
     <message>
         <location filename="../passworddialog.ui" line="66"/>
@@ -237,12 +237,12 @@
     <message>
         <location filename="../passworddialog.ui" line="73"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Storno</translation>
     </message>
     <message>
         <location filename="../passworddialog.cpp" line="25"/>
         <source>Wrong password</source>
-        <translation type="unfinished"></translation>
+        <translation>Chybné heslo</translation>
     </message>
 </context>
 <context>
@@ -250,12 +250,12 @@
     <message>
         <location filename="../selectfiledialog.ui" line="14"/>
         <source>Select File</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyberte soubor</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="22"/>
         <source>Filename:</source>
-        <translation type="unfinished"></translation>
+        <translation>Název souboru:</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="32"/>
@@ -265,7 +265,7 @@
     <message>
         <location filename="../selectfiledialog.ui" line="43"/>
         <source>Parameters:</source>
-        <translation type="unfinished"></translation>
+        <translation>Parametry:</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="83"/>
@@ -275,7 +275,7 @@
     <message>
         <location filename="../selectfiledialog.ui" line="90"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Storno</translation>
     </message>
 </context>
 <context>
@@ -283,76 +283,76 @@
     <message>
         <location filename="../settingsdialog.ui" line="14"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavení</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Všeobecné</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="30"/>
         <source>Minimize to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimalizovat do lišty</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="39"/>
         <source>Beep last</source>
         <comment>Beep last( N seconds)</comment>
-        <translation type="unfinished"></translation>
+        <translation>Poslední pípnutí</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="49"/>
         <source>seconds</source>
         <comment>(Beep last N )seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation>sekundy</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="71"/>
         <source>Use audio file to play beep sound</source>
-        <translation type="unfinished"></translation>
+        <translation>Použijte zvukový soubor k přehrání zvukového signálu</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="78"/>
         <source>Password protection</source>
-        <translation type="unfinished"></translation>
+        <translation>Ochrana heslem</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="99"/>
         <source>Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Po startu</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="105"/>
         <source>Run Hsiu-Ming&apos;s Timer on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustit Hsiu-Ming&apos;s Timer po startu</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="112"/>
         <source>Minimize to tray on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Minimalizovat do lišty po startu</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="119"/>
         <source>Start timer on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Spuštění časovače po startu</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="144"/>
         <source>Hour</source>
-        <translation type="unfinished"></translation>
+        <translation>Hodiny</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="158"/>
         <source>Min.</source>
         <comment>minute</comment>
-        <translation>Мин.</translation>
+        <translation>Minuty</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="175"/>
         <source>Sec.</source>
         <comment>second</comment>
-        <translation>Сек.</translation>
+        <translation>Sekundy</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="229"/>
@@ -362,7 +362,7 @@
     <message>
         <location filename="../settingsdialog.ui" line="236"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Storno</translation>
     </message>
 </context>
 </TS>

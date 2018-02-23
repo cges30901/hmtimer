@@ -32,10 +32,6 @@
         <translation>مؤقت شِيُو-مِينْج</translation>
     </message>
     <message>
-        <source>&amp;Hour</source>
-        <translation type="vanished">&amp;ساعة</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="32"/>
         <source>H&amp;our</source>
         <translation type="unfinished"></translation>
@@ -53,147 +49,142 @@
         <translation>&amp;ثانية</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="81"/>
+        <location filename="../mainwindow.ui" line="83"/>
         <source>Run repeatedly</source>
         <translation>شغّل مرارا وتكرارا</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="90"/>
-        <source>A&amp;t:</source>
+        <location filename="../mainwindow.ui" line="113"/>
+        <source>times</source>
+        <comment>(Run repeatedly N )times</comment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="143"/>
-        <location filename="../mainwindow.cpp" line="131"/>
-        <location filename="../mainwindow.cpp" line="478"/>
-        <location filename="../mainwindow.cpp" line="521"/>
+        <location filename="../mainwindow.ui" line="137"/>
+        <source>A&amp;t:</source>
+        <comment>At a specific time</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="190"/>
+        <location filename="../mainwindow.cpp" line="128"/>
+        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="549"/>
         <source>Start</source>
         <translation>ابدأ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="193"/>
+        <location filename="../mainwindow.ui" line="240"/>
         <source>&amp;Action</source>
         <translation>&amp;الإجراء</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="199"/>
+        <location filename="../mainwindow.ui" line="246"/>
         <source>Turn off monitor</source>
         <translation>أوقف العرض</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="209"/>
+        <location filename="../mainwindow.ui" line="256"/>
         <source>Shutdown</source>
         <translation>أغلق</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="216"/>
+        <location filename="../mainwindow.ui" line="263"/>
         <source>Reboot</source>
         <translation>أعد التشغيل</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="223"/>
+        <location filename="../mainwindow.ui" line="270"/>
         <source>Play Sound</source>
         <translation>شغِّل الصوت</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="233"/>
+        <location filename="../mainwindow.ui" line="280"/>
         <source>Run Program</source>
         <translation>شغِّل البرنامج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="279"/>
+        <location filename="../mainwindow.ui" line="326"/>
         <source>&amp;Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="290"/>
+        <location filename="../mainwindow.ui" line="337"/>
         <source>&amp;File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Help</source>
-        <translation type="vanished">مساعدة</translation>
-    </message>
-    <message>
-        <source>File</source>
-        <translation type="vanished">ملف</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="301"/>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.ui" line="353"/>
+        <location filename="../mainwindow.cpp" line="289"/>
         <source>About Qt</source>
         <translation>حول Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="311"/>
+        <location filename="../mainwindow.ui" line="358"/>
         <source>Homepage</source>
         <translation>الصفحة الرئيسية</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="316"/>
+        <location filename="../mainwindow.ui" line="363"/>
         <source>Settings</source>
         <translation>الإعدادات</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="321"/>
-        <location filename="../mainwindow.cpp" line="54"/>
+        <location filename="../mainwindow.ui" line="368"/>
+        <location filename="../mainwindow.cpp" line="55"/>
         <source>Quit</source>
         <translation>اخرج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="326"/>
+        <location filename="../mainwindow.ui" line="373"/>
         <source>Project Page</source>
         <translation>صفحة المشروع</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="331"/>
+        <location filename="../mainwindow.ui" line="378"/>
         <source>Donate</source>
         <translation>تبرع</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="53"/>
+        <location filename="../mainwindow.cpp" line="54"/>
         <source>Show</source>
         <translation>اعرض</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="135"/>
-        <location filename="../mainwindow.cpp" line="136"/>
+        <location filename="../mainwindow.cpp" line="132"/>
+        <location filename="../mainwindow.cpp" line="133"/>
         <source>Please set the timer</source>
         <translation>رجاءً اضبط المؤقت</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
-        <location filename="../mainwindow.cpp" line="498"/>
+        <location filename="../mainwindow.cpp" line="196"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>Stop</source>
         <translation>أوقف</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</source>
-        <translation type="vanished">&lt;h3&gt;مؤقت شِيُو-مِينْج %1&lt;/h3&gt;&lt;br&gt;المؤلف: شيو-مينج تشانغ&lt;br&gt;البريد الإلكتروني:cges30901@gmail.com&lt;br&gt;الرخصة:GPL v3</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="445"/>
         <source>Close hmtimer?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="422"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="496"/>
         <source>Audio Error</source>
         <translation>خطأ صوتي</translation>
     </message>
@@ -307,11 +298,13 @@
     <message>
         <location filename="../settingsdialog.ui" line="39"/>
         <source>Beep last</source>
+        <comment>Beep last( N seconds)</comment>
         <translation>مدى الزمارة</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="49"/>
         <source>seconds</source>
+        <comment>(Beep last N )seconds</comment>
         <translation>ثواني</translation>
     </message>
     <message>

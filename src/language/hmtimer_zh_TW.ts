@@ -49,120 +49,131 @@
         <translation>秒(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="81"/>
+        <location filename="../mainwindow.ui" line="83"/>
         <source>Run repeatedly</source>
         <translation>重複執行</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="90"/>
         <source>A&amp;t:</source>
+        <translation type="vanished">在(&amp;T)：</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="113"/>
+        <source>times</source>
+        <comment>(Run repeatedly N )times</comment>
+        <translation>次</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="137"/>
+        <source>A&amp;t:</source>
+        <comment>At a specific time</comment>
         <translation>在(&amp;T)：</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="143"/>
-        <location filename="../mainwindow.cpp" line="131"/>
-        <location filename="../mainwindow.cpp" line="478"/>
-        <location filename="../mainwindow.cpp" line="521"/>
+        <location filename="../mainwindow.ui" line="190"/>
+        <location filename="../mainwindow.cpp" line="128"/>
+        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="549"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="193"/>
+        <location filename="../mainwindow.ui" line="240"/>
         <source>&amp;Action</source>
         <translation>動作(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="199"/>
+        <location filename="../mainwindow.ui" line="246"/>
         <source>Turn off monitor</source>
         <translation>關閉監視器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="209"/>
+        <location filename="../mainwindow.ui" line="256"/>
         <source>Shutdown</source>
         <translation>關機</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="216"/>
+        <location filename="../mainwindow.ui" line="263"/>
         <source>Reboot</source>
         <translation>重新開機</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="223"/>
+        <location filename="../mainwindow.ui" line="270"/>
         <source>Play Sound</source>
         <translation>播放聲音</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="233"/>
+        <location filename="../mainwindow.ui" line="280"/>
         <source>Run Program</source>
         <translation>執行程式</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="279"/>
+        <location filename="../mainwindow.ui" line="326"/>
         <source>&amp;Help</source>
         <translation>說明(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="290"/>
+        <location filename="../mainwindow.ui" line="337"/>
         <source>&amp;File</source>
         <translation>檔案(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="301"/>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.ui" line="353"/>
+        <location filename="../mainwindow.cpp" line="289"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="311"/>
+        <location filename="../mainwindow.ui" line="358"/>
         <source>Homepage</source>
         <translation>首頁</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="316"/>
+        <location filename="../mainwindow.ui" line="363"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="321"/>
-        <location filename="../mainwindow.cpp" line="54"/>
+        <location filename="../mainwindow.ui" line="368"/>
+        <location filename="../mainwindow.cpp" line="55"/>
         <source>Quit</source>
         <translation>結束</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="326"/>
+        <location filename="../mainwindow.ui" line="373"/>
         <source>Project Page</source>
         <translation>專案頁面</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="331"/>
+        <location filename="../mainwindow.ui" line="378"/>
         <source>Donate</source>
         <translation>捐款</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="53"/>
+        <location filename="../mainwindow.cpp" line="54"/>
         <source>Show</source>
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="135"/>
-        <location filename="../mainwindow.cpp" line="136"/>
+        <location filename="../mainwindow.cpp" line="132"/>
+        <location filename="../mainwindow.cpp" line="133"/>
         <source>Please set the timer</source>
         <translation>請設定計時器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
-        <location filename="../mainwindow.cpp" line="498"/>
+        <location filename="../mainwindow.cpp" line="196"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;如果你發現任何錯誤或有任何建議，請寄 e-mail 聯絡我。</translation>
     </message>
@@ -171,17 +182,17 @@
         <translation type="vanished">&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="445"/>
         <source>Close hmtimer?</source>
         <translation>關閉 hmtimer 嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="422"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>計時器正在執行。你真的想要退出嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="496"/>
         <source>Audio Error</source>
         <translation>音訊錯誤</translation>
     </message>
@@ -301,13 +312,23 @@
         <translation>最小化到系統匣</translation>
     </message>
     <message>
+        <source>Beep last</source>
+        <translation type="vanished">最後</translation>
+    </message>
+    <message>
+        <source>seconds</source>
+        <translation type="vanished">秒發出嗶聲</translation>
+    </message>
+    <message>
         <location filename="../settingsdialog.ui" line="39"/>
         <source>Beep last</source>
+        <comment>Beep last( N seconds)</comment>
         <translation>最後</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="49"/>
         <source>seconds</source>
+        <comment>(Beep last N )seconds</comment>
         <translation>秒發出嗶聲</translation>
     </message>
     <message>

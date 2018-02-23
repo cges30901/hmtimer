@@ -40,7 +40,9 @@ TRANSLATIONS=language/hmtimer.ts \
     language/hmtimer_zh_TW.ts \
     language/hmtimer_ar.ts \
     language/hmtimer_ru.ts \
-    language/hmtimer_be.ts
+    language/hmtimer_be.ts \
+    language/hmtimer_cs.ts \
+    language/hmtimer_de.ts
 
 RESOURCES=hmtimer.qrc
 
