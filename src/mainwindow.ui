@@ -110,7 +110,7 @@
            <bool>false</bool>
           </property>
           <property name="text">
-           <string>times</string>
+           <string comment="(Run repeatedly N )times">times</string>
           </property>
          </widget>
         </item>
@@ -134,7 +134,7 @@
         <item>
          <widget class="QPushButton" name="btnAt">
           <property name="text">
-           <string>A&amp;t:</string>
+           <string comment="At a specific time">A&amp;t:</string>
           </property>
          </widget>
         </item>

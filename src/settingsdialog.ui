@@ -36,7 +36,7 @@
          <item>
           <widget class="QCheckBox" name="chbBeep">
            <property name="text">
-            <string>Beep last</string>
+            <string comment="Beep last( N seconds)">Beep last</string>
            </property>
           </widget>
          </item>
@@ -46,7 +46,7 @@
          <item>
           <widget class="QLabel" name="label">
            <property name="text">
-            <string>seconds</string>
+            <string comment="(Beep last N )seconds">seconds</string>
            </property>
           </widget>
          </item>
