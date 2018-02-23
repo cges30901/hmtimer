@@ -79,6 +79,8 @@ private slots:
     void on_actionProject_Page_triggered();
     void on_actionDonate_triggered();
     void on_btnAt_clicked();
+    void on_chbRepeatTimes_toggled(bool checked);
+    void on_chbRunRepeatedly_toggled(bool checked);
 };
 
 #endif // MAINWINDOW_H

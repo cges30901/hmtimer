@@ -266,7 +266,13 @@ void MainWindow::action()
         process->start(programOptions->lneFilename_Text+" "+programOptions->lneParameters_Text);
     }
     if(chbRunRepeatedly->isChecked()){
-        startTimer();
+        if(!chbRepeatTimes->isChecked()){
+            startTimer();
+        }
+        else if(spbRepeatTimes->value()>1){
+            spbRepeatTimes->stepDown();
+            startTimer();
+        }
     }
 }
 
@@ -314,6 +320,7 @@ void MainWindow::writeSettings()
     settings.beginGroup("mainwindow");
     settings.setValue("audioFile",audioFile);
     settings.setValue("chbRunRepeatedly",chbRunRepeatedly->isChecked());
+    settings.setValue("chbRepeatTimes",chbRepeatTimes->isChecked());
     settings.setValue("monitor",rbtMonitor->isChecked());
     settings.setValue("shutdown",rbtShutdown->isChecked());
     settings.setValue("reboot",rbtReboot->isChecked());
@@ -365,7 +372,9 @@ void MainWindow::readSettings()
     //mainwindow
     settings.beginGroup("mainwindow");
     audioFile=settings.value("audioFile").toString();
+    chbRepeatTimes->setChecked(settings.value("chbRepeatTimes",false).toBool());
     chbRunRepeatedly->setChecked(settings.value("chbRunRepeatedly",false).toBool());
+    on_chbRunRepeatedly_toggled(chbRunRepeatedly->isChecked());
     rbtMonitor->setChecked(settings.value("monitor").toBool());
     rbtShutdown->setChecked(settings.value("shutdown").toBool());
     rbtReboot->setChecked(settings.value("reboot").toBool());
@@ -501,6 +510,7 @@ void MainWindow::stopTimer()
     rbtSound->setEnabled(true);
     rbtRunprogram->setEnabled(true);
     chbRunRepeatedly->setEnabled(true);
+    on_chbRunRepeatedly_toggled(chbRunRepeatedly->isChecked());
     btnAt->setEnabled(true);
     timer_enabled=!timer_enabled;
 }
@@ -521,6 +531,9 @@ void MainWindow::startTimer()
     rbtSound->setEnabled(false);
     rbtRunprogram->setEnabled(false);
     chbRunRepeatedly->setEnabled(false);
+    chbRepeatTimes->setEnabled(false);
+    spbRepeatTimes->setEnabled(false);
+    labelRepeatTimes->setEnabled(false);
     btnAt->setEnabled(false);
     timer_enabled=!timer_enabled;
     if(rbtSound->isChecked() and player->state()!=QMediaPlayer::PlayingState){
@@ -580,4 +593,23 @@ void MainWindow::setAtTime()
     spbHour->setValue(timeSet/3600);
     spbMinute->setValue(timeSet/60%60);
     spbSecond->setValue(timeSet%60);
+}
+
+void MainWindow::on_chbRepeatTimes_toggled(bool checked)
+{
+    spbRepeatTimes->setEnabled(checked);
+    labelRepeatTimes->setEnabled(checked);
+}
+
+void MainWindow::on_chbRunRepeatedly_toggled(bool checked)
+{
+    if(!checked){
+        chbRepeatTimes->setEnabled(false);
+        spbRepeatTimes->setEnabled(false);
+        labelRepeatTimes->setEnabled(false);
+    }
+    else{
+        chbRepeatTimes->setEnabled(true);
+        on_chbRepeatTimes_toggled(chbRepeatTimes->isChecked());
+    }
 }

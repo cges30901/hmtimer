@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>520</width>
+    <width>527</width>
     <height>308</height>
    </rect>
   </property>
@@ -76,11 +76,58 @@
        </layout>
       </item>
       <item>
-       <widget class="QCheckBox" name="chbRunRepeatedly">
-        <property name="text">
-         <string>Run repeatedly</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QCheckBox" name="chbRunRepeatedly">
+          <property name="text">
+           <string>Run repeatedly</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="chbRepeatTimes">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="spbRepeatTimes">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="value">
+           <number>2</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelRepeatTimes">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>times</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </item>
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -270,8 +317,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>520</width>
-     <height>30</height>
+     <width>527</width>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHelp">
@@ -336,7 +383,6 @@
   <tabstop>spbHour</tabstop>
   <tabstop>spbMinute</tabstop>
   <tabstop>spbSecond</tabstop>
-  <tabstop>chbRunRepeatedly</tabstop>
   <tabstop>btnStart</tabstop>
   <tabstop>rbtMonitor</tabstop>
   <tabstop>rbtShutdown</tabstop>
