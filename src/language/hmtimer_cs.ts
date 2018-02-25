@@ -16,7 +16,7 @@
     <message>
         <location filename="../atdialog.ui" line="85"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="92"/>
@@ -29,7 +29,7 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <source>Hsiu-Ming&apos;s Timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Hsiu-Ming&apos;s Timer</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="32"/>
@@ -54,6 +54,10 @@
         <translation>Spouštět opakovaně</translation>
     </message>
     <message>
+        <source>A&amp;t:</source>
+        <translation type="vanished">Za&amp;čít v:</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.ui" line="113"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
@@ -71,7 +75,7 @@
         <location filename="../mainwindow.cpp" line="502"/>
         <location filename="../mainwindow.cpp" line="549"/>
         <source>Start</source>
-        <translation type="unfinished"></translation>
+        <translation>Start</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="240"/>
@@ -166,7 +170,7 @@
         <location filename="../mainwindow.cpp" line="196"/>
         <location filename="../mainwindow.cpp" line="523"/>
         <source>Stop</source>
-        <translation type="unfinished"></translation>
+        <translation>Stop</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
@@ -232,7 +236,7 @@
     <message>
         <location filename="../passworddialog.ui" line="66"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../passworddialog.ui" line="73"/>
@@ -260,7 +264,7 @@
     <message>
         <location filename="../selectfiledialog.ui" line="32"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="43"/>
@@ -270,7 +274,7 @@
     <message>
         <location filename="../selectfiledialog.ui" line="83"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="90"/>
@@ -294,6 +298,14 @@
         <location filename="../settingsdialog.ui" line="30"/>
         <source>Minimize to tray</source>
         <translation>Minimalizovat do lišty</translation>
+    </message>
+    <message>
+        <source>Beep last</source>
+        <translation type="vanished">Poslední pípnutí</translation>
+    </message>
+    <message>
+        <source>seconds</source>
+        <translation type="vanished">sekundy</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="39"/>
@@ -357,7 +369,7 @@
     <message>
         <location filename="../settingsdialog.ui" line="229"/>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="236"/>
