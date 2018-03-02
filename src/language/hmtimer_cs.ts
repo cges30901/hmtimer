@@ -11,7 +11,7 @@
     <message>
         <location filename="../atdialog.ui" line="20"/>
         <source>Enter the time you want this program to do the action:</source>
-        <translation>Zadejte čas, ve kterém chcete tuto akci provést:</translation>
+        <translation>Zadejte čas, ve kterém chcete akci provést:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="85"/>
@@ -61,7 +61,7 @@
         <location filename="../mainwindow.ui" line="113"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
-        <translation type="unfinished"></translation>
+        <translation>krát</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="137"/>
@@ -71,9 +71,9 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="190"/>
-        <location filename="../mainwindow.cpp" line="128"/>
-        <location filename="../mainwindow.cpp" line="502"/>
-        <location filename="../mainwindow.cpp" line="549"/>
+        <location filename="../mainwindow.cpp" line="129"/>
+        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="550"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
@@ -119,13 +119,13 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="348"/>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>About</source>
         <translation>O programu</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="353"/>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <source>About Qt</source>
         <translation>O knihovně Qt</translation>
     </message>
@@ -141,7 +141,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="368"/>
-        <location filename="../mainwindow.cpp" line="55"/>
+        <location filename="../mainwindow.cpp" line="56"/>
         <source>Quit</source>
         <translation>Ukončit</translation>
     </message>
@@ -156,39 +156,39 @@
         <translation>Darovat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="54"/>
+        <location filename="../mainwindow.cpp" line="55"/>
         <source>Show</source>
         <translation>Ukázat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="132"/>
         <location filename="../mainwindow.cpp" line="133"/>
+        <location filename="../mainwindow.cpp" line="134"/>
         <source>Please set the timer</source>
         <translation>Nastavte prosím časovač</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="196"/>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>Stop</source>
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;Pokud zjistíte jakékoliv chyby nebo máte nějaké návrhy, neváhejte a kontaktujte mě na e-mailu.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Close hmtimer?</source>
         <translation>Ukončit časovač?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>Časovač je spuštěn. Skutečně chcete skončit?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="497"/>
         <source>Audio Error</source>
         <translation>Chyba přehrávání</translation>
     </message>

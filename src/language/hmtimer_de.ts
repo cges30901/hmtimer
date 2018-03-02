@@ -67,9 +67,9 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="190"/>
-        <location filename="../mainwindow.cpp" line="128"/>
-        <location filename="../mainwindow.cpp" line="502"/>
-        <location filename="../mainwindow.cpp" line="549"/>
+        <location filename="../mainwindow.cpp" line="129"/>
+        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="550"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
@@ -115,13 +115,13 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="348"/>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="353"/>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <source>About Qt</source>
         <translation>Über Qt</translation>
     </message>
@@ -137,7 +137,7 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="368"/>
-        <location filename="../mainwindow.cpp" line="55"/>
+        <location filename="../mainwindow.cpp" line="56"/>
         <source>Quit</source>
         <translation>Beenden</translation>
     </message>
@@ -152,39 +152,39 @@
         <translation>Spenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="54"/>
+        <location filename="../mainwindow.cpp" line="55"/>
         <source>Show</source>
         <translation>Anzeigen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="132"/>
         <location filename="../mainwindow.cpp" line="133"/>
+        <location filename="../mainwindow.cpp" line="134"/>
         <source>Please set the timer</source>
         <translation>Bitte setzen Sie die Timer-Zeit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="196"/>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>Stop</source>
         <translation>Stopp</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="295"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;E-Mail: cges30901@gmail.com&lt;br&gt;Lizenz: GPL v3&lt;br&gt;&lt;br&gt;Wenn Sie Fehler finden oder Verbesserungsvorschläge haben, kontaktieren Sie mich gerne via E-Mail</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Close hmtimer?</source>
         <translation>hmtimer beenden?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>Ein Timer läuft. Wirklich beenden?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="497"/>
         <source>Audio Error</source>
         <translation>Audio-Fehler</translation>
     </message>
