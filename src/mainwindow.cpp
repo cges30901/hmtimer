@@ -303,7 +303,7 @@ void MainWindow::on_actionAbout_triggered()
 
 void MainWindow::on_actionHomepage_triggered()
 {
-    QDesktopServices::openUrl(QUrl("https://hsiumingstimer.sourceforge.io/"));
+    QDesktopServices::openUrl(QUrl("https://cges30901.github.io/hmtimer-website/"));
 }
 
 void MainWindow::writeSettings()
@@ -569,7 +569,7 @@ void MainWindow::on_actionProject_Page_triggered()
 
 void MainWindow::on_actionDonate_triggered()
 {
-    QDesktopServices::openUrl(QUrl("https://hsiumingstimer.sourceforge.io/donate.html"));
+    QDesktopServices::openUrl(QUrl("https://cges30901.github.io/hmtimer-website/donate.html"));
 }
 
 void MainWindow::on_btnAt_clicked()
