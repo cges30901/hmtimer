@@ -81,6 +81,7 @@ private slots:
     void on_btnAt_clicked();
     void on_chbRepeatTimes_toggled(bool checked);
     void on_chbRunRepeatedly_toggled(bool checked);
+    void on_actionBlog_triggered();
 };
 
 #endif // MAINWINDOW_H

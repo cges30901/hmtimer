@@ -614,3 +614,8 @@ void MainWindow::on_chbRunRepeatedly_toggled(bool checked)
         on_chbRepeatTimes_toggled(chbRepeatTimes->isChecked());
     }
 }
+
+void MainWindow::on_actionBlog_triggered()
+{
+    QDesktopServices::openUrl(QUrl("https://hsiu-ming.blogspot.com/"));
+}

@@ -328,6 +328,7 @@
     <addaction name="actionHomepage"/>
     <addaction name="actionProject_Page"/>
     <addaction name="actionDonate"/>
+    <addaction name="actionBlog"/>
     <addaction name="separator"/>
     <addaction name="actionAbout_Qt"/>
     <addaction name="actionAbout"/>
@@ -376,6 +377,11 @@
   <action name="actionDonate">
    <property name="text">
     <string>Donate</string>
+   </property>
+  </action>
+  <action name="actionBlog">
+   <property name="text">
+    <string>Blog</string>
    </property>
   </action>
  </widget>
