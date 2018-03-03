@@ -85,3 +85,9 @@ version 2.5 2018.02.15
 -remove command line option "-s". Timer is started if "-t" is found
 -Linux: add man page
 -miner fix and refactor
+
+version 2.6 2018.03.03
+-new homepage: https://cges30901.github.io/hmtimer-website/
+-fix: If you make hmtimer do action at a specific time and "Run repeatedly " is checked, set the timer to the next specific time
+-add function to limit repeat times
+-minor modification

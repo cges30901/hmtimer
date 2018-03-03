@@ -1,7 +1,7 @@
 #
 # spec file for package hmtimer
 #
-# Copyright (c) 2015 Hsiu-Ming Chang <cges30901@gmail.com>
+# Copyright (c) 2018 Hsiu-Ming Chang <cges30901@gmail.com>
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -17,10 +17,10 @@
 
 Summary:        A graphical shutdown timer
 Name:           hmtimer
-Version:        2.5
+Version:        2.6
 Release:        1
 License:        GPL-3.0
-Url:            https://hsiumingstimer.sourceforge.io/
+Url:            https://cges30901.github.io/hmtimer-website/
 Group:          Productivity/Other
 Source0:        %{name}-%{version}-src.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
