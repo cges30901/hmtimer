@@ -45,6 +45,7 @@ Hsiu-Ming's Timer is a graphical shutdown timer for Linux and Windows. It enable
 qmake-qt5
 make
 gzip hmtimer.1
+lrelease src/language/hmtimer_*.ts
 
 %install
 install -D -m0755 src/hmtimer %{buildroot}%{_bindir}/hmtimer
