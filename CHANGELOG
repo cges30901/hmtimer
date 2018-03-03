@@ -90,4 +90,5 @@ version 2.6 2018.03.03
 -new homepage: https://cges30901.github.io/hmtimer-website/
 -fix: If you make hmtimer do action at a specific time and "Run repeatedly " is checked, set the timer to the next specific time
 -add function to limit repeat times
+-add Czech and German translation
 -minor modification
