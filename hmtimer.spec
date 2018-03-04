@@ -29,6 +29,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Multimedia)
 BuildRequires:  pkgconfig(Qt5Widgets)
 BuildRequires:  pkgconfig(Qt5DBus)
+BuildRequires:  qt5-linguist
 %if 0%{?suse_version}
 BuildRequires:  update-desktop-files
 %endif
@@ -45,7 +46,7 @@ Hsiu-Ming's Timer is a graphical shutdown timer for Linux and Windows. It enable
 qmake-qt5
 make
 gzip hmtimer.1
-lrelease src/language/hmtimer_*.ts
+lrelease-qt5 src/language/hmtimer_*.ts
 
 %install
 install -D -m0755 src/hmtimer %{buildroot}%{_bindir}/hmtimer
