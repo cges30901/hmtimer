@@ -564,7 +564,7 @@ void MainWindow::actQuit_Triggered()
 
 void MainWindow::on_actionProject_Page_triggered()
 {
-    QDesktopServices::openUrl(QUrl("https://sourceforge.net/projects/hsiumingstimer/"));
+    QDesktopServices::openUrl(QUrl("https://github.com/cges30901/hmtimer"));
 }
 
 void MainWindow::on_actionDonate_triggered()
