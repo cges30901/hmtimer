@@ -78,7 +78,11 @@ void SettingsDialog::on_btnOk_clicked()
         file<<"[Desktop Entry]\n"
             <<"Type=Application\n"
             <<"Name=hmtimer\n"
+#ifdef FLATPAK
+            <<"Exec=flatpak run io.github.cges30901.hmtimer";
+#else
             <<"Exec="<<qPrintable(qApp->applicationFilePath());
+#endif
         if(chbMinimizeOnStartup->isChecked()){
             file<<" -m";
         }

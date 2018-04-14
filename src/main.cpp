@@ -48,9 +48,13 @@ int main(int argc,char *argv[])
         }
     }
     QTranslator translator;
+#ifdef FLATPAK
+    translator.load(QLocale(),"hmtimer","_","/app/share/hmtimer");
+#else
     if(translator.load(QLocale(),"hmtimer","_",app.applicationDirPath()+"/language")!=true){
         translator.load(QLocale(),"hmtimer","_","/usr/share/hmtimer");
     }
+#endif
     app.installTranslator(&translator);
     MainWindow *window=new MainWindow;
     if(showWindow==true){
