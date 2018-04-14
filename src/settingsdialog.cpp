@@ -79,12 +79,11 @@ void SettingsDialog::on_btnOk_clicked()
             <<"Type=Application\n"
             <<"Name=hmtimer\n"
             <<"Exec="<<qPrintable(qApp->applicationFilePath());
-        file<<" -t "<<qPrintable(QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value()));
         if(chbMinimizeOnStartup->isChecked()){
             file<<" -m";
         }
         if(chbStartTimerOnStartup->isChecked()){
-            file<<" -s";
+            file<<" -t "<<qPrintable(QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value()));
         }
         file<<"\nTerminal=false\n"
             <<"Hidden=false";
