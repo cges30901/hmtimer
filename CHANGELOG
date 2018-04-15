@@ -92,3 +92,9 @@ version 2.6 2018.03.03
 -add function to limit repeat times
 -add Czech and German translation
 -minor modification
+
+version 2.6.1 2018.04.15
+-fix parameter in autostart
+-update Russian translation
+-flatpak build
+
