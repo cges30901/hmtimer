@@ -6,22 +6,22 @@
     <message>
         <location filename="../atdialog.ui" line="14"/>
         <source>At a specific time:</source>
-        <translation type="unfinished"></translation>
+        <translation>В определённое время:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="20"/>
         <source>Enter the time you want this program to do the action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Введите время, когда эта программа должна выполнить действие:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="85"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="92"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
@@ -34,7 +34,7 @@
     <message>
         <location filename="../mainwindow.ui" line="32"/>
         <source>H&amp;our</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Час</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="49"/>
@@ -51,19 +51,19 @@
     <message>
         <location filename="../mainwindow.ui" line="83"/>
         <source>Run repeatedly</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторение</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="113"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
-        <translation type="unfinished"></translation>
+        <translation>раз</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="137"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;В:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="190"/>
@@ -101,66 +101,71 @@
     <message>
         <location filename="../mainwindow.ui" line="280"/>
         <source>Run Program</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск программы</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="326"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Помощь</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="337"/>
+        <location filename="../mainwindow.ui" line="338"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="348"/>
+        <location filename="../mainwindow.ui" line="349"/>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="353"/>
+        <location filename="../mainwindow.ui" line="354"/>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>About Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>О Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="358"/>
+        <location filename="../mainwindow.ui" line="359"/>
         <source>Homepage</source>
-        <translation type="unfinished"></translation>
+        <translation>Сайт программы</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="363"/>
+        <location filename="../mainwindow.ui" line="364"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="368"/>
+        <location filename="../mainwindow.ui" line="369"/>
         <location filename="../mainwindow.cpp" line="56"/>
         <source>Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="373"/>
+        <location filename="../mainwindow.ui" line="374"/>
         <source>Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Проект на SourceForge</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="378"/>
+        <location filename="../mainwindow.ui" line="379"/>
         <source>Donate</source>
+        <translation>Пожертвование</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="384"/>
+        <source>Blog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="55"/>
         <source>Show</source>
-        <translation type="unfinished"></translation>
+        <translation>Показать</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="133"/>
         <location filename="../mainwindow.cpp" line="134"/>
         <source>Please set the timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Пожалуйста, установите таймер</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="197"/>
@@ -171,22 +176,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Автор: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;Лицензия: GPL v3&lt;br&gt;&lt;br&gt;Если вы обнаружите какие-либо ошибки или есть предложения, пожалуйста, не стесняйтесь связаться со мной, отправьте мне по электронной почте.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="446"/>
         <source>Close hmtimer?</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрыть hmtimer?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="447"/>
         <source>Timer is running. Do you really want to quit?</source>
-        <translation type="unfinished"></translation>
+        <translation>Таймер запущен. Ты действительно хочешь уйти?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="497"/>
         <source>Audio Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка аудио</translation>
     </message>
 </context>
 <context>
@@ -194,27 +199,27 @@
     <message>
         <location filename="../newpassworddialog.ui" line="14"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароль</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.ui" line="22"/>
         <source>Confirm password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Повторить пароль:</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.ui" line="29"/>
         <source>Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароль:</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.cpp" line="22"/>
         <source>Error</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка</translation>
     </message>
     <message>
         <location filename="../newpassworddialog.cpp" line="23"/>
         <source>password do not match</source>
-        <translation type="unfinished"></translation>
+        <translation>пароль не совпадает</translation>
     </message>
 </context>
 <context>
@@ -222,27 +227,27 @@
     <message>
         <location filename="../passworddialog.ui" line="14"/>
         <source>Password</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароль</translation>
     </message>
     <message>
         <location filename="../passworddialog.ui" line="22"/>
         <source>Password:</source>
-        <translation type="unfinished"></translation>
+        <translation>Пароль:</translation>
     </message>
     <message>
         <location filename="../passworddialog.ui" line="66"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <location filename="../passworddialog.ui" line="73"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../passworddialog.cpp" line="25"/>
         <source>Wrong password</source>
-        <translation type="unfinished"></translation>
+        <translation>Неверный пароль</translation>
     </message>
 </context>
 <context>
@@ -250,32 +255,32 @@
     <message>
         <location filename="../selectfiledialog.ui" line="14"/>
         <source>Select File</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать файл</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="22"/>
         <source>Filename:</source>
-        <translation type="unfinished"></translation>
+        <translation>Имя файла:</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="32"/>
         <source>...</source>
-        <translation type="unfinished"></translation>
+        <translation>...</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="43"/>
         <source>Parameters:</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметры:</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="83"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="90"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 <context>
@@ -283,64 +288,64 @@
     <message>
         <location filename="../settingsdialog.ui" line="14"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="24"/>
         <source>General</source>
-        <translation type="unfinished"></translation>
+        <translation>Общие</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="30"/>
         <source>Minimize to tray</source>
-        <translation type="unfinished"></translation>
+        <translation>Свернуть в трей</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="39"/>
         <source>Beep last</source>
         <comment>Beep last( N seconds)</comment>
-        <translation type="unfinished"></translation>
+        <translation>Звуковой сигнал последние</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="49"/>
         <source>seconds</source>
         <comment>(Beep last N )seconds</comment>
-        <translation type="unfinished"></translation>
+        <translation>секунд</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="71"/>
         <source>Use audio file to play beep sound</source>
-        <translation type="unfinished"></translation>
+        <translation>Использование аудио файла для воспроизведения звукового сигнала</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="78"/>
         <source>Password protection</source>
-        <translation type="unfinished"></translation>
+        <translation>Защита паролем</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="99"/>
         <source>Startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Автозапуск</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="105"/>
         <source>Run Hsiu-Ming&apos;s Timer on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить Hsiu-Ming&apos;s Timer в автозапуск</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="112"/>
         <source>Minimize to tray on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Свернуть в трей при автозапуске</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="119"/>
         <source>Start timer on startup</source>
-        <translation type="unfinished"></translation>
+        <translation>Старт таймера при автозагрузке</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="144"/>
         <source>Hour</source>
-        <translation type="unfinished"></translation>
+        <translation>Час</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="158"/>
@@ -357,12 +362,12 @@
     <message>
         <location filename="../settingsdialog.ui" line="229"/>
         <source>Ok</source>
-        <translation type="unfinished"></translation>
+        <translation>ОК</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="236"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отмена</translation>
     </message>
 </context>
 </TS>
