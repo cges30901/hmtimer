@@ -52,9 +52,15 @@ install_bin.path=/usr/bin
 install_translation.files=language/hmtimer_*.qm
 install_translation.path=/usr/share/hmtimer
 
-install_icon.files=hmtimer.png
-install_icon.path=/usr/share/icons/hicolor/128x128/apps
+install_icon128.files=icon/128x128/hmtimer.png
+install_icon128.path=/usr/share/icons/hicolor/128x128/apps
 
-INSTALLS+=install_bin install_translation install_icon
+install_icon64.files=icon/64x64/hmtimer.png
+install_icon64.path=/usr/share/icons/hicolor/64x64/apps
+
+install_icon48.files=icon/48x48/hmtimer.png
+install_icon48.path=/usr/share/icons/hicolor/48x48/apps
+
+INSTALLS+=install_bin install_translation install_icon128 install_icon64 install_icon48
 
 win32:RC_ICONS += hmtimer.ico
