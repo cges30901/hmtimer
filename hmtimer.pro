@@ -6,5 +6,11 @@ TEMPLATE = subdirs
 SUBDIRS=src
 
 install_desktop.files=hmtimer.desktop
-install_desktop.path=/usr/share/applications
-INSTALLS+=install_desktop
+CONFIG(flatpak):install_desktop.path=/app/share/applications
+else:install_desktop.path=/usr/share/applications
+
+install_appdata.files=hmtimer.appdata.xml
+CONFIG(flatpak):install_appdata.path=/app/share/appdata
+else:install_appdata.path=/usr/share/appdata
+
+INSTALLS+=install_desktop install_appdata

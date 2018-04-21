@@ -47,19 +47,24 @@ TRANSLATIONS=language/hmtimer.ts \
 RESOURCES=hmtimer.qrc
 
 install_bin.files=hmtimer
-install_bin.path=/usr/bin
+CONFIG(flatpak):install_bin.path=/app/bin
+else:install_bin.path=/usr/bin
 
 install_translation.files=language/hmtimer_*.qm
-install_translation.path=/usr/share/hmtimer
+CONFIG(flatpak):install_translation.path=/app/share/hmtimer
+else:install_translation.path=/usr/share/hmtimer
 
 install_icon128.files=icon/128x128/hmtimer.png
-install_icon128.path=/usr/share/icons/hicolor/128x128/apps
+CONFIG(flatpak):install_icon128.path=/app/share/icons/hicolor/128x128/apps
+else:install_icon128.path=/usr/share/icons/hicolor/128x128/apps
 
 install_icon64.files=icon/64x64/hmtimer.png
-install_icon64.path=/usr/share/icons/hicolor/64x64/apps
+CONFIG(flatpak):install_icon64.path=/app/share/icons/hicolor/64x64/apps
+else:install_icon64.path=/usr/share/icons/hicolor/64x64/apps
 
 install_icon48.files=icon/48x48/hmtimer.png
-install_icon48.path=/usr/share/icons/hicolor/48x48/apps
+CONFIG(flatpak):install_icon48.path=/app/share/icons/hicolor/48x48/apps
+else:install_icon48.path=/usr/share/icons/hicolor/48x48/apps
 
 INSTALLS+=install_bin install_translation install_icon128 install_icon64 install_icon48
 
