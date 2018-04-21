@@ -14,7 +14,7 @@
 
 Summary:        A graphical shutdown timer
 Name:           hmtimer
-Version:        2.6.1
+Version:        2.6.2
 Release:        1
 License:        GPL-3.0
 Url:            https://cges30901.github.io/hmtimer-website/

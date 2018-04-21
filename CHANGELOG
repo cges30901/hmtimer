@@ -98,3 +98,7 @@ version 2.6.1 2018.04.15
 -update Russian translation
 -flatpak build
 
+version 2.6.2 2018.04.21
+-add appdata
+-fix install for flatpak
+
