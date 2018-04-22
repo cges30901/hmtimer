@@ -2,8 +2,9 @@
 Type=Application
 Name=hmtimer
 GenericName=System Shut Down Utility
-Icon=hmtimer
+Icon=io.github.cges30901.hmtimer
 Exec=hmtimer
 Terminal=false
 Hidden=false
 Categories=Utility;Qt;
+
