@@ -11,6 +11,8 @@ QT += multimedia
 QT += dbus
 }
 
+CONFIG(flatpak):DEFINES+=FLATPAK
+
 # Input
 FORMS += mainwindow.ui \
     selectfiledialog.ui \
