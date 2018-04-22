@@ -29,6 +29,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):QDialog(parent)
 {
     setupUi(this);
+#ifdef FLATPAK
+    tabWidget->setTabEnabled(1,false);
+#endif
     this->programOptions=programOptions;
     tabWidget->setCurrentIndex(0);
 
@@ -72,17 +75,13 @@ void SettingsDialog::on_btnOk_clicked()
     programOptions->spbStartupMinute_Value=spbStartupMinute->value();
     programOptions->spbStartupSecond_Value=spbStartupSecond->value();
 
-#ifdef Q_OS_LINUX
+#if defined(Q_OS_LINUX) && !defined(FLATPAK)
     if(chbStartup->isChecked()){
         std::ofstream file(qPrintable(QDir::homePath()+"/.config/autostart/hmtimer.desktop"));
         file<<"[Desktop Entry]\n"
             <<"Type=Application\n"
             <<"Name=hmtimer\n"
-#ifdef FLATPAK
-            <<"Exec=flatpak run io.github.cges30901.hmtimer";
-#else
             <<"Exec="<<qPrintable(qApp->applicationFilePath());
-#endif
         if(chbMinimizeOnStartup->isChecked()){
             file<<" -m";
         }
