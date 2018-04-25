@@ -40,10 +40,10 @@ Hsiu-Ming's Timer is a graphical shutdown timer for Linux and Windows. It enable
 %setup -q
 
 %build
+lrelease-qt5 src/language/hmtimer_*.ts
 qmake-qt5
 make
 gzip hmtimer.1
-lrelease-qt5 src/language/hmtimer_*.ts
 
 %install
 make INSTALL_ROOT="%{buildroot}" install
