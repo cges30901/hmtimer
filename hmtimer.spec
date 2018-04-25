@@ -46,14 +46,10 @@ gzip hmtimer.1
 lrelease-qt5 src/language/hmtimer_*.ts
 
 %install
-install -D -m0755 src/hmtimer %{buildroot}%{_bindir}/hmtimer
-install -D -m0644 -t %{buildroot}%{_datadir}/hmtimer src/language/hmtimer_*.qm
-install -D -m0644 hmtimer.desktop %{buildroot}%{_datadir}/applications/hmtimer.desktop
-install -D -m0644 src/hmtimer.png %{buildroot}%{_datadir}/icons/hicolor/128x128/apps/hmtimer.png
-install -D -m0644 src/hmtimer48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/hmtimer.png
+make INSTALL_ROOT="%{buildroot}" install
 install -D -m0644 hmtimer.1.gz %{buildroot}%{_mandir}/man1/hmtimer.1.gz
 %if 0%{?suse_version}
-%suse_update_desktop_file -r %{name} Utility DesktopUtility
+%suse_update_desktop_file -r io.github.cges30901.hmtimer Utility DesktopUtility
 %endif
 
 %clean
@@ -63,7 +59,8 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %doc LICENSE
 %{_bindir}/hmtimer
-%{_datadir}/applications/hmtimer.desktop
+%{_datadir}/appdata/io.github.cges30901.hmtimer.appdata.xml
+%{_datadir}/applications/io.github.cges30901.hmtimer.desktop
 %{_datadir}/hmtimer/
 %{_datadir}/icons/hicolor/
 %{_mandir}/man1/hmtimer.1.gz
