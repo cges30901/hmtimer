@@ -256,7 +256,20 @@ void MainWindow::action()
     }
     else if (rbtMonitor->isChecked()){
 #ifdef Q_OS_LINUX
-        system("xset dpms force off");
+        QString wayland=QProcessEnvironment::systemEnvironment().value("WAYLAND_DISPLAY");
+        if(wayland=="")
+            system("xset dpms force off");
+        else
+        {
+            bool response;
+            QDBusInterface mutter("org.gnome.Mutter.DisplayConfig",
+                                  "/org/gnome/Mutter/DisplayConfig",
+                                  "org.gnome.Mutter.DisplayConfig");
+            response = mutter.setProperty("PowerSaveMode", 1);
+            if(response==false){
+                QMessageBox::warning(this,tr("Error"),tr("Failed to turn off monitor on wayland"));
+            }
+        }
 #endif
 #ifdef Q_OS_WIN32
         SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM) 2);
