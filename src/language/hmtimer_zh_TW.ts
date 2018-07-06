@@ -32,24 +32,24 @@
         <translation>Hsiu-Ming&apos;s Timer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
+        <location filename="../mainwindow.ui" line="30"/>
         <source>H&amp;our</source>
         <translation>小時(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="49"/>
+        <location filename="../mainwindow.ui" line="47"/>
         <source>&amp;Min.</source>
         <comment>minute</comment>
         <translation>分(&amp;M)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="69"/>
+        <location filename="../mainwindow.ui" line="67"/>
         <source>&amp;Sec.</source>
         <comment>second</comment>
         <translation>秒(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="83"/>
+        <location filename="../mainwindow.ui" line="94"/>
         <source>Run repeatedly</source>
         <translation>重複執行</translation>
     </message>
@@ -58,127 +58,146 @@
         <translation type="vanished">在(&amp;T)：</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="113"/>
+        <location filename="../mainwindow.ui" line="124"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
         <translation>次</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="137"/>
+        <location filename="../mainwindow.ui" line="148"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
         <translation>在(&amp;T)：</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="190"/>
-        <location filename="../mainwindow.cpp" line="129"/>
-        <location filename="../mainwindow.cpp" line="503"/>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.ui" line="172"/>
+        <source>&amp;Action:</source>
+        <translation>動作(&amp;A)：</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="231"/>
+        <location filename="../mainwindow.cpp" line="133"/>
+        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="535"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="240"/>
         <source>&amp;Action</source>
-        <translation>動作(&amp;A)</translation>
+        <translation type="vanished">動作(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="246"/>
+        <location filename="../mainwindow.cpp" line="46"/>
+        <source>Do nothing</source>
+        <translation>不做任何事</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="47"/>
         <source>Turn off monitor</source>
         <translation>關閉監視器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="256"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Shutdown</source>
         <translation>關機</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="263"/>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Reboot</source>
         <translation>重新開機</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="270"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Play Sound</source>
         <translation>播放聲音</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="280"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Run Program</source>
         <translation>執行程式</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="326"/>
+        <location filename="../mainwindow.ui" line="263"/>
         <source>&amp;Help</source>
         <translation>說明(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="338"/>
+        <location filename="../mainwindow.ui" line="275"/>
         <source>&amp;File</source>
         <translation>檔案(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="349"/>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.ui" line="286"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="354"/>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.ui" line="291"/>
+        <location filename="../mainwindow.cpp" line="299"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="359"/>
+        <location filename="../mainwindow.ui" line="296"/>
         <source>Homepage</source>
         <translation>首頁</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="364"/>
+        <location filename="../mainwindow.ui" line="301"/>
         <source>Settings</source>
         <translation>設定</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="369"/>
-        <location filename="../mainwindow.cpp" line="56"/>
+        <location filename="../mainwindow.ui" line="306"/>
+        <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>結束</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="374"/>
+        <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
         <translation>專案頁面</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="379"/>
+        <location filename="../mainwindow.ui" line="316"/>
         <source>Donate</source>
         <translation>捐款</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="384"/>
+        <location filename="../mainwindow.ui" line="321"/>
         <source>Blog</source>
         <translation>部落格</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="55"/>
+        <location filename="../mainwindow.cpp" line="61"/>
         <source>Show</source>
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="133"/>
-        <location filename="../mainwindow.cpp" line="134"/>
+        <location filename="../mainwindow.cpp" line="137"/>
+        <location filename="../mainwindow.cpp" line="138"/>
         <source>Please set the timer</source>
         <translation>請設定計時器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="201"/>
+        <location filename="../mainwindow.cpp" line="513"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <source>Error</source>
+        <translation>錯誤</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <source>Failed to turn off monitor on wayland</source>
+        <translation>無法在 wayland 關閉監視器</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;如果你發現任何錯誤或有任何建議，請寄 e-mail 聯絡我。</translation>
     </message>
@@ -187,17 +206,17 @@
         <translation type="vanished">&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Close hmtimer?</source>
         <translation>關閉 hmtimer 嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>計時器正在執行。你真的想要退出嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="497"/>
+        <location filename="../mainwindow.cpp" line="490"/>
         <source>Audio Error</source>
         <translation>音訊錯誤</translation>
     </message>

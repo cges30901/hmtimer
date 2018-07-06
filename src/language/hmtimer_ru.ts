@@ -32,164 +32,183 @@
         <translation>Таймер Hsiu-Ming</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
+        <location filename="../mainwindow.ui" line="30"/>
         <source>H&amp;our</source>
         <translation>&amp;Час</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="49"/>
+        <location filename="../mainwindow.ui" line="47"/>
         <source>&amp;Min.</source>
         <comment>minute</comment>
         <translation>&amp;Мин.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="69"/>
+        <location filename="../mainwindow.ui" line="67"/>
         <source>&amp;Sec.</source>
         <comment>second</comment>
         <translation>&amp;Сек.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="83"/>
+        <location filename="../mainwindow.ui" line="94"/>
         <source>Run repeatedly</source>
         <translation>Повторение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="113"/>
+        <location filename="../mainwindow.ui" line="124"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
         <translation>раз</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="137"/>
+        <location filename="../mainwindow.ui" line="148"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
         <translation>&amp;В:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="190"/>
-        <location filename="../mainwindow.cpp" line="129"/>
-        <location filename="../mainwindow.cpp" line="503"/>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.ui" line="172"/>
+        <source>&amp;Action:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="231"/>
+        <location filename="../mainwindow.cpp" line="133"/>
+        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="535"/>
         <source>Start</source>
         <translation>Старт</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="240"/>
         <source>&amp;Action</source>
-        <translation>&amp;Действие</translation>
+        <translation type="vanished">&amp;Действие</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="246"/>
+        <location filename="../mainwindow.cpp" line="47"/>
         <source>Turn off monitor</source>
         <translation>Выключить монитор</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="256"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Shutdown</source>
         <translation>Выключение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="263"/>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Reboot</source>
         <translation>Перезагрузка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="270"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Play Sound</source>
         <translation>Воспроизвести звук</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="280"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Run Program</source>
         <translation>Запуск программы</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="326"/>
+        <location filename="../mainwindow.ui" line="263"/>
         <source>&amp;Help</source>
         <translation>&amp;Помощь</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="338"/>
+        <location filename="../mainwindow.ui" line="275"/>
         <source>&amp;File</source>
         <translation>&amp;Файл</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="349"/>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.ui" line="286"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="354"/>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.ui" line="291"/>
+        <location filename="../mainwindow.cpp" line="299"/>
         <source>About Qt</source>
         <translation>О Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="359"/>
+        <location filename="../mainwindow.ui" line="296"/>
         <source>Homepage</source>
         <translation>Сайт программы</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="364"/>
+        <location filename="../mainwindow.ui" line="301"/>
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="369"/>
-        <location filename="../mainwindow.cpp" line="56"/>
+        <location filename="../mainwindow.ui" line="306"/>
+        <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>Выход</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="374"/>
+        <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
         <translation>Проект на SourceForge</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="379"/>
+        <location filename="../mainwindow.ui" line="316"/>
         <source>Donate</source>
         <translation>Пожертвование</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="384"/>
+        <location filename="../mainwindow.ui" line="321"/>
         <source>Blog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="55"/>
+        <location filename="../mainwindow.cpp" line="46"/>
+        <source>Do nothing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="61"/>
         <source>Show</source>
         <translation>Показать</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="133"/>
-        <location filename="../mainwindow.cpp" line="134"/>
+        <location filename="../mainwindow.cpp" line="137"/>
+        <location filename="../mainwindow.cpp" line="138"/>
         <source>Please set the timer</source>
         <translation>Пожалуйста, установите таймер</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="201"/>
+        <location filename="../mainwindow.cpp" line="513"/>
         <source>Stop</source>
         <translation>Стоп</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <source>Error</source>
+        <translation type="unfinished">Ошибка</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <source>Failed to turn off monitor on wayland</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Автор: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;Лицензия: GPL v3&lt;br&gt;&lt;br&gt;Если вы обнаружите какие-либо ошибки или есть предложения, пожалуйста, не стесняйтесь связаться со мной, отправьте мне по электронной почте.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Close hmtimer?</source>
         <translation>Закрыть hmtimer?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>Таймер запущен. Ты действительно хочешь уйти?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="497"/>
+        <location filename="../mainwindow.cpp" line="490"/>
         <source>Audio Error</source>
         <translation>Ошибка аудио</translation>
     </message>

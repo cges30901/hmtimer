@@ -32,24 +32,24 @@
         <translation>Hsiu-Ming&apos;s Timer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="32"/>
+        <location filename="../mainwindow.ui" line="30"/>
         <source>H&amp;our</source>
         <translation>H&amp;odiny</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="49"/>
+        <location filename="../mainwindow.ui" line="47"/>
         <source>&amp;Min.</source>
         <comment>minute</comment>
         <translation>&amp;Minuty</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="69"/>
+        <location filename="../mainwindow.ui" line="67"/>
         <source>&amp;Sec.</source>
         <comment>second</comment>
         <translation>&amp;Sekundy</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="83"/>
+        <location filename="../mainwindow.ui" line="94"/>
         <source>Run repeatedly</source>
         <translation>Spouštět opakovaně</translation>
     </message>
@@ -58,142 +58,161 @@
         <translation type="vanished">Za&amp;čít v:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="113"/>
+        <location filename="../mainwindow.ui" line="124"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
         <translation>krát</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="137"/>
+        <location filename="../mainwindow.ui" line="148"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
         <translation>Za&amp;čít v:</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="190"/>
-        <location filename="../mainwindow.cpp" line="129"/>
-        <location filename="../mainwindow.cpp" line="503"/>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.ui" line="172"/>
+        <source>&amp;Action:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="231"/>
+        <location filename="../mainwindow.cpp" line="133"/>
+        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="535"/>
         <source>Start</source>
         <translation>Start</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="240"/>
         <source>&amp;Action</source>
-        <translation>&amp;Činnosti</translation>
+        <translation type="vanished">&amp;Činnosti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="246"/>
+        <location filename="../mainwindow.cpp" line="47"/>
         <source>Turn off monitor</source>
         <translation>Zhasnout monitor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="256"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Shutdown</source>
         <translation>Vypnout</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="263"/>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Reboot</source>
         <translation>Restartovat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="270"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Play Sound</source>
         <translation>Přehrát zvuk</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="280"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Run Program</source>
         <translation>Spustit program</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="326"/>
+        <location filename="../mainwindow.ui" line="263"/>
         <source>&amp;Help</source>
         <translation>&amp;Nápověda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="338"/>
+        <location filename="../mainwindow.ui" line="275"/>
         <source>&amp;File</source>
         <translation>&amp;Soubor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="349"/>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.ui" line="286"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>About</source>
         <translation>O programu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="354"/>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.ui" line="291"/>
+        <location filename="../mainwindow.cpp" line="299"/>
         <source>About Qt</source>
         <translation>O knihovně Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="359"/>
+        <location filename="../mainwindow.ui" line="296"/>
         <source>Homepage</source>
         <translation>Domovská stránka</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="364"/>
+        <location filename="../mainwindow.ui" line="301"/>
         <source>Settings</source>
         <translation>Nastavení</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="369"/>
-        <location filename="../mainwindow.cpp" line="56"/>
+        <location filename="../mainwindow.ui" line="306"/>
+        <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>Ukončit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="374"/>
+        <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
         <translation>Stránka projektu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="379"/>
+        <location filename="../mainwindow.ui" line="316"/>
         <source>Donate</source>
         <translation>Darovat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="384"/>
+        <location filename="../mainwindow.ui" line="321"/>
         <source>Blog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="55"/>
+        <location filename="../mainwindow.cpp" line="46"/>
+        <source>Do nothing</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="61"/>
         <source>Show</source>
         <translation>Ukázat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="133"/>
-        <location filename="../mainwindow.cpp" line="134"/>
+        <location filename="../mainwindow.cpp" line="137"/>
+        <location filename="../mainwindow.cpp" line="138"/>
         <source>Please set the timer</source>
         <translation>Nastavte prosím časovač</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="201"/>
+        <location filename="../mainwindow.cpp" line="513"/>
         <source>Stop</source>
         <translation>Stop</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <source>Error</source>
+        <translation type="unfinished">Chyba</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <source>Failed to turn off monitor on wayland</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;Pokud zjistíte jakékoliv chyby nebo máte nějaké návrhy, neváhejte a kontaktujte mě na e-mailu.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>Close hmtimer?</source>
         <translation>Ukončit časovač?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>Časovač je spuštěn. Skutečně chcete skončit?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="497"/>
+        <location filename="../mainwindow.cpp" line="490"/>
         <source>Audio Error</source>
         <translation>Chyba přehrávání</translation>
     </message>
