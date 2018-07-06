@@ -62,7 +62,6 @@ protected:
 private slots:
     void timer_timeout();
     void btnStartPressed();
-    void setAudioFile();
     void writeSettings();
     void trayIcon_activated(QSystemTrayIcon::ActivationReason reason);
     void playerError(QMediaPlayer::Error error);
@@ -75,13 +74,13 @@ private slots:
     void on_actionAbout_triggered();
     void on_actionHomepage_triggered();
     void on_actionSettings_triggered();
-    void on_rbtRunprogram_clicked();
     void on_actionProject_Page_triggered();
     void on_actionDonate_triggered();
     void on_btnAt_clicked();
     void on_chbRepeatTimes_toggled(bool checked);
     void on_chbRunRepeatedly_toggled(bool checked);
     void on_actionBlog_triggered();
+    void on_comboAction_activated(int index);
 };
 
 #endif // MAINWINDOW_H

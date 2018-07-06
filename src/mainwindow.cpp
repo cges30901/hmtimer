@@ -43,6 +43,12 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     setupUi(this);
+    comboAction->addItem(tr("Do nothing"));
+    comboAction->addItem(tr("Turn off monitor"));
+    comboAction->addItem(tr("Shutdown"));
+    comboAction->addItem(tr("Reboot"));
+    comboAction->addItem(tr("Play Sound"));
+    comboAction->addItem(tr("Run Program"));
     programOptions=new ProgramOptions;
     player=new QMediaPlayer;
     beepPlayer=new QMediaPlayer;
@@ -59,8 +65,6 @@ MainWindow::MainWindow(QWidget *parent)
             this,&MainWindow::btnStartPressed);
     connect(timer,&QTimer::timeout,
             this,&MainWindow::timer_timeout);
-    connect(rbtSound,&QRadioButton::clicked,
-            this,&MainWindow::setAudioFile);
     connect(qApp,&QApplication::aboutToQuit,
             this,&MainWindow::writeSettings);
     connect(trayIcon,&QSystemTrayIcon::activated,
@@ -80,19 +84,19 @@ MainWindow::MainWindow(QWidget *parent)
         if(args.at(i)=="-a"){
             i++;
             if(args.at(i)=="monitor"){
-                rbtMonitor->setChecked(true);
+                comboAction->setCurrentIndex(1);
             }
             if(args.at(i)=="shutdown"){
-                rbtShutdown->setChecked(true);
+                comboAction->setCurrentIndex(2);
             }
             if(args.at(i)=="reboot"){
-                rbtReboot->setChecked(true);
+                comboAction->setCurrentIndex(3);
             }
             if(args.at(i)=="sound"){
-                rbtSound->setChecked(true);
+                comboAction->setCurrentIndex(4);
             }
             if(args.at(i)=="runprogram"){
-                rbtRunprogram->setChecked(true);
+                comboAction->setCurrentIndex(5);
             }
         }
         else if(args.at(i)=="-t"){
@@ -192,11 +196,11 @@ void MainWindow::timer_timeout()
 
 void MainWindow::action()
 {
-    if(rbtSound->isChecked()){
+    if(comboAction->currentIndex()==4){
         player->play();
         btnStart->setText(tr("Stop"));
     }
-    else if(rbtShutdown->isChecked()){
+    else if(comboAction->currentIndex()==2){
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
@@ -225,7 +229,7 @@ void MainWindow::action()
         ExitWindowsEx(EWX_POWEROFF|EWX_FORCE,0);
 #endif
     }
-    else if(rbtReboot->isChecked()){
+    else if(comboAction->currentIndex()==3){
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
@@ -254,7 +258,7 @@ void MainWindow::action()
         ExitWindowsEx(EWX_REBOOT|EWX_FORCE,0);
 #endif
     }
-    else if (rbtMonitor->isChecked()){
+    else if(comboAction->currentIndex()==1){
 #ifdef Q_OS_LINUX
         QString wayland=QProcessEnvironment::systemEnvironment().value("WAYLAND_DISPLAY");
         if(wayland=="")
@@ -275,7 +279,7 @@ void MainWindow::action()
         SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM) 2);
 #endif
     }
-    else if (rbtRunprogram->isChecked()){
+    else if(comboAction->currentIndex()==5){
         process=new QProcess;
         process->start(programOptions->lneFilename_Text+" "+programOptions->lneParameters_Text);
     }
@@ -287,14 +291,6 @@ void MainWindow::action()
             spbRepeatTimes->stepDown();
             startTimer();
         }
-    }
-}
-
-void MainWindow::setAudioFile()
-{
-    QString file=QFileDialog::getOpenFileName(this,QString(),audioFile);
-    if(file.length()!=0){
-        audioFile=file;
     }
 }
 
@@ -335,11 +331,7 @@ void MainWindow::writeSettings()
     settings.setValue("audioFile",audioFile);
     settings.setValue("chbRunRepeatedly",chbRunRepeatedly->isChecked());
     settings.setValue("chbRepeatTimes",chbRepeatTimes->isChecked());
-    settings.setValue("monitor",rbtMonitor->isChecked());
-    settings.setValue("shutdown",rbtShutdown->isChecked());
-    settings.setValue("reboot",rbtReboot->isChecked());
-    settings.setValue("sound",rbtSound->isChecked());
-    settings.setValue("runprogram",rbtRunprogram->isChecked());
+    settings.setValue("action",comboAction->currentIndex());
     settings.endGroup();
 
     //SelectFileDialog
@@ -389,11 +381,7 @@ void MainWindow::readSettings()
     chbRepeatTimes->setChecked(settings.value("chbRepeatTimes",false).toBool());
     chbRunRepeatedly->setChecked(settings.value("chbRunRepeatedly",false).toBool());
     on_chbRunRepeatedly_toggled(chbRunRepeatedly->isChecked());
-    rbtMonitor->setChecked(settings.value("monitor").toBool());
-    rbtShutdown->setChecked(settings.value("shutdown").toBool());
-    rbtReboot->setChecked(settings.value("reboot").toBool());
-    rbtSound->setChecked(settings.value("sound").toBool());
-    rbtRunprogram->setChecked(settings.value("runprogram").toBool());
+    comboAction->setCurrentIndex(settings.value("action").toInt());
     settings.endGroup();
 
     //SelectFileDialog
@@ -483,14 +471,6 @@ void MainWindow::on_actionSettings_triggered()
     delete dlgSettings;
 }
 
-
-void MainWindow::on_rbtRunprogram_clicked()
-{
-    SelectFileDialog *dlgSelectFile =new SelectFileDialog(programOptions,this);
-    dlgSelectFile->exec();
-    delete dlgSelectFile;
-}
-
 void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 {
     if(reason==QSystemTrayIcon::Trigger or reason==QSystemTrayIcon::DoubleClick){
@@ -518,11 +498,7 @@ void MainWindow::stopTimer()
     spbHour->setReadOnly(false);
     spbMinute->setReadOnly(false);
     spbSecond->setReadOnly(false);
-    rbtMonitor->setEnabled(true);
-    rbtShutdown->setEnabled(true);
-    rbtReboot->setEnabled(true);
-    rbtSound->setEnabled(true);
-    rbtRunprogram->setEnabled(true);
+    comboAction->setEnabled(true);
     chbRunRepeatedly->setEnabled(true);
     on_chbRunRepeatedly_toggled(chbRunRepeatedly->isChecked());
     btnAt->setEnabled(true);
@@ -539,18 +515,14 @@ void MainWindow::startTimer()
     spbHour->setReadOnly(true);
     spbMinute->setReadOnly(true);
     spbSecond->setReadOnly(true);
-    rbtMonitor->setEnabled(false);
-    rbtShutdown->setEnabled(false);
-    rbtReboot->setEnabled(false);
-    rbtSound->setEnabled(false);
-    rbtRunprogram->setEnabled(false);
+    comboAction->setEnabled(false);
     chbRunRepeatedly->setEnabled(false);
     chbRepeatTimes->setEnabled(false);
     spbRepeatTimes->setEnabled(false);
     labelRepeatTimes->setEnabled(false);
     btnAt->setEnabled(false);
     timer_enabled=!timer_enabled;
-    if(rbtSound->isChecked() and player->state()!=QMediaPlayer::PlayingState){
+    if(comboAction->currentIndex()==4 and player->state()!=QMediaPlayer::PlayingState){
         player->setMedia(QUrl::fromLocalFile(audioFile));
     }
     connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
@@ -631,4 +603,19 @@ void MainWindow::on_chbRunRepeatedly_toggled(bool checked)
 void MainWindow::on_actionBlog_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://hsiu-ming.blogspot.com/"));
+}
+
+void MainWindow::on_comboAction_activated(int index)
+{
+    if(index==4){
+        QString file=QFileDialog::getOpenFileName(this,QString(),audioFile);
+        if(file.length()!=0){
+            audioFile=file;
+        }
+    }
+    else if(index==5){
+        SelectFileDialog *dlgSelectFile =new SelectFileDialog(programOptions,this);
+        dlgSelectFile->exec();
+        delete dlgSelectFile;
+    }
 }
