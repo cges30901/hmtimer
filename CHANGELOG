@@ -1,71 +1,25 @@
-version 1.1 2014.07.13
--add Chinese(Traditional) translation
--add run program action
+version 2.6.2 2018.04.21
+-add appdata
+-fix install for flatpak
 
-version 1.2 2014.7.28
--add parameter for run program action
+version 2.6.1 2018.04.15
+-fix parameter in autostart
+-update Russian translation
+-flatpak build
 
-version 1.3 2014.8.14
--add toolbar
--disable action radiobuttons when timer is enabled
--save settings
+version 2.6 2018.03.03
+-new homepage: https://cges30901.github.io/hmtimer-website/
+-fix: If you make hmtimer do action at a specific time and "Run repeatedly" is checked, set the timer to the next specific time
+-add function to limit repeat times
+-add Czech and German translation
+-minor modification
 
-version 1.4 2014.8.25
--saves settings to settings.ini
--add the ability to minimize to system tray
-
-version 1.5 2014.9.13
--beep
--bug fix
-
-version 1.6 2014.12.7
--beep with ioctl
--save settings with programOptions
-
-version 1.7 2015.2.7
--modal dialog
--windows version
-
-version 1.8 2015.4.5
--pkexec
-
-version 1.9 2015.6.23
--add context menu to tray icon
--bug fixes
-
-version 2.0 2015.8.23
--run timer repeatedly
--add the function to use audio file to play beep sound
--add hour
-
-version 2.1 2015.10.15
--startup settings
--command line
-
-version 2.2 2016.01.19
--Linux: shutdown and reboot with org.freedesktop.login1. hmtimer_root is not needed now
--display a messagebox if audio file cannot be played
--bug fix: after time is up, the tooltip of trayIcon is set to Hsiu-Ming's Timer
--other bug fixes
-
-version 2.3 2016.05.20
--start or stop timer by pressing Enter or Return key
--Linux: fix minimize to tray when Hsiu-Ming's timer is run
--edit tab order
--add keyboard shortcut
--bug fixes
-
-version 2.3.1 2016.08.04
--add Arabic and Russian translation
--add keyboard shortcut for File and Help
--show version number if parameter is "--version"
-
-version 2.4 2017.02.06
--If timer is running when closing hmtimer, ask for confirmation
--password protection
-
-version 2.4.1 2017.02.09
--do not show PasswordDialog when time is up
+version 2.5 2018.02.15
+-new homepage: https://hsiumingstimer.sourceforge.io/
+-new function: do action at a specific time
+-remove command line option "-s". Timer is started if "-t" is found
+-Linux: add man page
+-miner fix and refactor
 
 version 2.4.2 2017.07.18
 -Use audio file to play beep sound by default
@@ -79,26 +33,72 @@ version 2.4.2 2017.07.18
 -add Belarusian translation
 -code refactor
 
-version 2.5 2018.02.15
--new homepage: https://hsiumingstimer.sourceforge.io/
--new function: do action at a specific time
--remove command line option "-s". Timer is started if "-t" is found
--Linux: add man page
--miner fix and refactor
+version 2.4.1 2017.02.09
+-do not show PasswordDialog when time is up
 
-version 2.6 2018.03.03
--new homepage: https://cges30901.github.io/hmtimer-website/
--fix: If you make hmtimer do action at a specific time and "Run repeatedly " is checked, set the timer to the next specific time
--add function to limit repeat times
--add Czech and German translation
--minor modification
+version 2.4 2017.02.06
+-If timer is running when closing hmtimer, ask for confirmation
+-password protection
 
-version 2.6.1 2018.04.15
--fix parameter in autostart
--update Russian translation
--flatpak build
+version 2.3.1 2016.08.04
+-add Arabic and Russian translation
+-add keyboard shortcut for File and Help
+-show version number if parameter is "--version"
 
-version 2.6.2 2018.04.21
--add appdata
--fix install for flatpak
+version 2.3 2016.05.20
+-start or stop timer by pressing Enter or Return key
+-Linux: fix minimize to tray when Hsiu-Ming's timer is run
+-edit tab order
+-add keyboard shortcut
+-bug fixes
+
+version 2.2 2016.01.19
+-Linux: shutdown and reboot with org.freedesktop.login1. hmtimer_root is not needed now
+-display a messagebox if audio file cannot be played
+-bug fix: after time is up, the tooltip of trayIcon is set to Hsiu-Ming's Timer
+-other bug fixes
+
+version 2.1 2015.10.15
+-startup settings
+-command line
+
+version 2.0 2015.08.23
+-run timer repeatedly
+-add the function to use audio file to play beep sound
+-add hour
+
+version 1.9 2015.06.23
+-add context menu to tray icon
+-bug fixes
+
+version 1.8 2015.04.05
+-pkexec
+
+version 1.7 2015.02.07
+-modal dialog
+-windows version
+
+version 1.6 2014.12.07
+-beep with ioctl
+-save settings with programOptions
+
+version 1.5 2014.09.13
+-beep
+-bug fix
+
+version 1.4 2014.08.25
+-saves settings to settings.ini
+-add the ability to minimize to system tray
+
+version 1.3 2014.08.14
+-add toolbar
+-disable action radiobuttons when timer is enabled
+-save settings
+
+version 1.2 2014.07.28
+-add parameter for run program action
+
+version 1.1 2014.07.13
+-add Chinese(Traditional) translation
+-add run program action
 
