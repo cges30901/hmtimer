@@ -6,22 +6,22 @@
     <message>
         <location filename="../atdialog.ui" line="14"/>
         <source>At a specific time:</source>
-        <translation type="unfinished"></translation>
+        <translation>У зададзены час:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="20"/>
         <source>Enter the time you want this program to do the action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Увядзіце час, калі праграма мусіць выканаць дзеянне:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="85"/>
         <source>OK</source>
-        <translation type="unfinished"></translation>
+        <translation>Добра</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="92"/>
         <source>Cancel</source>
-        <translation type="unfinished">Скасаваць</translation>
+        <translation>Скасаваць</translation>
     </message>
 </context>
 <context>
@@ -57,13 +57,13 @@
         <location filename="../mainwindow.ui" line="124"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
-        <translation type="unfinished"></translation>
+        <translation>разоў</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="148"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
-        <translation type="unfinished"></translation>
+        <translation>&amp;У:</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="172"/>
@@ -90,12 +90,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="48"/>
         <source>Shutdown</source>
-        <translation>Адключыць</translation>
+        <translation>Выключыць</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="49"/>
         <source>Reboot</source>
-        <translation>Перазагрузіць</translation>
+        <translation>Перазапусціць</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="50"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
-        <translation>Старонка праэкта</translation>
+        <translation>Старонка праекта</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="316"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../mainwindow.ui" line="321"/>
         <source>Blog</source>
-        <translation type="unfinished"></translation>
+        <translation>Блог</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
@@ -195,7 +195,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;h3&gt;Hsiu-Ming&apos;s Таймер %1&lt;/h3&gt;&lt;br&gt;Распрацоўшчык: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;Ліцэнзія: GPL v3&lt;br&gt;&lt;br&gt;Калі вам патрапіліся хібы, або вам ёсць што прапанаваць, калі ласка, не саромейцеся звязацца са мною. Дашліце мне ліст на электронную пошту.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="447"/>
@@ -205,7 +205,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="448"/>
         <source>Timer is running. Do you really want to quit?</source>
-        <translation>Запушчаны таймер. Сапраўды выйсці?</translation>
+        <translation>Таймер запушчаны. Сапраўды выйсці?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="490"/>

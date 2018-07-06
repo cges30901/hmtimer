@@ -54,10 +54,6 @@
         <translation>Spouštět opakovaně</translation>
     </message>
     <message>
-        <source>A&amp;t:</source>
-        <translation type="vanished">Za&amp;čít v:</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.ui" line="124"/>
         <source>times</source>
         <comment>(Run repeatedly N )times</comment>
@@ -322,14 +318,6 @@
         <location filename="../settingsdialog.ui" line="30"/>
         <source>Minimize to tray</source>
         <translation>Minimalizovat do lišty</translation>
-    </message>
-    <message>
-        <source>Beep last</source>
-        <translation type="vanished">Poslední pípnutí</translation>
-    </message>
-    <message>
-        <source>seconds</source>
-        <translation type="vanished">sekundy</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="39"/>

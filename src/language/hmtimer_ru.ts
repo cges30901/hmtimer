@@ -158,7 +158,7 @@
     <message>
         <location filename="../mainwindow.ui" line="321"/>
         <source>Blog</source>
-        <translation type="unfinished"></translation>
+        <translation>Блог</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
