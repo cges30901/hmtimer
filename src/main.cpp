@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <QApplication>
 #include <QTranslator>
 #include <QStringList>
+#include <QLibraryInfo>
 #include <iostream>
 #include "mainwindow.h"
 #include "version.h"
@@ -47,15 +48,23 @@ int main(int argc,char *argv[])
             showWindow=false;
         }
     }
-    QTranslator translator;
+
+    QTranslator translator, qtTranslator;
 #ifdef FLATPAK
     translator.load(QLocale(),"hmtimer","_","/app/share/hmtimer");
+    qtTranslator.load(QLocale(),"qt","_",QLibraryInfo::location(QLibraryInfo::TranslationsPath));
 #else
     if(translator.load(QLocale(),"hmtimer","_",app.applicationDirPath()+"/language")!=true){
         translator.load(QLocale(),"hmtimer","_","/usr/share/hmtimer");
     }
+
+    if(qtTranslator.load(QLocale(),"qt","_",app.applicationDirPath()+"/language")!=true){
+        qtTranslator.load(QLocale(),"qt","_",QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+    }
 #endif
     app.installTranslator(&translator);
+    app.installTranslator(&qtTranslator);
+
     MainWindow *window=new MainWindow;
     if(showWindow==true){
         window->show();
