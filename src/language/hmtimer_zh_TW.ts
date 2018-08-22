@@ -28,6 +28,8 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
+        <location filename="../mainwindow.cpp" line="59"/>
+        <location filename="../mainwindow.cpp" line="169"/>
         <source>Hsiu-Ming&apos;s Timer</source>
         <translation>Hsiu-Ming&apos;s Timer</translation>
     </message>
@@ -76,9 +78,9 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="231"/>
-        <location filename="../mainwindow.cpp" line="133"/>
-        <location filename="../mainwindow.cpp" line="496"/>
-        <location filename="../mainwindow.cpp" line="535"/>
+        <location filename="../mainwindow.cpp" line="136"/>
+        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="540"/>
         <source>Start</source>
         <translation>開始</translation>
     </message>
@@ -128,13 +130,13 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="286"/>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="291"/>
-        <location filename="../mainwindow.cpp" line="299"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
@@ -175,29 +177,37 @@
         <translation>顯示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="137"/>
-        <location filename="../mainwindow.cpp" line="138"/>
+        <location filename="../mainwindow.cpp" line="140"/>
+        <location filename="../mainwindow.cpp" line="141"/>
         <source>Please set the timer</source>
         <translation>請設定計時器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="201"/>
-        <location filename="../mainwindow.cpp" line="513"/>
+        <location filename="../mainwindow.cpp" line="175"/>
+        <source>Hsiu-Ming&apos;s Timer
+%1:%2:%3</source>
+        <extracomment>%1 is hour, %2 is minute, %3 is second</extracomment>
+        <translation>Hsiu-Ming&apos;s Timer
+%1:%2:%3</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="206"/>
+        <location filename="../mainwindow.cpp" line="518"/>
         <source>Stop</source>
         <translation>停止</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Failed to turn off monitor on wayland</source>
         <translation>無法在 wayland 關閉監視器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;如果你發現任何錯誤或有任何建議，請寄 e-mail 聯絡我。</translation>
     </message>
@@ -206,17 +216,17 @@
         <translation type="vanished">&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="452"/>
         <source>Close hmtimer?</source>
         <translation>關閉 hmtimer 嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="448"/>
+        <location filename="../mainwindow.cpp" line="453"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>計時器正在執行。你真的想要退出嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="490"/>
+        <location filename="../mainwindow.cpp" line="495"/>
         <source>Audio Error</source>
         <translation>音訊錯誤</translation>
     </message>

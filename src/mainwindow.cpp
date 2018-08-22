@@ -171,6 +171,7 @@ void MainWindow::timer_timeout()
         action();
     }
     else{
+        //: %1 is hour, %2 is minute, %3 is second
         trayIcon->setToolTip(tr("Hsiu-Ming's Timer\n%1:%2:%3")
                              .arg(spbHour->text(),spbMinute->text(),spbSecond->text()));
         if(programOptions->chbBeep_Checked==true and timeRemain<programOptions->spbBeep_Value){
