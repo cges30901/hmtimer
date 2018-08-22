@@ -30,12 +30,12 @@ int main(int argc,char *argv[])
     bool showWindow=true;
     for(int i=0;i<args.size();i++){
         if(args.at(i)=="--help"){
-            std::cout<<"Usage: hmtimer [-t time] [-s] [-m] [-a ACTION] [--help] [--version]\n"
+            std::cout<<"Usage: hmtimer [-t time] [-m] [-a ACTION] [--help] [--version]\n"
                      <<"options:\n"
-                     <<"  -t SECONDS   set seconds and start timer\n"
+                     <<"  -t SECONDS   set time in seconds and start timer\n"
                      <<"  -m           minimize to tray\n"
                      <<"  -a ACTION    set action when time is up.\n"
-                     <<"    available action: monitor, shutdown, reboot, sound, runprogram\n"
+                     <<"    available actions: nothing, monitor, shutdown, reboot, sound, runprogram\n"
                      <<"  --help       display help and exit\n"
                      <<"  --version    display version and exit\n";
             exit(0);

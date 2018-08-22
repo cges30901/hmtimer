@@ -83,6 +83,9 @@ MainWindow::MainWindow(QWidget *parent)
     for(int i=0;i<args.size();i++){
         if(args.at(i)=="-a"){
             i++;
+            if(args.at(i)=="nothing"){
+                comboAction->setCurrentIndex(0);
+            }
             if(args.at(i)=="monitor"){
                 comboAction->setCurrentIndex(1);
             }
