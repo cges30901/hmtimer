@@ -86,19 +86,19 @@ MainWindow::MainWindow(QWidget *parent)
             if(args.at(i)=="nothing"){
                 comboAction->setCurrentIndex(0);
             }
-            if(args.at(i)=="monitor"){
+            else if(args.at(i)=="monitor"){
                 comboAction->setCurrentIndex(1);
             }
-            if(args.at(i)=="shutdown"){
+            else if(args.at(i)=="shutdown"){
                 comboAction->setCurrentIndex(2);
             }
-            if(args.at(i)=="reboot"){
+            else if(args.at(i)=="reboot"){
                 comboAction->setCurrentIndex(3);
             }
-            if(args.at(i)=="sound"){
+            else if(args.at(i)=="sound"){
                 comboAction->setCurrentIndex(4);
             }
-            if(args.at(i)=="runprogram"){
+            else if(args.at(i)=="runprogram"){
                 comboAction->setCurrentIndex(5);
             }
         }
