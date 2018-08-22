@@ -149,10 +149,10 @@ void MainWindow::btnStartPressed()
 }
 void MainWindow::timer_timeout()
 {
-    if(timeRemain==timeSet-int(difftime(time(NULL),timeStart))){
+    if(timeRemain==timeSet-int(difftime(time(nullptr),timeStart))){
         return;
     }
-    timeRemain=timeSet-int(difftime(time(NULL),timeStart));
+    timeRemain=timeSet-int(difftime(time(nullptr),timeStart));
     spbHour->setValue(timeRemain/3600);
     spbMinute->setValue(timeRemain/60%60);
     spbSecond->setValue(timeRemain%60);
@@ -510,7 +510,7 @@ void MainWindow::stopTimer()
 
 void MainWindow::startTimer()
 {
-    timeStart=time(NULL);
+    timeStart=time(nullptr);
     timeSet=spbHour->text().toInt()*3600+spbMinute->text().toInt()*60+spbSecond->text().toInt();
     timeRemain=timeSet;
     btnStart->setText(tr("Stop"));
