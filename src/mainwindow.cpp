@@ -56,7 +56,7 @@ MainWindow::MainWindow(QWidget *parent)
     timer_enabled=false;
     trayIcon=new QSystemTrayIcon;
     trayIcon->setIcon(QIcon(":/hmtimer.png"));
-    trayIcon->setToolTip("Hsiu-Ming's Timer");
+    trayIcon->setToolTip(tr("Hsiu-Ming's Timer"));
     trayContextMenu=new QMenu;
     actShow=trayContextMenu->addAction(tr("Show"));
     actQuit=trayContextMenu->addAction(tr("Quit"));
@@ -166,12 +166,13 @@ void MainWindow::timer_timeout()
             spbMinute->setValue(timeSet/60%60);
             spbSecond->setValue(timeSet%60);
         }
-        trayIcon->setToolTip("Hsiu-Ming's Timer");
+        trayIcon->setToolTip(tr("Hsiu-Ming's Timer"));
         writeSettings();
         action();
     }
     else{
-        trayIcon->setToolTip("Hsiu-Ming's Timer\n"+spbHour->text()+':'+spbMinute->text()+':'+spbSecond->text());
+        trayIcon->setToolTip(tr("Hsiu-Ming's Timer\n%1:%2:%3")
+                             .arg(spbHour->text(),spbMinute->text(),spbSecond->text()));
         if(programOptions->chbBeep_Checked==true and timeRemain<programOptions->spbBeep_Value){
             if(programOptions->chbAudioBeep_Checked==false) //beep with pcspkr
             {
