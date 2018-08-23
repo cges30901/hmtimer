@@ -43,12 +43,12 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
     setupUi(this);
-    comboAction->addItem(tr("Do nothing"));
-    comboAction->addItem(tr("Turn off monitor"));
-    comboAction->addItem(tr("Shutdown"));
-    comboAction->addItem(tr("Reboot"));
-    comboAction->addItem(tr("Play Sound"));
-    comboAction->addItem(tr("Run Program"));
+    comboAction->addItem(tr("Do nothing")); //index 0
+    comboAction->addItem(tr("Turn off monitor")); //index 1
+    comboAction->addItem(tr("Shutdown")); //index 2
+    comboAction->addItem(tr("Reboot")); //index 3
+    comboAction->addItem(tr("Play Sound")); //index 4
+    comboAction->addItem(tr("Run Program")); //index 5
     programOptions=new ProgramOptions;
     player=new QMediaPlayer;
     beepPlayer=new QMediaPlayer;
@@ -200,11 +200,11 @@ void MainWindow::timer_timeout()
 
 void MainWindow::action()
 {
-    if(comboAction->currentIndex()==4){
+    if(comboAction->currentIndex()==4){ //play sound
         player->play();
         btnStart->setText(tr("Stop"));
     }
-    else if(comboAction->currentIndex()==2){
+    else if(comboAction->currentIndex()==2){ //shutdown
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
@@ -233,7 +233,7 @@ void MainWindow::action()
         ExitWindowsEx(EWX_POWEROFF|EWX_FORCE,0);
 #endif
     }
-    else if(comboAction->currentIndex()==3){
+    else if(comboAction->currentIndex()==3){ //reboot
 #ifdef Q_OS_LINUX
         QDBusMessage response;
         QDBusInterface freedesktopLogin1("org.freedesktop.login1",
@@ -262,7 +262,7 @@ void MainWindow::action()
         ExitWindowsEx(EWX_REBOOT|EWX_FORCE,0);
 #endif
     }
-    else if(comboAction->currentIndex()==1){
+    else if(comboAction->currentIndex()==1){ //turn off monitor
 #ifdef Q_OS_LINUX
         QString wayland=QProcessEnvironment::systemEnvironment().value("WAYLAND_DISPLAY");
         if(wayland=="")
@@ -283,7 +283,7 @@ void MainWindow::action()
         SendMessage(HWND_BROADCAST, WM_SYSCOMMAND, SC_MONITORPOWER, (LPARAM) 2);
 #endif
     }
-    else if(comboAction->currentIndex()==5){
+    else if(comboAction->currentIndex()==5){ //run program
         process=new QProcess;
         process->start(programOptions->lneFilename_Text+" "+programOptions->lneParameters_Text);
     }
@@ -612,13 +612,13 @@ void MainWindow::on_actionBlog_triggered()
 
 void MainWindow::on_comboAction_activated(int index)
 {
-    if(index==4){
+    if(index==4){ //play sound
         QString file=QFileDialog::getOpenFileName(this,QString(),audioFile);
         if(file.length()!=0){
             audioFile=file;
         }
     }
-    else if(index==5){
+    else if(index==5){ //run program
         SelectFileDialog *dlgSelectFile =new SelectFileDialog(programOptions,this);
         dlgSelectFile->exec();
         delete dlgSelectFile;
