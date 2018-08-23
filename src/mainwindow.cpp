@@ -507,7 +507,7 @@ void MainWindow::stopTimer()
     on_chbRunRepeatedly_toggled(chbRunRepeatedly->isChecked());
     btnAt->setEnabled(true);
     trayIcon->setToolTip(tr("Hsiu-Ming's Timer"));
-    timer_enabled=!timer_enabled;
+    timer_enabled=false;
 }
 
 void MainWindow::startTimer()
@@ -526,7 +526,7 @@ void MainWindow::startTimer()
     spbRepeatTimes->setEnabled(false);
     labelRepeatTimes->setEnabled(false);
     btnAt->setEnabled(false);
-    timer_enabled=!timer_enabled;
+    timer_enabled=true;
     if(comboAction->currentIndex()==4 and player->state()!=QMediaPlayer::PlayingState){
         player->setMedia(QUrl::fromLocalFile(audioFile));
     }
