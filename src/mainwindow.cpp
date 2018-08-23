@@ -166,7 +166,6 @@ void MainWindow::timer_timeout()
             spbMinute->setValue(timeSet/60%60);
             spbSecond->setValue(timeSet%60);
         }
-        trayIcon->setToolTip(tr("Hsiu-Ming's Timer"));
         writeSettings();
         action();
     }
@@ -507,6 +506,7 @@ void MainWindow::stopTimer()
     chbRunRepeatedly->setEnabled(true);
     on_chbRunRepeatedly_toggled(chbRunRepeatedly->isChecked());
     btnAt->setEnabled(true);
+    trayIcon->setToolTip(tr("Hsiu-Ming's Timer"));
     timer_enabled=!timer_enabled;
 }
 
