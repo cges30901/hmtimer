@@ -26,7 +26,7 @@ class AtDialog:public QDialog,public Ui::AtDialog
     Q_OBJECT
     ProgramOptions *programOptions;
 public:
-    AtDialog(ProgramOptions *programOptions, QWidget *parent=0);
+    AtDialog(ProgramOptions *programOptions, QWidget *parent=nullptr);
 private slots:
     void on_btnOk_clicked();
 };

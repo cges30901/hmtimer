@@ -26,7 +26,7 @@ class SettingsDialog:public QDialog,public Ui::SettingsDialog
     Q_OBJECT
     ProgramOptions *programOptions;
 public:
-    SettingsDialog(ProgramOptions *programOptions,QWidget *parent=0);
+    SettingsDialog(ProgramOptions *programOptions,QWidget *parent=nullptr);
 private slots:
 
     void on_btnOk_clicked();
