@@ -527,11 +527,12 @@ void MainWindow::startTimer()
     labelRepeatTimes->setEnabled(false);
     btnAt->setEnabled(false);
     timer_enabled=true;
+    //checking player state is required to play sound and run repeatedly
     if(comboAction->currentIndex()==4 and player->state()!=QMediaPlayer::PlayingState){
         player->setMedia(QUrl::fromLocalFile(audioFile));
+        connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
+                this,&MainWindow::playerError);
     }
-    connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
-            this,&MainWindow::playerError);
 }
 
 void MainWindow::playerMediaStatusChanged(QMediaPlayer::MediaStatus status)
