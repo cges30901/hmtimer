@@ -29,26 +29,26 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="59"/>
-        <location filename="../mainwindow.cpp" line="169"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>Hsiu-Ming&apos;s Timer</source>
         <translation>Hsiu-Ming&apos;s Таймер</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="30"/>
         <source>H&amp;our</source>
-        <translation>Г&amp;адзіна</translation>
+        <translation>Гадз. (&amp;O)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="47"/>
         <source>&amp;Min.</source>
         <comment>minute</comment>
-        <translation>&amp;Хвіл.</translation>
+        <translation>Хвіл. (&amp;M)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="67"/>
         <source>&amp;Sec.</source>
         <comment>second</comment>
-        <translation>&amp;Сек.</translation>
+        <translation>Сек. (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="94"/>
@@ -65,24 +65,20 @@
         <location filename="../mainwindow.ui" line="148"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
-        <translation>&amp;У:</translation>
+        <translation>У (&amp;T):</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="172"/>
         <source>&amp;Action:</source>
-        <translation type="unfinished"></translation>
+        <translation>Дзеянне (&amp;A):</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="231"/>
         <location filename="../mainwindow.cpp" line="136"/>
-        <location filename="../mainwindow.cpp" line="501"/>
-        <location filename="../mainwindow.cpp" line="540"/>
+        <location filename="../mainwindow.cpp" line="500"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>Start</source>
         <translation>Запусціць</translation>
-    </message>
-    <message>
-        <source>&amp;Action</source>
-        <translation type="vanished">&amp;Дзеянне</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="47"/>
@@ -112,22 +108,22 @@
     <message>
         <location filename="../mainwindow.ui" line="263"/>
         <source>&amp;Help</source>
-        <translation>&amp;Даведка</translation>
+        <translation>Даведка (&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="275"/>
         <source>&amp;File</source>
-        <translation>&amp;Файл</translation>
+        <translation>Файл (&amp;F)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="286"/>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>About</source>
         <translation>Пра праграму</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="291"/>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="303"/>
         <source>About Qt</source>
         <translation>Пра Qt</translation>
     </message>
@@ -165,7 +161,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
         <source>Do nothing</source>
-        <translation type="unfinished"></translation>
+        <translation>Нічога не рабіць</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="61"/>
@@ -179,45 +175,45 @@
         <translation>Калі ласка, прызначце таймер</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="174"/>
         <source>Hsiu-Ming&apos;s Timer
 %1:%2:%3</source>
         <extracomment>%1 is hour, %2 is minute, %3 is second</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="206"/>
+        <location filename="../mainwindow.cpp" line="205"/>
         <location filename="../mainwindow.cpp" line="518"/>
         <source>Stop</source>
         <translation>Спыніць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>Error</source>
-        <translation type="unfinished">Памылка</translation>
+        <translation>Памылка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>Failed to turn off monitor on wayland</source>
-        <translation type="unfinished"></translation>
+        <translation>Не атрымалася выключыць манітор у wayland</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Таймер %1&lt;/h3&gt;&lt;br&gt;Распрацоўшчык: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;Ліцэнзія: GPL v3&lt;br&gt;&lt;br&gt;Калі вам патрапіліся хібы, або вам ёсць што прапанаваць, калі ласка, не саромейцеся звязацца са мною. Дашліце мне ліст на электронную пошту.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="452"/>
+        <location filename="../mainwindow.cpp" line="451"/>
         <source>Close hmtimer?</source>
         <translation>Закрыць?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="452"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>Таймер запушчаны. Сапраўды выйсці?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="495"/>
+        <location filename="../mainwindow.cpp" line="494"/>
         <source>Audio Error</source>
         <translation>Памылка аўдыё</translation>
     </message>
@@ -283,7 +279,7 @@
     <message>
         <location filename="../selectfiledialog.ui" line="14"/>
         <source>Select File</source>
-        <translation>Абярыце файл</translation>
+        <translation>Араць файл</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="22"/>
@@ -303,7 +299,7 @@
     <message>
         <location filename="../selectfiledialog.ui" line="83"/>
         <source>OK</source>
-        <translation>Так</translation>
+        <translation>Добра</translation>
     </message>
     <message>
         <location filename="../selectfiledialog.ui" line="90"/>
@@ -373,7 +369,7 @@
     <message>
         <location filename="../settingsdialog.ui" line="144"/>
         <source>Hour</source>
-        <translation>Гадзіна</translation>
+        <translation>Гадз.</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="158"/>
