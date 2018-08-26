@@ -179,7 +179,8 @@
         <source>Hsiu-Ming&apos;s Timer
 %1:%2:%3</source>
         <extracomment>%1 is hour, %2 is minute, %3 is second</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Таймер Hsiu-Ming&apos;s
+%1:%2:%3</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="205"/>
