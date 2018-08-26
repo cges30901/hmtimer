@@ -1,3 +1,8 @@
+version 3.0.1 2018.08.26
+-add argument "nothing" as an available action and fix output of "--help"
+-make trayicon tooltip translatable
+-reset trayicon tooltip when user stops timer
+
 version 3.0.0 2018.07.06
 -turn off monitor on wayland
 -use combobox to select action
