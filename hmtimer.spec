@@ -19,7 +19,7 @@ Release:        1
 License:        GPL-3.0
 Url:            https://cges30901.github.io/hmtimer-website/
 Group:          Productivity/Other
-Source0:        %{name}-%{version}-src.tar.bz2
+Source0:        v%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 BuildRequires:  pkgconfig(Qt5Core)
