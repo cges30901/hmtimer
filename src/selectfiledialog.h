@@ -26,7 +26,7 @@ class SelectFileDialog:public QDialog,public Ui::SelectFileDialog
     Q_OBJECT
     ProgramOptions *programOptions;
 public:
-    SelectFileDialog(ProgramOptions *programOptions,QWidget *parent=nullptr);
+    SelectFileDialog(ProgramOptions *programOptions,QWidget *parent=Q_NULLPTR);
 private slots:
     void setFile();
     void on_btnOk_clicked();

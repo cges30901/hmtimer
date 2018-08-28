@@ -54,7 +54,7 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
     void readSettings();
     void setAtTime();
 public:
-    MainWindow(QWidget *parent=nullptr);
+    MainWindow(QWidget *parent=Q_NULLPTR);
 protected:
     void changeEvent(QEvent *);
     void keyPressEvent(QKeyEvent *);

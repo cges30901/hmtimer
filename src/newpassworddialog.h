@@ -14,7 +14,7 @@ class NewPasswordDialog : public QDialog
     ProgramOptions *programOptions;
 
 public:
-    explicit NewPasswordDialog(ProgramOptions *programOptions, QWidget *parent = nullptr);
+    explicit NewPasswordDialog(ProgramOptions *programOptions, QWidget *parent = Q_NULLPTR);
     ~NewPasswordDialog();
 
 private:

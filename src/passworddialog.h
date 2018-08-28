@@ -13,7 +13,7 @@ class PasswordDialog : public QDialog
     QString password;
 
 public:
-    explicit PasswordDialog(const QString password, QWidget *parent = nullptr);
+    explicit PasswordDialog(const QString password, QWidget *parent = Q_NULLPTR);
     ~PasswordDialog();
 
 private slots:
