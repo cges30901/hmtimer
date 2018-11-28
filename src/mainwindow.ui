@@ -255,7 +255,7 @@
      <x>0</x>
      <y>0</y>
      <width>385</width>
-     <height>32</height>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuHelp">
@@ -283,12 +283,12 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionAbout">
    <property name="text">
-    <string>About</string>
+    <string>&amp;About</string>
    </property>
   </action>
   <action name="actionAbout_Qt">
    <property name="text">
-    <string>About Qt</string>
+    <string>About &amp;Qt</string>
    </property>
   </action>
   <action name="actionWebsite">
@@ -298,27 +298,27 @@
   </action>
   <action name="actionSettings">
    <property name="text">
-    <string>Settings</string>
+    <string>&amp;Settings</string>
    </property>
   </action>
   <action name="actionQuit">
    <property name="text">
-    <string>Quit</string>
+    <string>&amp;Quit</string>
    </property>
   </action>
   <action name="actionProject_Page">
    <property name="text">
-    <string>Project Page</string>
+    <string>&amp;Project Page</string>
    </property>
   </action>
   <action name="actionDonate">
    <property name="text">
-    <string>Donate</string>
+    <string>&amp;Donate</string>
    </property>
   </action>
   <action name="actionBlog">
    <property name="text">
-    <string>Blog</string>
+    <string>&amp;Blog</string>
    </property>
   </action>
  </widget>
