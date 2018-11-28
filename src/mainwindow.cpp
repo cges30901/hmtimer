@@ -314,7 +314,7 @@ void MainWindow::on_actionAbout_triggered()
                                            "sending me an e-mail.").arg(VERSION));
 }
 
-void MainWindow::on_actionHomepage_triggered()
+void MainWindow::on_actionWebsite_triggered()
 {
     QDesktopServices::openUrl(QUrl("https://cges30901.github.io/hmtimer-website/"));
 }

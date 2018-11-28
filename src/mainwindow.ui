@@ -262,7 +262,7 @@
     <property name="title">
      <string>&amp;Help</string>
     </property>
-    <addaction name="actionHomepage"/>
+    <addaction name="actionWebsite"/>
     <addaction name="actionProject_Page"/>
     <addaction name="actionDonate"/>
     <addaction name="actionBlog"/>
@@ -291,9 +291,9 @@
     <string>About Qt</string>
    </property>
   </action>
-  <action name="actionHomepage">
+  <action name="actionWebsite">
    <property name="text">
-    <string>Homepage</string>
+    <string>&amp;Website</string>
    </property>
   </action>
   <action name="actionSettings">

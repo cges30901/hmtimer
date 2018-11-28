@@ -72,7 +72,7 @@ private slots:
     void actQuit_Triggered();
     void on_actionAbout_Qt_triggered();
     void on_actionAbout_triggered();
-    void on_actionHomepage_triggered();
+    void on_actionWebsite_triggered();
     void on_actionSettings_triggered();
     void on_actionProject_Page_triggered();
     void on_actionDonate_triggered();
