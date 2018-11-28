@@ -58,46 +58,42 @@
     <message>
         <location filename="../mainwindow.ui" line="286"/>
         <source>&amp;About</source>
-        <translation type="unfinished"></translation>
+        <translation>關於(&amp;A)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="291"/>
         <source>About &amp;Qt</source>
-        <translation type="unfinished"></translation>
+        <translation>關於 &amp;Qt</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="296"/>
         <source>&amp;Website</source>
-        <translation type="unfinished"></translation>
+        <translation>網站(&amp;W)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="301"/>
         <source>&amp;Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>設定(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="306"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>退出(&amp;Q)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="311"/>
         <source>&amp;Project Page</source>
-        <translation type="unfinished"></translation>
+        <translation>專案頁面(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="316"/>
         <source>&amp;Donate</source>
-        <translation type="unfinished"></translation>
+        <translation>捐款(&amp;D)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="321"/>
         <source>&amp;Blog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>A&amp;t:</source>
-        <translation type="vanished">在(&amp;T)：</translation>
+        <translation>部落格(&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="124"/>
@@ -123,10 +119,6 @@
         <location filename="../mainwindow.cpp" line="541"/>
         <source>Start</source>
         <translation>開始</translation>
-    </message>
-    <message>
-        <source>&amp;Action</source>
-        <translation type="vanished">動作(&amp;A)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
@@ -179,29 +171,9 @@
         <translation>關於 Qt</translation>
     </message>
     <message>
-        <source>Homepage</source>
-        <translation type="vanished">首頁</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="vanished">設定</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>結束</translation>
-    </message>
-    <message>
-        <source>Project Page</source>
-        <translation type="vanished">專案頁面</translation>
-    </message>
-    <message>
-        <source>Donate</source>
-        <translation type="vanished">捐款</translation>
-    </message>
-    <message>
-        <source>Blog</source>
-        <translation type="vanished">部落格</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="61"/>
@@ -244,10 +216,6 @@
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;如果你發現任何錯誤或有任何建議，請寄 e-mail 聯絡我。</translation>
     </message>
     <message>
-        <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</source>
-        <translation type="vanished">&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License:GPL v3</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>Close hmtimer?</source>
         <translation>關閉 hmtimer 嗎？</translation>
@@ -265,10 +233,6 @@
 </context>
 <context>
     <name>NewPasswordDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="vanished">對話方塊</translation>
-    </message>
     <message>
         <location filename="../newpassworddialog.ui" line="14"/>
         <source>Password</source>
@@ -297,10 +261,6 @@
 </context>
 <context>
     <name>PasswordDialog</name>
-    <message>
-        <source>Dialog</source>
-        <translation type="vanished">對話方塊</translation>
-    </message>
     <message>
         <location filename="../passworddialog.ui" line="14"/>
         <source>Password</source>
@@ -376,14 +336,6 @@
         <location filename="../settingsdialog.ui" line="30"/>
         <source>Minimize to tray</source>
         <translation>最小化到系統匣</translation>
-    </message>
-    <message>
-        <source>Beep last</source>
-        <translation type="vanished">最後</translation>
-    </message>
-    <message>
-        <source>seconds</source>
-        <translation type="vanished">秒發出嗶聲</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="39"/>
