@@ -81,6 +81,46 @@
         <translation>Запусціць</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="286"/>
+        <source>&amp;About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="291"/>
+        <source>About &amp;Qt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="296"/>
+        <source>&amp;Website</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="301"/>
+        <source>&amp;Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="306"/>
+        <source>&amp;Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="311"/>
+        <source>&amp;Project Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="316"/>
+        <source>&amp;Donate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="321"/>
+        <source>&amp;Blog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Turn off monitor</source>
         <translation>Выключыць манітор</translation>
@@ -116,47 +156,39 @@
         <translation>Файл (&amp;F)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="286"/>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>About</source>
         <translation>Пра праграму</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="291"/>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>About Qt</source>
         <translation>Пра Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="296"/>
         <source>Homepage</source>
-        <translation>Хатняя старонка</translation>
+        <translation type="vanished">Хатняя старонка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="301"/>
         <source>Settings</source>
-        <translation>Налады</translation>
+        <translation type="vanished">Налады</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>Выйсці</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
-        <translation>Старонка праекта</translation>
+        <translation type="vanished">Старонка праекта</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="316"/>
         <source>Donate</source>
-        <translation>Ахвяраваць</translation>
+        <translation type="vanished">Ахвяраваць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="321"/>
         <source>Blog</source>
-        <translation>Блог</translation>
+        <translation type="vanished">Блог</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>

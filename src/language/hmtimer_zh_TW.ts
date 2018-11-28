@@ -56,6 +56,46 @@
         <translation>重複執行</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="286"/>
+        <source>&amp;About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="291"/>
+        <source>About &amp;Qt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="296"/>
+        <source>&amp;Website</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="301"/>
+        <source>&amp;Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="306"/>
+        <source>&amp;Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="311"/>
+        <source>&amp;Project Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="316"/>
+        <source>&amp;Donate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="321"/>
+        <source>&amp;Blog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>A&amp;t:</source>
         <translation type="vanished">在(&amp;T)：</translation>
     </message>
@@ -129,47 +169,39 @@
         <translation>檔案(&amp;F)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="286"/>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="291"/>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>About Qt</source>
         <translation>關於 Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="296"/>
         <source>Homepage</source>
-        <translation>首頁</translation>
+        <translation type="vanished">首頁</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="301"/>
         <source>Settings</source>
-        <translation>設定</translation>
+        <translation type="vanished">設定</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>結束</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
-        <translation>專案頁面</translation>
+        <translation type="vanished">專案頁面</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="316"/>
         <source>Donate</source>
-        <translation>捐款</translation>
+        <translation type="vanished">捐款</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="321"/>
         <source>Blog</source>
-        <translation>部落格</translation>
+        <translation type="vanished">部落格</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="61"/>

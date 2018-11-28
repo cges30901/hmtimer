@@ -81,6 +81,46 @@
         <translation>Start</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="286"/>
+        <source>&amp;About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="291"/>
+        <source>About &amp;Qt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="296"/>
+        <source>&amp;Website</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="301"/>
+        <source>&amp;Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="306"/>
+        <source>&amp;Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="311"/>
+        <source>&amp;Project Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="316"/>
+        <source>&amp;Donate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="321"/>
+        <source>&amp;Blog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Turn off monitor</source>
         <translation>Bildschirm ausschalten</translation>
@@ -116,47 +156,35 @@
         <translation>&amp;Datei</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="286"/>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="291"/>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>About Qt</source>
         <translation>Über Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="296"/>
         <source>Homepage</source>
-        <translation>Homepage</translation>
+        <translation type="vanished">Homepage</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="301"/>
         <source>Settings</source>
-        <translation>Einstellungen</translation>
+        <translation type="vanished">Einstellungen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>Beenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
-        <translation>Projektseite</translation>
+        <translation type="vanished">Projektseite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="316"/>
         <source>Donate</source>
-        <translation>Spenden</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="321"/>
-        <source>Blog</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">Spenden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>

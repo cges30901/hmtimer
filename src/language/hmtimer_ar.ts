@@ -81,6 +81,46 @@
         <translation>ابدأ</translation>
     </message>
     <message>
+        <location filename="../mainwindow.ui" line="286"/>
+        <source>&amp;About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="291"/>
+        <source>About &amp;Qt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="296"/>
+        <source>&amp;Website</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="301"/>
+        <source>&amp;Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="306"/>
+        <source>&amp;Quit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="311"/>
+        <source>&amp;Project Page</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="316"/>
+        <source>&amp;Donate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="321"/>
+        <source>&amp;Blog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="47"/>
         <source>Turn off monitor</source>
         <translation>أوقف العرض</translation>
@@ -116,47 +156,35 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="286"/>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>About</source>
         <translation>حول</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="291"/>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>About Qt</source>
         <translation>حول Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="296"/>
         <source>Homepage</source>
-        <translation>الصفحة الرئيسية</translation>
+        <translation type="vanished">الصفحة الرئيسية</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="301"/>
         <source>Settings</source>
-        <translation>الإعدادات</translation>
+        <translation type="vanished">الإعدادات</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="306"/>
         <location filename="../mainwindow.cpp" line="62"/>
         <source>Quit</source>
         <translation>اخرج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="311"/>
         <source>Project Page</source>
-        <translation>صفحة المشروع</translation>
+        <translation type="vanished">صفحة المشروع</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="316"/>
         <source>Donate</source>
-        <translation>تبرع</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.ui" line="321"/>
-        <source>Blog</source>
-        <translation type="unfinished"></translation>
+        <translation type="vanished">تبرع</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="46"/>
