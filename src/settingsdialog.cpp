@@ -142,18 +142,12 @@ void SettingsDialog::on_btnOk_clicked()
         {
             printf("Unable to set registry value; last error = %lu\n", GetLastError());
         }
-        RegCloseKey(newValue);
     }
     else{
         //delete registry
-        RegSetValueEx(newValue,
-                      TEXT("hmtimer"),
-                      0,
-                      REG_SZ,
-                      (LPBYTE)TEXT(""),
-                      0);
-        RegCloseKey(newValue);
+        RegDeleteValueA(newValue,"hmtimer");
     }
+    RegCloseKey(newValue);
 #endif
     this->accept();
 }
