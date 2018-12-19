@@ -124,12 +124,11 @@ void SettingsDialog::on_btnOk_clicked()
         // which may not equal the number of characters due to
         // character set.
         QString argument=QString("\"")+QString::fromWCharArray(szPath)+QString("\"");
-        argument+=" -t "+QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value());
         if(chbMinimizeOnStartup->isChecked()){
             argument+=" -m";
         }
         if(chbStartTimerOnStartup->isChecked()){
-            argument+=" -s";
+            argument+=" -t "+QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value());
         }
         argument.toWCharArray(szPath);
         //pathLen=wcslen(szPath);
