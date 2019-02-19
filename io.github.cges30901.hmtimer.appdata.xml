@@ -19,7 +19,7 @@
     <binary>hmtimer</binary>
   </provides>
   <releases>
-    <release version="3.0.1" date="2018-08-26" />
+    <release version="3.0.2" date="2019-02-19" />
   </releases>
   <screenshots>
     <screenshot type="default">

@@ -1,3 +1,9 @@
+version 3.0.2 2019.02.19
+-Add keyboard shortcuts in menuBar
+-fix startup on Windows
+-Windows: Use RegDeleteValueA() to delete registry
+-Disable minimize to tray if a dialog is open
+
 version 3.0.1 2018.08.26
 -add argument "nothing" as an available action and fix output of "--help"
 -make trayicon tooltip translatable

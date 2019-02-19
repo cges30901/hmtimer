@@ -1,7 +1,7 @@
 #
 # spec file for package hmtimer
 #
-# Copyright (c) 2018 Hsiu-Ming Chang <cges30901@gmail.com>
+# Copyright (c) 2019 Hsiu-Ming Chang <cges30901@gmail.com>
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -14,7 +14,7 @@
 
 Summary:        A graphical shutdown timer
 Name:           hmtimer
-Version:        3.0.1
+Version:        3.0.2
 Release:        1
 License:        GPL-3.0
 Url:            https://cges30901.github.io/hmtimer-website/
