@@ -61,6 +61,7 @@ MainWindow::MainWindow(QWidget *parent)
     actShow=trayContextMenu->addAction(tr("Show"));
     actQuit=trayContextMenu->addAction(tr("Quit"));
     trayIcon->setContextMenu(trayContextMenu);
+    dialog_open=false;
     connect(btnStart,&QPushButton::clicked,
             this,&MainWindow::btnStartPressed);
     connect(timer,&QTimer::timeout,
@@ -421,7 +422,8 @@ void MainWindow::readSettings()
 void MainWindow::changeEvent(QEvent *event)
 {
     if(event->type()==QEvent::WindowStateChange){
-        if(isMinimized() and programOptions->chbMinimizeToTray_Checked){ //minimize to tray
+        if(isMinimized() and programOptions->chbMinimizeToTray_Checked
+                and dialog_open==false){ //minimize to tray
             this->hide();
             trayIcon->show();
         }
@@ -470,16 +472,16 @@ void MainWindow::closeEvent(QCloseEvent *event)
 
 void MainWindow::on_actionSettings_triggered()
 {
+    dialog_open=true;
     SettingsDialog *dlgSettings=new SettingsDialog(programOptions,this);
     dlgSettings->exec();
     delete dlgSettings;
+    dialog_open=false;
 }
 
 void MainWindow::trayIcon_activated(QSystemTrayIcon::ActivationReason reason)
 {
-    if(reason==QSystemTrayIcon::Trigger or reason==QSystemTrayIcon::DoubleClick){
-        //When dialog is open, trayicon can not be activated.
-        //Double click seems to be the only way to show main window.
+    if(reason==QSystemTrayIcon::Trigger){
         this->showNormal();
         trayIcon->hide();
     }
@@ -565,6 +567,7 @@ void MainWindow::on_actionDonate_triggered()
 
 void MainWindow::on_btnAt_clicked()
 {
+    dialog_open=true;
     AtDialog *dlgAt =new AtDialog(programOptions,this);
     if(dlgAt->exec()==QDialog::Accepted){
         startFromAt=true;
@@ -572,6 +575,7 @@ void MainWindow::on_btnAt_clicked()
         startTimer();
     }
     delete dlgAt;
+    dialog_open=false;
 }
 
 void MainWindow::setAtTime()
@@ -614,14 +618,18 @@ void MainWindow::on_actionBlog_triggered()
 void MainWindow::on_comboAction_activated(int index)
 {
     if(index==4){ //play sound
+        dialog_open=true;
         QString file=QFileDialog::getOpenFileName(this,QString(),audioFile);
         if(file.length()!=0){
             audioFile=file;
         }
+        dialog_open=false;
     }
     else if(index==5){ //run program
+        dialog_open=true;
         SelectFileDialog *dlgSelectFile =new SelectFileDialog(programOptions,this);
         dlgSelectFile->exec();
         delete dlgSelectFile;
+        dialog_open=false;
     }
 }

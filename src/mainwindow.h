@@ -49,6 +49,10 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
     ProgramOptions *programOptions;
     QProcess *process;
     bool startFromAt;
+    //If a dialog is open when I minimize to tray,
+    //tray icon cannot be activated. So I
+    //disable minimize to tray if a dialog is open.
+    bool dialog_open;
 
     void action();
     void readSettings();
