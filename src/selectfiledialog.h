@@ -29,7 +29,7 @@ public:
     SelectFileDialog(ProgramOptions *programOptions,QWidget *parent=Q_NULLPTR);
 private slots:
     void setFile();
-    void on_btnOk_clicked();
+    void on_buttonBox_accepted();
 };
 
 #endif // SELECTFILEDIALOG_H

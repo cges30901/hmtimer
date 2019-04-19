@@ -25,7 +25,7 @@ AtDialog::AtDialog(ProgramOptions *programOptions, QWidget *parent):QDialog(pare
     spbMinute->setValue(programOptions->spbAtMinute_Value);
 }
 
-void AtDialog::on_btnOk_clicked()
+void AtDialog::on_buttonBox_accepted()
 {
     programOptions->spbAtHour_Value=spbHour->value();
     programOptions->spbAtMinute_Value=spbMinute->value();

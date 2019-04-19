@@ -16,7 +16,7 @@ PasswordDialog::~PasswordDialog()
     delete ui;
 }
 
-void PasswordDialog::on_btnOk_clicked()
+void PasswordDialog::on_buttonBox_accepted()
 {
     if(QCryptographicHash::hash(ui->lnePassword->text().toUtf8(),QCryptographicHash::Sha1).toHex()==password){
         accept();

@@ -58,7 +58,7 @@ SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):
     spbStartupSecond->setEnabled(programOptions->chbStartup_Checked);
 }
 
-void SettingsDialog::on_btnOk_clicked()
+void SettingsDialog::on_buttonBox_accepted()
 {
     //general
     programOptions->chbMinimizeToTray_Checked=chbMinimizeToTray->isChecked();

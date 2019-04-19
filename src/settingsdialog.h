@@ -29,7 +29,7 @@ public:
     SettingsDialog(ProgramOptions *programOptions,QWidget *parent=Q_NULLPTR);
 private slots:
 
-    void on_btnOk_clicked();
+    void on_buttonBox_accepted();
     void on_chbStartup_clicked(bool checked);
     void on_chbPassword_clicked(bool checked);
 };

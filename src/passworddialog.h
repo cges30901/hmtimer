@@ -17,7 +17,7 @@ public:
     ~PasswordDialog();
 
 private slots:
-    void on_btnOk_clicked();
+    void on_buttonBox_accepted();
 
 private:
     Ui::PasswordDialog *ui;

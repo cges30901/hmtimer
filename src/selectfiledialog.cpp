@@ -36,7 +36,7 @@ void SelectFileDialog::setFile()
     }
 }
 
-void SelectFileDialog::on_btnOk_clicked()
+void SelectFileDialog::on_buttonBox_accepted()
 {
     programOptions->lneFilename_Text=lneFilename->text();
     programOptions->lneParameters_Text=lneParameters->text();
