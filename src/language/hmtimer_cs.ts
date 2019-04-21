@@ -13,16 +13,6 @@
         <source>Enter the time you want this program to do the action:</source>
         <translation>Zadejte čas, ve kterém chcete akci provést:</translation>
     </message>
-    <message>
-        <location filename="../atdialog.ui" line="85"/>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <location filename="../atdialog.ui" line="92"/>
-        <source>Cancel</source>
-        <translation>Storno</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -271,16 +261,6 @@
         <translation>Heslo:</translation>
     </message>
     <message>
-        <location filename="../passworddialog.ui" line="66"/>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <location filename="../passworddialog.ui" line="73"/>
-        <source>Cancel</source>
-        <translation>Storno</translation>
-    </message>
-    <message>
         <location filename="../passworddialog.cpp" line="25"/>
         <source>Wrong password</source>
         <translation>Chybné heslo</translation>
@@ -307,16 +287,6 @@
         <location filename="../selectfiledialog.ui" line="43"/>
         <source>Parameters:</source>
         <translation>Parametry:</translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="83"/>
-        <source>OK</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="90"/>
-        <source>Cancel</source>
-        <translation>Storno</translation>
     </message>
 </context>
 <context>
@@ -394,16 +364,6 @@
         <source>Sec.</source>
         <comment>second</comment>
         <translation>Sekundy</translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="229"/>
-        <source>Ok</source>
-        <translation>OK</translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="236"/>
-        <source>Cancel</source>
-        <translation>Storno</translation>
     </message>
 </context>
 </TS>

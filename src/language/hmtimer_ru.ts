@@ -13,16 +13,6 @@
         <source>Enter the time you want this program to do the action:</source>
         <translation>Введите время, когда эта программа должна выполнить действие:</translation>
     </message>
-    <message>
-        <location filename="../atdialog.ui" line="85"/>
-        <source>OK</source>
-        <translation>ОК</translation>
-    </message>
-    <message>
-        <location filename="../atdialog.ui" line="92"/>
-        <source>Cancel</source>
-        <translation>Отмена</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -272,16 +262,6 @@
         <translation>Пароль:</translation>
     </message>
     <message>
-        <location filename="../passworddialog.ui" line="66"/>
-        <source>OK</source>
-        <translation>ОК</translation>
-    </message>
-    <message>
-        <location filename="../passworddialog.ui" line="73"/>
-        <source>Cancel</source>
-        <translation>Отмена</translation>
-    </message>
-    <message>
         <location filename="../passworddialog.cpp" line="25"/>
         <source>Wrong password</source>
         <translation>Неверный пароль</translation>
@@ -308,16 +288,6 @@
         <location filename="../selectfiledialog.ui" line="43"/>
         <source>Parameters:</source>
         <translation>Параметры:</translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="83"/>
-        <source>OK</source>
-        <translation>ОК</translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="90"/>
-        <source>Cancel</source>
-        <translation>Отмена</translation>
     </message>
 </context>
 <context>
@@ -395,16 +365,6 @@
         <source>Sec.</source>
         <comment>second</comment>
         <translation>Сек.</translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="229"/>
-        <source>Ok</source>
-        <translation>ОК</translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="236"/>
-        <source>Cancel</source>
-        <translation>Отмена</translation>
     </message>
 </context>
 </TS>

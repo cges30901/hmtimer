@@ -13,16 +13,6 @@
         <source>Enter the time you want this program to do the action:</source>
         <translation>輸入你要這個程式執行動作的時間：</translation>
     </message>
-    <message>
-        <location filename="../atdialog.ui" line="85"/>
-        <source>OK</source>
-        <translation>確定</translation>
-    </message>
-    <message>
-        <location filename="../atdialog.ui" line="92"/>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -272,16 +262,6 @@
         <translation>密碼：</translation>
     </message>
     <message>
-        <location filename="../passworddialog.ui" line="66"/>
-        <source>OK</source>
-        <translation>確定</translation>
-    </message>
-    <message>
-        <location filename="../passworddialog.ui" line="73"/>
-        <source>Cancel</source>
-        <translation>取消</translation>
-    </message>
-    <message>
         <location filename="../passworddialog.cpp" line="25"/>
         <source>Wrong password</source>
         <translation>密碼錯誤</translation>
@@ -308,16 +288,6 @@
         <location filename="../selectfiledialog.ui" line="43"/>
         <source>Parameters:</source>
         <translation>參數：</translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="83"/>
-        <source>OK</source>
-        <translation>確定</translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="90"/>
-        <source>Cancel</source>
-        <translation>取消</translation>
     </message>
 </context>
 <context>
@@ -395,16 +365,6 @@
         <source>Sec.</source>
         <comment>second</comment>
         <translation>秒</translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="229"/>
-        <source>Ok</source>
-        <translation>確定</translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="236"/>
-        <source>Cancel</source>
-        <translation>取消</translation>
     </message>
 </context>
 </TS>

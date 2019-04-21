@@ -13,16 +13,6 @@
         <source>Enter the time you want this program to do the action:</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../atdialog.ui" line="85"/>
-        <source>OK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../atdialog.ui" line="92"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 <context>
     <name>MainWindow</name>
@@ -271,16 +261,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../passworddialog.ui" line="66"/>
-        <source>OK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../passworddialog.ui" line="73"/>
-        <source>Cancel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../passworddialog.cpp" line="25"/>
         <source>Wrong password</source>
         <translation type="unfinished"></translation>
@@ -306,16 +286,6 @@
     <message>
         <location filename="../selectfiledialog.ui" line="43"/>
         <source>Parameters:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="83"/>
-        <source>OK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../selectfiledialog.ui" line="90"/>
-        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -393,16 +363,6 @@
         <location filename="../settingsdialog.ui" line="175"/>
         <source>Sec.</source>
         <comment>second</comment>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="229"/>
-        <source>Ok</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../settingsdialog.ui" line="236"/>
-        <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
