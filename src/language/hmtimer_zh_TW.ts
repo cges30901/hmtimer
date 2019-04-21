@@ -203,7 +203,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
-        <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;如果你發現任何錯誤或有任何建議，請寄 e-mail 聯絡我。</translation>
+        <translation>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;作者：張修銘&lt;br&gt;電子郵件：cges30901@gmail.com&lt;br&gt;授權：GPL v3&lt;br&gt;&lt;br&gt;如果你發現任何錯誤或有任何建議，請寄電子郵件聯絡我。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="453"/>
