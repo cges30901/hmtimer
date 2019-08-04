@@ -129,6 +129,18 @@ MainWindow::MainWindow(QWidget *parent)
             }
             btnStartPressed();
         }
+        else if(args.at(i)=="-at"){
+            i++;
+            QString time=args.at(i);
+            QStringList list=time.split(':');
+            if(list.size()==2){
+                startFromAt=true;
+                programOptions->spbAtHour_Value=list.at(0).toInt();
+                programOptions->spbAtMinute_Value=list.at(1).toInt();
+                setAtTime();
+                startTimer();
+            }
+        }
         else if(args.at(i)=="-m"){
             trayIcon->show();
         }
