@@ -106,9 +106,27 @@ MainWindow::MainWindow(QWidget *parent)
         else if(args.at(i)=="-t"){
             i++;
             QString time=args.at(i);
-            spbHour->setValue(time.toInt()/3600);
-            spbMinute->setValue(time.toInt()/60%60);
-            spbSecond->setValue(time.toInt()%60);
+            QStringList list=time.split(':');
+            if(list.size()==1){ //time is number in second
+                spbHour->setValue(time.toInt()/3600);
+                spbMinute->setValue(time.toInt()/60%60);
+                spbSecond->setValue(time.toInt()%60);
+            }
+            else if(list.size()==2){ //time is MM:SS
+                int minute=list.at(0).toInt();
+                int second=list.at(1).toInt();
+                spbHour->setValue(minute/60);
+                spbMinute->setValue(minute%60);
+                spbSecond->setValue(second);
+            }
+            else if(list.size()==3){ //time is HH:MM:SS
+                int hour=list.at(0).toInt();
+                int minute=list.at(1).toInt();
+                int second=list.at(2).toInt();
+                spbHour->setValue(hour);
+                spbMinute->setValue(minute);
+                spbSecond->setValue(second);
+            }
             btnStartPressed();
         }
         else if(args.at(i)=="-m"){
