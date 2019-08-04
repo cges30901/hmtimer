@@ -157,7 +157,7 @@ void MainWindow::btnStartPressed()
     else if(spbHour->value()==0 and spbMinute->value()==0 and spbSecond->value()==0)
     {
         QMessageBox::warning(this,tr("Please set the timer"),
-                                 tr("Please set the timer"));
+                                 tr("Time can not be zero"));
     }
     else
     {
