@@ -166,11 +166,6 @@ void MainWindow::btnStartPressed()
         player->stop();
         btnStart->setText(tr("Start"));
     }
-    else if(spbHour->value()==0 and spbMinute->value()==0 and spbSecond->value()==0)
-    {
-        QMessageBox::warning(this,tr("Please set the timer"),
-                                 tr("Time can not be zero"));
-    }
     else
     {
         startFromAt=false;
@@ -544,6 +539,12 @@ void MainWindow::stopTimer()
 
 void MainWindow::startTimer()
 {
+    if(spbHour->value()==0 and spbMinute->value()==0 and spbSecond->value()==0)
+    {
+        QMessageBox::warning(this,tr("Please set the timer"),
+                                 tr("Time can not be zero"));
+        return;
+    }
     timeStart=time(Q_NULLPTR);
     timeSet=spbHour->text().toInt()*3600+spbMinute->text().toInt()*60+spbSecond->text().toInt();
     timeRemain=timeSet;
