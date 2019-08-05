@@ -127,7 +127,12 @@ MainWindow::MainWindow(QWidget *parent)
                 spbMinute->setValue(minute);
                 spbSecond->setValue(second);
             }
-            btnStartPressed();
+            else{
+                qDebug()<<"Invalid time for -t:"<<time<<endl;
+                break;
+            }
+            startFromAt=false;
+            startTimer();
         }
         else if(args.at(i)=="-at"){
             i++;
@@ -139,6 +144,10 @@ MainWindow::MainWindow(QWidget *parent)
                 programOptions->spbAtMinute_Value=list.at(1).toInt();
                 setAtTime();
                 startTimer();
+            }
+            else{
+                qDebug()<<"Invalid time for -at:"<<time<<endl;
+                break;
             }
         }
         else if(args.at(i)=="-m"){
