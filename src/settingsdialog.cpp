@@ -50,12 +50,18 @@ SettingsDialog::SettingsDialog(ProgramOptions *programOptions, QWidget *parent):
     spbStartupHour->setValue(programOptions->spbStartupHour_Value);
     spbStartupMinute->setValue(programOptions->spbStartupMinute_Value);
     spbStartupSecond->setValue(programOptions->spbStartupSecond_Value);
+    chbStartupAt->setChecked(programOptions->chbStartupAt_Checked);
+    spbStartupAtHour->setValue(programOptions->spbStartupAtHour_Value);
+    spbStartupAtMinute->setValue(programOptions->spbStartupAtMinute_Value);
 
     chbMinimizeOnStartup->setEnabled(programOptions->chbStartup_Checked);
     chbStartTimerOnStartup->setEnabled(programOptions->chbStartup_Checked);
     spbStartupHour->setEnabled(programOptions->chbStartup_Checked);
     spbStartupMinute->setEnabled(programOptions->chbStartup_Checked);
     spbStartupSecond->setEnabled(programOptions->chbStartup_Checked);
+    chbStartupAt->setEnabled(programOptions->chbStartup_Checked);
+    spbStartupAtHour->setEnabled(programOptions->chbStartup_Checked);
+    spbStartupAtMinute->setEnabled(programOptions->chbStartup_Checked);
 }
 
 void SettingsDialog::on_buttonBox_accepted()
@@ -74,6 +80,9 @@ void SettingsDialog::on_buttonBox_accepted()
     programOptions->spbStartupHour_Value=spbStartupHour->value();
     programOptions->spbStartupMinute_Value=spbStartupMinute->value();
     programOptions->spbStartupSecond_Value=spbStartupSecond->value();
+    programOptions->chbStartupAt_Checked=chbStartupAt->isChecked();
+    programOptions->spbStartupAtHour_Value=spbStartupAtHour->value();
+    programOptions->spbStartupAtMinute_Value=spbStartupAtMinute->value();
 
 #if defined(Q_OS_LINUX) && !defined(FLATPAK)
     if(chbStartup->isChecked()){
@@ -87,6 +96,9 @@ void SettingsDialog::on_buttonBox_accepted()
         }
         if(chbStartTimerOnStartup->isChecked()){
             file<<" -t "<<qPrintable(QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value()));
+        }
+        if(chbStartupAt->isChecked()){
+            file<<" -at "<<qPrintable(QString::number(spbStartupAtHour->value()))<<":"<<qPrintable(QString::number(spbStartupMinute->value()));
         }
         file<<"\nTerminal=false\n"
             <<"Hidden=false";
@@ -159,6 +171,9 @@ void SettingsDialog::on_chbStartup_clicked(bool checked)
     spbStartupHour->setEnabled(checked);
     spbStartupMinute->setEnabled(checked);
     spbStartupSecond->setEnabled(checked);
+    chbStartupAt->setEnabled(checked);
+    spbStartupAtHour->setEnabled(checked);
+    spbStartupAtMinute->setEnabled(checked);
 }
 
 void SettingsDialog::on_chbPassword_clicked(bool checked)
@@ -176,5 +191,33 @@ void SettingsDialog::on_chbPassword_clicked(bool checked)
             chbPassword->setChecked(true);
         }
         delete dialog;
+    }
+}
+
+void SettingsDialog::on_chbStartTimerOnStartup_stateChanged(int state)
+{
+    if(state==Qt::Checked){
+        spbStartupHour->setEnabled(true);
+        spbStartupMinute->setEnabled(true);
+        spbStartupSecond->setEnabled(true);
+        chbStartupAt->setChecked(false);
+    }
+    else{
+        spbStartupHour->setEnabled(false);
+        spbStartupMinute->setEnabled(false);
+        spbStartupSecond->setEnabled(false);
+    }
+}
+
+void SettingsDialog::on_chbStartupAt_stateChanged(int state)
+{
+    if(state==Qt::Checked){
+        spbStartupAtHour->setEnabled(true);
+        spbStartupAtMinute->setEnabled(true);
+        chbStartTimerOnStartup->setChecked(false);
+    }
+    else{
+        spbStartupAtHour->setEnabled(false);
+        spbStartupAtMinute->setEnabled(false);
     }
 }

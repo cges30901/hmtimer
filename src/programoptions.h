@@ -36,6 +36,9 @@ public:
     int spbStartupHour_Value;
     int spbStartupMinute_Value;
     int spbStartupSecond_Value;
+    bool chbStartupAt_Checked;
+    int spbStartupAtHour_Value;
+    int spbStartupAtMinute_Value;
 
     //SelectFileDialog
     QString lneFilename_Text;

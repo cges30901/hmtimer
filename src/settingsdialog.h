@@ -32,6 +32,8 @@ private slots:
     void on_buttonBox_accepted();
     void on_chbStartup_clicked(bool checked);
     void on_chbPassword_clicked(bool checked);
+    void on_chbStartTimerOnStartup_stateChanged(int state);
+    void on_chbStartupAt_stateChanged(int state);
 };
 
 #endif // SETTINGSDIALOG_H

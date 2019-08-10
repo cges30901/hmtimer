@@ -394,6 +394,9 @@ void MainWindow::writeSettings()
     settings.setValue("spbStartupHour_Value",programOptions->spbStartupHour_Value);
     settings.setValue("spbStartupMinute_Value",programOptions->spbStartupMinute_Value);
     settings.setValue("spbStartupSecond_Value",programOptions->spbStartupSecond_Value);
+    settings.setValue("chbStartupAt_Checked",programOptions->chbStartupAt_Checked);
+    settings.setValue("spbStartupAtHour_Value",programOptions->spbStartupAtHour_Value);
+    settings.setValue("spbStartupAtMinute_Value",programOptions->spbStartupAtMinute_Value);
     settings.endGroup();
 
     //AtDialog
@@ -444,6 +447,9 @@ void MainWindow::readSettings()
     programOptions->spbStartupHour_Value=settings.value("spbStartupHour_Value",0).toInt();
     programOptions->spbStartupMinute_Value=settings.value("spbStartupMinute_Value",0).toInt();
     programOptions->spbStartupSecond_Value=settings.value("spbStartupSecond_Value",0).toInt();
+    programOptions->chbStartupAt_Checked=settings.value("chbStartupAt_Checked",false).toBool();
+    programOptions->spbStartupAtHour_Value=settings.value("spbStartupAtHour_Value",0).toInt();
+    programOptions->spbStartupAtMinute_Value=settings.value("spbStartupAtMinute_Value",0).toInt();
     settings.endGroup();
 
     //AtDialog
