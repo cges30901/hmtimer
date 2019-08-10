@@ -84,22 +84,28 @@ void SettingsDialog::on_buttonBox_accepted()
     programOptions->spbStartupAtHour_Value=spbStartupAtHour->value();
     programOptions->spbStartupAtMinute_Value=spbStartupAtMinute->value();
 
+    QString argument;
+    if(chbMinimizeOnStartup->isChecked()){
+        argument+=" -m";
+    }
+    if(chbStartTimerOnStartup->isChecked()){
+        argument+=QString(" -t ")+QString::number(spbStartupHour->value())
+                +":"+QString::number(spbStartupMinute->value())
+                +":"+QString::number(spbStartupSecond->value());
+    }
+    if(chbStartupAt->isChecked()){
+        argument+=QString(" -at ")+QString::number(spbStartupAtHour->value())
+                +":"+QString::number(spbStartupAtMinute->value());
+    }
+
 #if defined(Q_OS_LINUX) && !defined(FLATPAK)
     if(chbStartup->isChecked()){
         std::ofstream file(qPrintable(QDir::homePath()+"/.config/autostart/hmtimer.desktop"));
         file<<"[Desktop Entry]\n"
             <<"Type=Application\n"
             <<"Name=hmtimer\n"
-            <<"Exec="<<qPrintable(qApp->applicationFilePath());
-        if(chbMinimizeOnStartup->isChecked()){
-            file<<" -m";
-        }
-        if(chbStartTimerOnStartup->isChecked()){
-            file<<" -t "<<qPrintable(QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value()));
-        }
-        if(chbStartupAt->isChecked()){
-            file<<" -at "<<qPrintable(QString::number(spbStartupAtHour->value()))<<":"<<qPrintable(QString::number(spbStartupMinute->value()));
-        }
+            <<"Exec="<<qPrintable(qApp->applicationFilePath())
+            <<qPrintable(argument);
         file<<"\nTerminal=false\n"
             <<"Hidden=false";
         file.close();
@@ -135,13 +141,7 @@ void SettingsDialog::on_buttonBox_accepted()
         // Need to pass the length of the path string in bytes,
         // which may not equal the number of characters due to
         // character set.
-        QString argument=QString("\"")+QString::fromWCharArray(szPath)+QString("\"");
-        if(chbMinimizeOnStartup->isChecked()){
-            argument+=" -m";
-        }
-        if(chbStartTimerOnStartup->isChecked()){
-            argument+=" -t "+QString::number(spbStartupHour->value()*3600+spbStartupMinute->value()*60+spbStartupSecond->value());
-        }
+        argument=QString("\"")+QString::fromWCharArray(szPath)+QString("\"")+argument;
         argument.toWCharArray(szPath);
         //pathLen=wcslen(szPath);
         DWORD pathLenInBytes = argument.length() * sizeof(*szPath);
