@@ -168,12 +168,12 @@ void SettingsDialog::on_chbStartup_clicked(bool checked)
 {
     chbMinimizeOnStartup->setEnabled(checked);
     chbStartTimerOnStartup->setEnabled(checked);
-    spbStartupHour->setEnabled(checked);
-    spbStartupMinute->setEnabled(checked);
-    spbStartupSecond->setEnabled(checked);
+    spbStartupHour->setEnabled(checked&&chbStartTimerOnStartup->isChecked());
+    spbStartupMinute->setEnabled(checked&&chbStartTimerOnStartup->isChecked());
+    spbStartupSecond->setEnabled(checked&&chbStartTimerOnStartup->isChecked());
     chbStartupAt->setEnabled(checked);
-    spbStartupAtHour->setEnabled(checked);
-    spbStartupAtMinute->setEnabled(checked);
+    spbStartupAtHour->setEnabled(checked&&chbStartupAt->isChecked());
+    spbStartupAtMinute->setEnabled(checked&&chbStartupAt->isChecked());
 }
 
 void SettingsDialog::on_chbPassword_clicked(bool checked)
