@@ -19,7 +19,7 @@
     <message>
         <location filename="../mainwindow.ui" line="14"/>
         <location filename="../mainwindow.cpp" line="59"/>
-        <location filename="../mainwindow.cpp" line="511"/>
+        <location filename="../mainwindow.cpp" line="551"/>
         <source>Hsiu-Ming&apos;s Timer</source>
         <translation>Hsiu-Ming&apos;s Таймер</translation>
     </message>
@@ -64,9 +64,9 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="231"/>
-        <location filename="../mainwindow.cpp" line="137"/>
-        <location filename="../mainwindow.cpp" line="502"/>
-        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="176"/>
+        <location filename="../mainwindow.cpp" line="542"/>
+        <location filename="../mainwindow.cpp" line="589"/>
         <source>Start</source>
         <translation>Запусціць</translation>
     </message>
@@ -146,12 +146,12 @@
         <translation>Файл (&amp;F)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="343"/>
         <source>About</source>
         <translation>Пра праграму</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="338"/>
         <source>About Qt</source>
         <translation>Пра Qt</translation>
     </message>
@@ -171,13 +171,12 @@
         <translation>Паказаць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="141"/>
-        <location filename="../mainwindow.cpp" line="142"/>
+        <location filename="../mainwindow.cpp" line="559"/>
         <source>Please set the timer</source>
         <translation>Калі ласка, прызначце таймер</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="175"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Hsiu-Ming&apos;s Timer
 %1:%2:%3</source>
         <extracomment>%1 is hour, %2 is minute, %3 is second</extracomment>
@@ -185,40 +184,45 @@
 %1:%2:%3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="206"/>
-        <location filename="../mainwindow.cpp" line="520"/>
+        <location filename="../mainwindow.cpp" line="240"/>
+        <location filename="../mainwindow.cpp" line="566"/>
         <source>Stop</source>
         <translation>Спыніць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>Error</source>
         <translation>Памылка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>Failed to turn off monitor on wayland</source>
         <translation>Не атрымалася выключыць манітор у wayland</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="343"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Таймер %1&lt;/h3&gt;&lt;br&gt;Распрацоўшчык: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;Ліцэнзія: GPL v3&lt;br&gt;&lt;br&gt;Калі вам патрапіліся хібы, або вам ёсць што прапанаваць, калі ласка, не саромейцеся звязацца са мною. Дашліце мне ліст на электронную пошту.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>Close hmtimer?</source>
         <translation>Закрыць?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="494"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>Таймер запушчаны. Сапраўды выйсці?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="496"/>
+        <location filename="../mainwindow.cpp" line="536"/>
         <source>Audio Error</source>
         <translation>Памылка аўдыё</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="560"/>
+        <source>Time can not be zero</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -346,22 +350,31 @@
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="119"/>
-        <source>Start timer on startup</source>
-        <translation>Запускаць таймер падчас запуску</translation>
+        <source>Set countdown time and start timer</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="144"/>
+        <location filename="../settingsdialog.ui" line="200"/>
+        <source>Set absolute time and start timer</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Start timer on startup</source>
+        <translation type="vanished">Запускаць таймер падчас запуску</translation>
+    </message>
+    <message>
+        <location filename="../settingsdialog.ui" line="147"/>
         <source>Hour</source>
         <translation>Гадз.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="158"/>
+        <location filename="../settingsdialog.ui" line="161"/>
         <source>Min.</source>
         <comment>minute</comment>
         <translation>Хвіл.</translation>
     </message>
     <message>
-        <location filename="../settingsdialog.ui" line="175"/>
+        <location filename="../settingsdialog.ui" line="178"/>
         <source>Sec.</source>
         <comment>second</comment>
         <translation>Сек.</translation>
