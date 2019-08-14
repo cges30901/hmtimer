@@ -3,15 +3,26 @@
 hmtimer \- A graphical shutdown timer
 .SH SYNOPSIS
 .B hmtimer
-[\-t time] [\-m] [\-a ACTION] [\-\-help] [\-\-version]
+[\-t TIME] [\-at HH:MM] [\-m] [\-a ACTION] [\-\-help] [\-\-version]
 .SH DESCRIPTION
 .B hmtimer
 is a graphical shutdown timer for Linux and Windows.
 It enables you to shutdown, turn off monitor, reboot or play sound after a period of time.
 .SH OPTIONS
 .TP
-\fB\-t SECONDS\fR
-set time in seconds and start timer
+\fB\-t TIME\fR
+set time from now and start timer
+
+Available formats for time are:
+.br
+1. seconds
+.br
+2. MM:SS, maximum value for SS is 59
+.br
+3. HH:MM:SS, maximum value for MM and SS is 59
+.TP
+\fB\-at HH:MM\fR
+set absolute time and start timer
 .TP
 \fB\-m\fR
 minimize to tray

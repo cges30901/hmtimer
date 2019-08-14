@@ -30,9 +30,14 @@ int main(int argc,char *argv[])
     bool showWindow=true;
     for(int i=0;i<args.size();i++){
         if(args.at(i)=="--help"){
-            std::cout<<"Usage: hmtimer [-t time] [-m] [-a ACTION] [--help] [--version]\n"
+            std::cout<<"Usage: hmtimer [-t TIME] [-at HH:MM] [-m] [-a ACTION] [--help] [--version]\n"
                      <<"options:\n"
-                     <<"  -t SECONDS   set time in seconds and start timer\n"
+                     <<"  -t TIME      set time from now and start timer\n"
+                     <<"    Available formats for time are:\n"
+                     <<"    1. seconds\n"
+                     <<"    2. MM:SS, maximum value for SS is 59\n"
+                     <<"    3. HH:MM:SS, maximum value for MM and SS is 59\n"
+                     <<"  -at HH:MM      set absolute time and start timer\n"
                      <<"  -m           minimize to tray\n"
                      <<"  -a ACTION    set action when time is up.\n"
                      <<"    available actions: nothing, monitor, shutdown, reboot, sound, runprogram\n"
