@@ -1,3 +1,8 @@
+version 3.1.0 2019.08.16
+-command line: Support more formats of countdown time
+-command line: Support setting absolute time
+-Add setting to set absolute time on startup
+
 version 3.0.2 2019.02.19
 -Add keyboard shortcuts in menuBar
 -fix startup on Windows
