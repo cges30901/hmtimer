@@ -128,7 +128,7 @@ MainWindow::MainWindow(QWidget *parent)
                 spbSecond->setValue(second);
             }
             else{
-                qDebug()<<"Invalid time for -t:"<<time<<endl;
+                qDebug()<<"Invalid time for -t:"<<time<<Qt::endl;
                 break;
             }
             startFromAt=false;
@@ -146,7 +146,7 @@ MainWindow::MainWindow(QWidget *parent)
                 startTimer();
             }
             else{
-                qDebug()<<"Invalid time for -at:"<<time<<endl;
+                qDebug()<<"Invalid time for -at:"<<time<<Qt::endl;
                 break;
             }
         }
@@ -171,7 +171,11 @@ void MainWindow::btnStartPressed()
         stopTimer();
         player->stop();
     }
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
+    else if(player->playbackState()==QMediaPlayer::PlayingState){
+#else
     else if(player->state()==QMediaPlayer::PlayingState){
+#endif
         player->stop();
         btnStart->setText(tr("Start"));
     }
@@ -221,12 +225,16 @@ void MainWindow::timer_timeout()
             }
             else{ //Use audio file to play beep sound
 #ifdef Q_OS_LINUX
-                beepPlayer->setMedia(QUrl("qrc:/beep.ogg"));
+# define BEEP_FILE "qrc:/beep.ogg"
 #endif
 #ifdef Q_OS_WIN
-                beepPlayer->setMedia(QUrl("qrc:/beep.mp3"));
+# define BEEP_FILE "qrc:/beep.mp3"
 #endif
-                beepPlayer->setVolume(100);
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
+                beepPlayer->setSource(QUrl(BEEP_FILE));
+#else
+                beepPlayer->setMedia(QUrl(BEEP_FILE));
+#endif
                 beepPlayer->play();
             }
         }
@@ -248,7 +256,7 @@ void MainWindow::action()
         response = freedesktopLogin1.call("PowerOff", true);
         if(response.type() == QDBusMessage::ErrorMessage){
             qDebug()<< response.errorName() << ": "
-                    << response.errorMessage() << endl;
+                    << response.errorMessage() << Qt::endl;
         }
 #endif
 #ifdef Q_OS_WIN32
@@ -277,7 +285,7 @@ void MainWindow::action()
         response = freedesktopLogin1.call("Reboot", true);
         if(response.type() == QDBusMessage::ErrorMessage){
             qDebug()<< response.errorName() << ": "
-                    << response.errorMessage() << endl;
+                    << response.errorMessage() << Qt::endl;
         }
 #endif
 #ifdef Q_OS_WIN32
@@ -531,7 +539,11 @@ void MainWindow::playerError(QMediaPlayer::Error error)
 {
     stopTimer();
     //prevent multiple messageboxes
-    disconnect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),0,0);
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
+    disconnect(player,&QMediaPlayer::errorOccurred,0,0);
+#else
+    disconnect(player,QOverload<QMediaPlayer::Error>::of(&QMediaPlayer::error),0,0);
+#endif
     qDebug()<<"player error: "<<error;
     QMessageBox::warning(this,tr("Audio Error"),
                          player->errorString());
@@ -576,11 +588,19 @@ void MainWindow::startTimer()
     btnAt->setEnabled(false);
     timer_enabled=true;
     //checking player state is required to play sound and run repeatedly
-    if(comboAction->currentIndex()==4 and player->state()!=QMediaPlayer::PlayingState){
-        player->setMedia(QUrl::fromLocalFile(audioFile));
-        connect(player,static_cast<void (QMediaPlayer::*)(QMediaPlayer::Error)>(&QMediaPlayer::error),
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
+    if(comboAction->currentIndex()==4 and player->playbackState()!=QMediaPlayer::PlayingState){
+        player->setSource(QUrl::fromLocalFile(audioFile));
+        connect(player,&QMediaPlayer::errorOccurred,
                 this,&MainWindow::playerError);
     }
+#else
+    if(comboAction->currentIndex()==4 and player->state()!=QMediaPlayer::PlayingState){
+        player->setMedia(QUrl::fromLocalFile(audioFile));
+        connect(player,QOverload<QMediaPlayer::Error>::of(&QMediaPlayer::error),
+                this,&MainWindow::playerError);
+    }
+#endif
 }
 
 void MainWindow::playerMediaStatusChanged(QMediaPlayer::MediaStatus status)
