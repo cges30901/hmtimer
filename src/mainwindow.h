@@ -35,6 +35,11 @@ class MainWindow : public QMainWindow,public Ui::MainWindow
     Q_OBJECT
     QMediaPlayer *player;
     QMediaPlayer *beepPlayer;
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
+    QAudioOutput *audioOutput;
+    QAudioOutput *beepAudioOutput;
+#endif
+
     QTimer *timer;
     int timeSet;
     int timeRemain;

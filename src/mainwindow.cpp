@@ -16,6 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include <time.h>
+#include <QAudioOutput>
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QDesktopServices>
@@ -52,6 +53,12 @@ MainWindow::MainWindow(QWidget *parent)
     programOptions=new ProgramOptions;
     player=new QMediaPlayer;
     beepPlayer=new QMediaPlayer;
+#if (QT_VERSION >= QT_VERSION_CHECK(6, 0, 0))
+    audioOutput = new QAudioOutput;
+    beepAudioOutput = new QAudioOutput;
+    player->setAudioOutput(audioOutput);
+    beepPlayer->setAudioOutput(beepAudioOutput);
+#endif
     timer=new QTimer(this);
     timer_enabled=false;
     trayIcon=new QSystemTrayIcon;
