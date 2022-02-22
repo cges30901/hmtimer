@@ -1,3 +1,7 @@
+version 3.2.0 2022.02.22
+-Support Qt 6
+-Update translation
+
 version 3.1.0 2019.08.16
 -command line: Support more formats of countdown time
 -command line: Support setting absolute time
