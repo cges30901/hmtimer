@@ -6,7 +6,7 @@
     <message>
         <location filename="../atdialog.ui" line="14"/>
         <source>At a specific time:</source>
-        <translation>У зададзены час:</translation>
+        <translation>У вызначаны час:</translation>
     </message>
     <message>
         <location filename="../atdialog.ui" line="20"/>
@@ -18,8 +18,8 @@
     <name>MainWindow</name>
     <message>
         <location filename="../mainwindow.ui" line="14"/>
-        <location filename="../mainwindow.cpp" line="59"/>
-        <location filename="../mainwindow.cpp" line="551"/>
+        <location filename="../mainwindow.cpp" line="66"/>
+        <location filename="../mainwindow.cpp" line="570"/>
         <source>Hsiu-Ming&apos;s Timer</source>
         <translation>Hsiu-Ming&apos;s Таймер</translation>
     </message>
@@ -55,7 +55,7 @@
         <location filename="../mainwindow.ui" line="148"/>
         <source>A&amp;t:</source>
         <comment>At a specific time</comment>
-        <translation>У (&amp;T):</translation>
+        <translation>А (&amp;T):</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="172"/>
@@ -64,9 +64,9 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="231"/>
-        <location filename="../mainwindow.cpp" line="176"/>
-        <location filename="../mainwindow.cpp" line="542"/>
-        <location filename="../mainwindow.cpp" line="589"/>
+        <location filename="../mainwindow.cpp" line="187"/>
+        <location filename="../mainwindow.cpp" line="561"/>
+        <location filename="../mainwindow.cpp" line="616"/>
         <source>Start</source>
         <translation>Запусціць</translation>
     </message>
@@ -111,27 +111,27 @@
         <translation>Блог (&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="47"/>
+        <location filename="../mainwindow.cpp" line="48"/>
         <source>Turn off monitor</source>
         <translation>Выключыць манітор</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="48"/>
+        <location filename="../mainwindow.cpp" line="49"/>
         <source>Shutdown</source>
         <translation>Выключыць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="49"/>
+        <location filename="../mainwindow.cpp" line="50"/>
         <source>Reboot</source>
         <translation>Перазапусціць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="50"/>
+        <location filename="../mainwindow.cpp" line="51"/>
         <source>Play Sound</source>
         <translation>Прайграць мелодыю</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="51"/>
+        <location filename="../mainwindow.cpp" line="52"/>
         <source>Run Program</source>
         <translation>Запусціць праграму</translation>
     </message>
@@ -146,37 +146,37 @@
         <translation>Файл (&amp;F)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="343"/>
+        <location filename="../mainwindow.cpp" line="358"/>
         <source>About</source>
         <translation>Пра праграму</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="../mainwindow.cpp" line="353"/>
         <source>About Qt</source>
         <translation>Пра Qt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="62"/>
+        <location filename="../mainwindow.cpp" line="69"/>
         <source>Quit</source>
         <translation>Выйсці</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="46"/>
+        <location filename="../mainwindow.cpp" line="47"/>
         <source>Do nothing</source>
         <translation>Нічога не рабіць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="61"/>
+        <location filename="../mainwindow.cpp" line="68"/>
         <source>Show</source>
         <translation>Паказаць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="559"/>
+        <location filename="../mainwindow.cpp" line="578"/>
         <source>Please set the timer</source>
         <translation>Калі ласка, прызначце таймер</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="220"/>
         <source>Hsiu-Ming&apos;s Timer
 %1:%2:%3</source>
         <extracomment>%1 is hour, %2 is minute, %3 is second</extracomment>
@@ -184,45 +184,45 @@
 %1:%2:%3</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="240"/>
-        <location filename="../mainwindow.cpp" line="566"/>
+        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="585"/>
         <source>Stop</source>
         <translation>Спыніць</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>Error</source>
         <translation>Памылка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>Failed to turn off monitor on wayland</source>
         <translation>Не атрымалася выключыць манітор у wayland</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="343"/>
+        <location filename="../mainwindow.cpp" line="358"/>
         <source>&lt;h3&gt;Hsiu-Ming&apos;s Timer %1&lt;/h3&gt;&lt;br&gt;Author: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;License: GPL v3&lt;br&gt;&lt;br&gt;If you find any bugs or have suggestions, please feel free to contact me by sending me an e-mail.</source>
         <translation>&lt;h3&gt;Hsiu-Ming&apos;s Таймер %1&lt;/h3&gt;&lt;br&gt;Распрацоўшчык: Hsiu-Ming Chang&lt;br&gt;e-mail: cges30901@gmail.com&lt;br&gt;Ліцэнзія: GPL v3&lt;br&gt;&lt;br&gt;Калі вам патрапіліся хібы, або вам ёсць што прапанаваць, калі ласка, не саромейцеся звязацца са мною. Дашліце мне ліст на электронную пошту.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="493"/>
+        <location filename="../mainwindow.cpp" line="508"/>
         <source>Close hmtimer?</source>
         <translation>Закрыць?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="494"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>Timer is running. Do you really want to quit?</source>
         <translation>Таймер запушчаны. Сапраўды выйсці?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="536"/>
+        <location filename="../mainwindow.cpp" line="555"/>
         <source>Audio Error</source>
         <translation>Памылка аўдыё</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="560"/>
+        <location filename="../mainwindow.cpp" line="579"/>
         <source>Time can not be zero</source>
-        <translation type="unfinished"></translation>
+        <translation>Час не можа быць нулявым</translation>
     </message>
 </context>
 <context>
@@ -351,16 +351,12 @@
     <message>
         <location filename="../settingsdialog.ui" line="119"/>
         <source>Set countdown time and start timer</source>
-        <translation type="unfinished"></translation>
+        <translation>Вызначце зваротны адлік і таймер запуску</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="200"/>
         <source>Set absolute time and start timer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Start timer on startup</source>
-        <translation type="vanished">Запускаць таймер падчас запуску</translation>
+        <translation>Вызначце абсалютны час і таймер запуску</translation>
     </message>
     <message>
         <location filename="../settingsdialog.ui" line="147"/>

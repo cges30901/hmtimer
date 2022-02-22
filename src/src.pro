@@ -39,12 +39,15 @@ HEADERS += \
     atdialog.h \
 
 TRANSLATIONS=language/hmtimer.ts \
-    language/hmtimer_zh_TW.ts \
     language/hmtimer_ar.ts \
-    language/hmtimer_ru.ts \
     language/hmtimer_be.ts \
     language/hmtimer_cs.ts \
-    language/hmtimer_de.ts
+    language/hmtimer_de.ts \
+    language/hmtimer_fr.ts \
+    language/hmtimer_it.ts \
+    language/hmtimer_nl.ts \
+    language/hmtimer_ru.ts \
+    language/hmtimer_zh_TW.ts
 
 RESOURCES=hmtimer.qrc
 
