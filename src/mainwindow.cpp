@@ -135,7 +135,7 @@ MainWindow::MainWindow(QWidget *parent)
                 spbSecond->setValue(second);
             }
             else{
-                qDebug()<<"Invalid time for -t:"<<time<<Qt::endl;
+                qDebug()<<"Invalid time for -t:"<<time<<'\n';
                 break;
             }
             startFromAt=false;
@@ -153,7 +153,7 @@ MainWindow::MainWindow(QWidget *parent)
                 startTimer();
             }
             else{
-                qDebug()<<"Invalid time for -at:"<<time<<Qt::endl;
+                qDebug()<<"Invalid time for -at:"<<time<<'\n';
                 break;
             }
         }
@@ -263,7 +263,7 @@ void MainWindow::action()
         response = freedesktopLogin1.call("PowerOff", true);
         if(response.type() == QDBusMessage::ErrorMessage){
             qDebug()<< response.errorName() << ": "
-                    << response.errorMessage() << Qt::endl;
+                    << response.errorMessage() << '\n';
         }
 #endif
 #ifdef Q_OS_WIN32
@@ -292,7 +292,7 @@ void MainWindow::action()
         response = freedesktopLogin1.call("Reboot", true);
         if(response.type() == QDBusMessage::ErrorMessage){
             qDebug()<< response.errorName() << ": "
-                    << response.errorMessage() << Qt::endl;
+                    << response.errorMessage() << '\n';
         }
 #endif
 #ifdef Q_OS_WIN32
