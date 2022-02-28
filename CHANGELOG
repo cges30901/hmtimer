@@ -1,3 +1,6 @@
+version 3.2.1 2022.02.28
+-Fix build
+
 version 3.2.0 2022.02.22
 -Support Qt 6
 -Update translation
